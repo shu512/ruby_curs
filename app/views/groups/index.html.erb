@@ -1,0 +1,24 @@
+<h1>Listing groups</h1>
+ 
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Size</th>
+    <th colspan="2"></th>
+  </tr>
+ 
+  <% @groups.each do |group| %>
+    <tr>
+      <td><%= group.name %></td>
+      <td><%= group.size %></td>
+      <td><%= link_to 'Show', group_path(group) %></td>
+      <td><%= link_to 'Edit', edit_group_path(group) %></td>
+      <td><%= link_to 'Destroy', group_path(group),
+              method: :delete,
+              data: { confirm: 'Are you sure?' } %>
+    </tr>
+  <% end %>
+</table>
+
+
+<%= link_to 'New group', new_group_path %>

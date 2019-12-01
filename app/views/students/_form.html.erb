@@ -1,0 +1,14 @@
+<%= form_with(model: [ @group, @group.students.build ], local: true) do |form| %>
+
+  <p>
+    <%= form.label :number %><br>
+    <%= form.text_field :number %>
+  </p>
+  <p>
+    <%= form.label :full_name %><br>
+    <%= form.text_area :full_name %>
+  </p>
+  <p>
+    <%= form.submit %>
+  </p>
+<% end %>

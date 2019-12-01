@@ -1,0 +1,14 @@
+<% total_students = 1 %>
+<table>
+  <tr>
+    <th>№</th>
+    <th>FIO</th>
+  </tr>
+</table>
+<% @groups.each do |group| %>
+  <% group.students.each do |student| %>
+    <% @number_student = total_students %>
+    <%= render student %>
+    <% total_students += 1 %>
+  <% end %>
+<% end %>

@@ -1,0 +1,25 @@
+<p>
+  <strong>Name:</strong>
+  <%= @group.name %>
+</p>
+ 
+<p>
+  <strong>Size:</strong>
+  <%= @group.size %>
+</p>
+
+<h2>Students</h2>
+<table>
+  <tr>
+    <th>№</th>
+    <th>FIO</th>
+    <th colspan="2"></th>
+  </tr>
+</table>
+<%= render @group.students %>
+
+<h2>Add a student:</h2>
+<%= render 'students/form' %>
+
+<%= link_to 'Edit', edit_group_path(@group) %> |
+<%= link_to 'Back', groups_path %>
