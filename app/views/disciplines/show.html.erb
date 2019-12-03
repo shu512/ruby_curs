@@ -1,0 +1,13 @@
+<p>
+  <strong>Title:</strong>
+  <%= @discipline.title %>
+</p>
+
+<h2>Question</h2>
+<%= render @discipline.questions %>
+
+<h2>Add a question:</h2>
+<%= render 'questions/form' %>
+
+<%= link_to 'Edit', edit_discipline_path(@discipline) %> |
+<%= link_to 'Back', disciplines_path %>

@@ -1,0 +1,18 @@
+<% if @discipline.errors.any? %>
+  <div id="error_explanation">
+    <h2>
+      <%= pluralize(@discipline.errors.count, "error") %> prohibited
+      this discipline from being saved:
+    </h2>
+    <ul>
+      <% @discipline.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+    </ul>
+  </div>
+<% end %>
+ 
+<%= simple_form_for @discipline do |f| %>
+  <p><%= f.input :title %></p>
+  <p><%= f.button :submit %></p>
+<% end %>
