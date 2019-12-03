@@ -1,31 +1,19 @@
-<%= form_with model: @group, local: true do |form| %>
+<% if @group.errors.any? %>
+  <div id="error_explanation">
+    <h2>
+      <%= pluralize(@group.errors.count, "error") %> prohibited
+      this group from being saved:
+    </h2>
+    <ul>
+      <% @group.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+    </ul>
+  </div>
+<% end %>
  
-  <% if @group.errors.any? %>
-    <div id="error_explanation">
-      <h2>
-        <%= pluralize(@group.errors.count, "error") %> prohibited
-        this group from being saved:
-      </h2>
-      <ul>
-        <% @group.errors.full_messages.each do |msg| %>
-          <li><%= msg %></li>
-        <% end %>
-      </ul>
-    </div>
-  <% end %>
- 
-  <p>
-    <%= form.label :name %><br>
-    <%= form.text_field :name %>
-  </p>
- 
-  <p>
-    <%= form.label :size %><br>
-    <%= form.text_field :size %>
-  </p>
- 
-  <p>
-    <%= form.submit %>
-  </p>
- 
+<%= simple_form_for @group do |f| %>
+  <p><%= f.input :name %></p>
+  <p><%= f.input :size %></p>
+  <p><%= f.button :submit %></p>
 <% end %>

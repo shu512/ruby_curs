@@ -1,26 +1,50 @@
 class StudentsController < ApplicationController
   def index
-    @groups = Group.all
+    @students = Student.all
+  end
+
+  def show
+    @student = Student.find(params[:id])
+  end
+
+  def new
+    @student = Student.new
+  end
+
+  def edit
+    @student = Student.find(params[:id])
   end
 
   def create
-    @group = Group.find(params[:group_id])
-    @student = @group.students.create(student_params)
+    @student = Student.new(student_params)
 
-    redirect_to group_path(@group)
+    if @student.save
+      redirect_to @student
+    else
+      render 'new'
+    end
+  end
+
+  def update
+    @student = Student.find(params[:id])
+
+    if @student.update(student_params)
+      redirect_to @student
+    else
+      render 'edit'
+    end
   end
 
   def destroy
-    @group = Group.find(params[:group_id])
-    @student = @group.students.find(params[:id])
+    @student = Student.find(params[:id])
     @student.destroy
 
-    redirect_to group_path(@group)
+    redirect_to students_path
   end
 
   private
 
   def student_params
-    params.require(:student).permit(:number, :full_name)
+    params.require(:student).permit(:number, :full_name, :group_id)
   end
 end
