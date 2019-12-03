@@ -12,11 +12,11 @@
   </div>
 <% end %>
 
-<% fill_avaliable_groups %>
+<% avaliable_groups = fill_avaliable_groups %>
 
 <%= simple_form_for @student do |f| %>
   <p><%= f.input :number %></p>
   <p><%= f.input :full_name %></p>
-  <p><%= f.select :group_id, @avaliable_groups %></p>
+  <p><%= f.select :group_id, avaliable_groups %></p>
   <p><%= f.button :submit %></p>
 <% end %>

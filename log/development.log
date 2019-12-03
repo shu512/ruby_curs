@@ -8606,3 +8606,611 @@ Processing by GroupsController#index as HTML
 Completed 200 OK in 7ms (Views: 6.1ms | ActiveRecord: 0.5ms | Allocations: 5243)
 
 
+Started GET "/groups/13" for ::1 at 2019-12-03 20:28:33 +0700
+Processing by GroupsController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:7:in `show'
+  Rendering groups/show.html.erb within layouts/application
+  [1m[36mStudent Load (28.5ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."group_id" = $1[0m  [["group_id", 13]]
+  ↳ app/views/groups/show.html.erb:19
+  Rendered collection of students/_student.html.erb [2 times] (Duration: 0.8ms | Allocations: 427)
+  Rendered groups/show.html.erb within layouts/application (Duration: 134.0ms | Allocations: 12631)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 198ms (Views: 101.6ms | ActiveRecord: 37.4ms | Allocations: 22621)
+
+
+Started GET "/students/8/edit" for ::1 at 2019-12-03 20:28:35 +0700
+Processing by StudentsController#edit as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mStudent Load (0.5ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:15:in `edit'
+  Rendering students/edit.html.erb within layouts/application
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/helpers/students_helper.rb:4:in `fill_avaliable_groups'
+  Rendered students/_form.html.erb (Duration: 215.8ms | Allocations: 20057)
+  Rendered students/edit.html.erb within layouts/application (Duration: 217.3ms | Allocations: 20418)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 261ms (Views: 257.3ms | ActiveRecord: 0.9ms | Allocations: 25819)
+
+
+Started GET "/students/12/edit" for ::1 at 2019-12-03 20:28:40 +0700
+Processing by StudentsController#edit as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mStudent Load (2.4ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:15:in `edit'
+  Rendering students/edit.html.erb within layouts/application
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/helpers/students_helper.rb:4:in `fill_avaliable_groups'
+  Rendered students/_form.html.erb (Duration: 18.3ms | Allocations: 6366)
+  Rendered students/edit.html.erb within layouts/application (Duration: 18.6ms | Allocations: 6463)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 40ms (Views: 28.1ms | ActiveRecord: 2.7ms | Allocations: 11155)
+
+
+Started GET "/groups/12" for ::1 at 2019-12-03 20:28:43 +0700
+Processing by GroupsController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:7:in `show'
+  Rendering groups/show.html.erb within layouts/application
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."group_id" = $1[0m  [["group_id", 12]]
+  ↳ app/views/groups/show.html.erb:19
+  Rendered collection of students/_student.html.erb [3 times] (Duration: 1.0ms | Allocations: 298)
+  Rendered groups/show.html.erb within layouts/application (Duration: 5.6ms | Allocations: 1283)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 18ms (Views: 11.5ms | ActiveRecord: 0.8ms | Allocations: 6079)
+
+
+Started GET "/students/7/edit" for ::1 at 2019-12-03 20:28:45 +0700
+Processing by StudentsController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:15:in `edit'
+  Rendering students/edit.html.erb within layouts/application
+  [1m[36mGroup Load (0.5ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/helpers/students_helper.rb:4:in `fill_avaliable_groups'
+  Rendered students/_form.html.erb (Duration: 36.3ms | Allocations: 6366)
+  Rendered students/edit.html.erb within layouts/application (Duration: 36.7ms | Allocations: 6463)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 51ms (Views: 47.2ms | ActiveRecord: 0.9ms | Allocations: 11154)
+
+
+Started GET "/students/7/edit" for ::1 at 2019-12-03 20:29:21 +0700
+Processing by StudentsController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:15:in `edit'
+  Rendering students/edit.html.erb within layouts/application
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/helpers/students_helper.rb:4:in `fill_avaliable_groups'
+  Rendered students/_form.html.erb (Duration: 20.7ms | Allocations: 11184)
+  Rendered students/edit.html.erb within layouts/application (Duration: 22.1ms | Allocations: 11541)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 49ms (Views: 33.7ms | ActiveRecord: 6.4ms | Allocations: 22140)
+
+
+Started GET "/students/7/edit" for ::1 at 2019-12-03 20:29:22 +0700
+Processing by StudentsController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:15:in `edit'
+  Rendering students/edit.html.erb within layouts/application
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/helpers/students_helper.rb:4:in `fill_avaliable_groups'
+  Rendered students/_form.html.erb (Duration: 17.3ms | Allocations: 6374)
+  Rendered students/edit.html.erb within layouts/application (Duration: 17.6ms | Allocations: 6472)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 27ms (Views: 24.0ms | ActiveRecord: 0.8ms | Allocations: 11158)
+
+
+Started GET "/students/7/edit" for ::1 at 2019-12-03 20:29:27 +0700
+Processing by StudentsController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mStudent Load (0.9ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:15:in `edit'
+  Rendering students/edit.html.erb within layouts/application
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/helpers/students_helper.rb:4:in `fill_avaliable_groups'
+  Rendered students/_form.html.erb (Duration: 368.5ms | Allocations: 155148)
+  Rendered students/edit.html.erb within layouts/application (Duration: 369.3ms | Allocations: 155481)
+Completed 500 Internal Server Error in 375ms (ActiveRecord: 1.2ms | Allocations: 157263)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `avaliable_groups' for #<#<Class:0x000055ab478aea60>:0x000055ab478a2350>):
+    17: <%= simple_form_for @student do |f| %>
+    18:   <p><%= f.input :number %></p>
+    19:   <p><%= f.input :full_name %></p>
+    20:   <p><%= f.select :group_id, avaliable_groups %></p>
+    21:   <p><%= f.button :submit %></p>
+    22: <% end %>
+  
+app/views/students/_form.html.erb:20
+app/views/students/_form.html.erb:17
+app/views/students/edit.html.erb:3
+Started GET "/students/7/edit" for ::1 at 2019-12-03 20:29:31 +0700
+Processing by StudentsController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:15:in `edit'
+  Rendering students/edit.html.erb within layouts/application
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/helpers/students_helper.rb:4:in `fill_avaliable_groups'
+  Rendered students/_form.html.erb (Duration: 16.2ms | Allocations: 6771)
+  Rendered students/edit.html.erb within layouts/application (Duration: 17.2ms | Allocations: 7125)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 29ms (Views: 24.5ms | ActiveRecord: 0.7ms | Allocations: 12819)
+
+
+Started GET "/students" for ::1 at 2019-12-03 20:29:33 +0700
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (2.7ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  ↳ app/views/students/index.html.erb:8
+  Rendered students/_student.html.erb (Duration: 2.0ms | Allocations: 316)
+  Rendered students/_student.html.erb (Duration: 0.2ms | Allocations: 87)
+  Rendered students/_student.html.erb (Duration: 0.2ms | Allocations: 87)
+  Rendered students/_student.html.erb (Duration: 0.2ms | Allocations: 87)
+  Rendered students/_student.html.erb (Duration: 0.1ms | Allocations: 87)
+  Rendered students/index.html.erb within layouts/application (Duration: 12.2ms | Allocations: 2122)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 19ms (Views: 14.6ms | ActiveRecord: 2.7ms | Allocations: 6504)
+
+
+Started GET "/students/new" for ::1 at 2019-12-03 20:30:10 +0700
+Processing by StudentsController#new as HTML
+  Rendering students/new.html.erb within layouts/application
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/helpers/students_helper.rb:4:in `fill_avaliable_groups'
+  Rendered students/_form.html.erb (Duration: 12.4ms | Allocations: 6406)
+  Rendered students/new.html.erb within layouts/application (Duration: 13.2ms | Allocations: 6612)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 30ms (Views: 26.6ms | ActiveRecord: 0.4ms | Allocations: 10920)
+
+
+Started GET "/students" for ::1 at 2019-12-03 20:30:13 +0700
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (1.6ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  ↳ app/views/students/index.html.erb:8
+  Rendered students/_student.html.erb (Duration: 0.4ms | Allocations: 113)
+  Rendered students/_student.html.erb (Duration: 0.4ms | Allocations: 87)
+  Rendered students/_student.html.erb (Duration: 0.2ms | Allocations: 87)
+  Rendered students/_student.html.erb (Duration: 0.2ms | Allocations: 87)
+  Rendered students/_student.html.erb (Duration: 0.2ms | Allocations: 87)
+  Rendered students/index.html.erb within layouts/application (Duration: 6.5ms | Allocations: 1556)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 27ms (Views: 24.2ms | ActiveRecord: 1.6ms | Allocations: 5792)
+
+
+Started GET "/students" for ::1 at 2019-12-03 20:32:48 +0700
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  Rendered students/index.html.erb within layouts/application (Duration: 3.3ms | Allocations: 1422)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms | Allocations: 2886)
+
+
+  
+ActionView::Template::Error (undefined method `each' for Class:Class):
+     5:     <th>FIO</th>
+     6:   </tr>
+     7: </table>
+     8: <% @students.each do |student| %>
+     9:   <% @number_student = counter_students %>
+    10:   <%= render student %>
+    11:   <% counter_students += 1 %>
+  
+app/views/students/index.html.erb:8
+Started GET "/students" for ::1 at 2019-12-03 20:32:59 +0700
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  Rendered students/index.html.erb within layouts/application (Duration: 15.5ms | Allocations: 1828)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.0ms | Allocations: 3240)
+
+
+  
+ActionView::Template::Error (undefined method `each' for "Class":String):
+     5:     <th>FIO</th>
+     6:   </tr>
+     7: </table>
+     8: <% @students.each do |student| %>
+     9:   <% @number_student = counter_students %>
+    10:   <%= render student %>
+    11:   <% counter_students += 1 %>
+  
+app/views/students/index.html.erb:8
+Started GET "/students" for ::1 at 2019-12-03 20:33:10 +0700
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  Rendered students/index.html.erb within layouts/application (Duration: 18.0ms | Allocations: 3416)
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 5.7ms | Allocations: 4825)
+
+
+  
+ActionView::Template::Error (undefined method `each' for #<Class:0x00007f73d00a2c38>):
+     5:     <th>FIO</th>
+     6:   </tr>
+     7: </table>
+     8: <% @students.each do |student| %>
+     9:   <% @number_student = counter_students %>
+    10:   <%= render student %>
+    11:   <% counter_students += 1 %>
+  
+app/views/students/index.html.erb:8
+Started GET "/students" for ::1 at 2019-12-03 20:33:33 +0700
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  ↳ app/views/students/index.html.erb:8
+  Rendered students/_student.html.erb (Duration: 0.3ms | Allocations: 121)
+  Rendered students/_student.html.erb (Duration: 0.1ms | Allocations: 87)
+  Rendered students/_student.html.erb (Duration: 0.1ms | Allocations: 87)
+  Rendered students/_student.html.erb (Duration: 0.1ms | Allocations: 87)
+  Rendered students/_student.html.erb (Duration: 0.2ms | Allocations: 87)
+  Rendered students/index.html.erb within layouts/application (Duration: 19.1ms | Allocations: 5671)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 27ms (Views: 18.1ms | ActiveRecord: 6.3ms | Allocations: 10850)
+
+
+Started GET "/students" for ::1 at 2019-12-03 20:33:55 +0700
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (1.0ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  ↳ app/views/students/index.html.erb:8
+  Rendered students/_student.html.erb (Duration: 1.1ms | Allocations: 315)
+  Rendered students/_student.html.erb (Duration: 0.2ms | Allocations: 87)
+  Rendered students/_student.html.erb (Duration: 0.2ms | Allocations: 87)
+  Rendered students/_student.html.erb (Duration: 0.2ms | Allocations: 87)
+  Rendered students/_student.html.erb (Duration: 0.2ms | Allocations: 87)
+  Rendered students/index.html.erb within layouts/application (Duration: 8.2ms | Allocations: 2111)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 18ms (Views: 15.0ms | ActiveRecord: 1.0ms | Allocations: 7307)
+
+
+Started GET "/students" for ::1 at 2019-12-03 20:34:02 +0700
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  ↳ app/views/students/index.html.erb:8
+  Rendered students/_student.html.erb (Duration: 0.4ms | Allocations: 121)
+  Rendered students/_student.html.erb (Duration: 0.4ms | Allocations: 87)
+  Rendered students/_student.html.erb (Duration: 0.1ms | Allocations: 87)
+  Rendered students/_student.html.erb (Duration: 0.2ms | Allocations: 87)
+  Rendered students/_student.html.erb (Duration: 0.1ms | Allocations: 87)
+  Rendered students/index.html.erb within layouts/application (Duration: 14.3ms | Allocations: 5625)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 27ms (Views: 20.3ms | ActiveRecord: 4.6ms | Allocations: 10832)
+
+
+Started GET "/students" for ::1 at 2019-12-03 20:34:08 +0700
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  ↳ app/views/students/index.html.erb:8
+  Rendered students/_student.html.erb (Duration: 0.3ms | Allocations: 121)
+  Rendered students/_student.html.erb (Duration: 0.2ms | Allocations: 87)
+  Rendered students/_student.html.erb (Duration: 0.2ms | Allocations: 87)
+  Rendered students/_student.html.erb (Duration: 0.2ms | Allocations: 87)
+  Rendered students/_student.html.erb (Duration: 0.2ms | Allocations: 87)
+  Rendered students/index.html.erb within layouts/application (Duration: 13.5ms | Allocations: 5627)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 26ms (Views: 19.1ms | ActiveRecord: 4.7ms | Allocations: 10794)
+
+
+Started GET "/students" for ::1 at 2019-12-03 20:34:17 +0700
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  ↳ app/views/students/index.html.erb:8
+  Rendered students/_student.html.erb (Duration: 0.3ms | Allocations: 111)
+  Rendered students/_student.html.erb (Duration: 0.1ms | Allocations: 87)
+  Rendered students/_student.html.erb (Duration: 0.1ms | Allocations: 87)
+  Rendered students/_student.html.erb (Duration: 0.1ms | Allocations: 87)
+  Rendered students/_student.html.erb (Duration: 0.1ms | Allocations: 87)
+  Rendered students/index.html.erb within layouts/application (Duration: 2.7ms | Allocations: 1556)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 7.2ms | ActiveRecord: 0.3ms | Allocations: 5798)
+
+
+Started GET "/students" for ::1 at 2019-12-03 20:34:18 +0700
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.9ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  ↳ app/views/students/index.html.erb:8
+  Rendered students/_student.html.erb (Duration: 0.9ms | Allocations: 315)
+  Rendered students/_student.html.erb (Duration: 0.2ms | Allocations: 87)
+  Rendered students/_student.html.erb (Duration: 0.2ms | Allocations: 87)
+  Rendered students/_student.html.erb (Duration: 0.3ms | Allocations: 87)
+  Rendered students/_student.html.erb (Duration: 0.3ms | Allocations: 87)
+  Rendered students/index.html.erb within layouts/application (Duration: 8.9ms | Allocations: 2116)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 16ms (Views: 14.2ms | ActiveRecord: 0.9ms | Allocations: 7294)
+
+
+Started GET "/students" for ::1 at 2019-12-03 20:34:25 +0700
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.7ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  ↳ app/views/students/index.html.erb:8
+  Rendered students/_student.html.erb (Duration: 0.3ms | Allocations: 117)
+  Rendered students/_student.html.erb (Duration: 0.3ms | Allocations: 87)
+  Rendered students/_student.html.erb (Duration: 0.3ms | Allocations: 87)
+  Rendered students/_student.html.erb (Duration: 0.3ms | Allocations: 87)
+  Rendered students/_student.html.erb (Duration: 0.3ms | Allocations: 87)
+  Rendered students/index.html.erb within layouts/application (Duration: 5.1ms | Allocations: 1563)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 10.8ms | ActiveRecord: 0.7ms | Allocations: 5804)
+
+
+Started GET "/students" for ::1 at 2019-12-03 20:34:26 +0700
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  ↳ app/views/students/index.html.erb:8
+  Rendered students/_student.html.erb (Duration: 0.8ms | Allocations: 315)
+  Rendered students/_student.html.erb (Duration: 0.3ms | Allocations: 87)
+  Rendered students/_student.html.erb (Duration: 0.2ms | Allocations: 87)
+  Rendered students/_student.html.erb (Duration: 0.3ms | Allocations: 87)
+  Rendered students/_student.html.erb (Duration: 0.2ms | Allocations: 87)
+  Rendered students/index.html.erb within layouts/application (Duration: 6.8ms | Allocations: 2118)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 16ms (Views: 13.3ms | ActiveRecord: 0.4ms | Allocations: 7291)
+
+
+Started GET "/students" for ::1 at 2019-12-03 20:34:47 +0700
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  ↳ app/views/students/index.html.erb:8
+  Rendered students/_student.html.erb (Duration: 0.7ms | Allocations: 315)
+  Rendered students/_student.html.erb (Duration: 0.2ms | Allocations: 87)
+  Rendered students/_student.html.erb (Duration: 0.2ms | Allocations: 87)
+  Rendered students/_student.html.erb (Duration: 0.2ms | Allocations: 87)
+  Rendered students/_student.html.erb (Duration: 0.2ms | Allocations: 87)
+  Rendered students/index.html.erb within layouts/application (Duration: 6.1ms | Allocations: 2117)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 15ms (Views: 13.6ms | ActiveRecord: 0.3ms | Allocations: 7293)
+
+
+Started GET "/students" for ::1 at 2019-12-03 20:34:48 +0700
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (1.5ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  ↳ app/views/students/index.html.erb:8
+  Rendered students/_student.html.erb (Duration: 0.5ms | Allocations: 117)
+  Rendered students/_student.html.erb (Duration: 0.3ms | Allocations: 87)
+  Rendered students/_student.html.erb (Duration: 0.2ms | Allocations: 87)
+  Rendered students/_student.html.erb (Duration: 0.2ms | Allocations: 87)
+  Rendered students/_student.html.erb (Duration: 0.2ms | Allocations: 87)
+  Rendered students/index.html.erb within layouts/application (Duration: 6.8ms | Allocations: 1570)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 15ms (Views: 11.9ms | ActiveRecord: 1.5ms | Allocations: 5814)
+
+
+Started GET "/students" for ::1 at 2019-12-03 20:34:49 +0700
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.6ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  ↳ app/views/students/index.html.erb:8
+  Rendered students/_student.html.erb (Duration: 0.3ms | Allocations: 111)
+  Rendered students/_student.html.erb (Duration: 0.2ms | Allocations: 87)
+  Rendered students/_student.html.erb (Duration: 0.2ms | Allocations: 87)
+  Rendered students/_student.html.erb (Duration: 0.3ms | Allocations: 87)
+  Rendered students/_student.html.erb (Duration: 0.2ms | Allocations: 87)
+  Rendered students/index.html.erb within layouts/application (Duration: 4.7ms | Allocations: 1563)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 9.7ms | ActiveRecord: 0.6ms | Allocations: 5804)
+
+
+Started GET "/students" for ::1 at 2019-12-03 20:36:44 +0700
+Processing by StudentsController#index as HTML
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 1377)
+
+
+  
+ArgumentError (The method .order() must contain arguments.):
+  
+app/controllers/students_controller.rb:3:in `index'
+Started GET "/students" for ::1 at 2019-12-03 20:36:57 +0700
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.5ms)[0m  [1m[34mSELECT "students".* FROM "students" ORDER BY id[0m
+  ↳ app/views/students/index.html.erb:8
+  Rendered students/_student.html.erb (Duration: 0.9ms | Allocations: 319)
+  Rendered students/_student.html.erb (Duration: 0.4ms | Allocations: 87)
+  Rendered students/_student.html.erb (Duration: 0.1ms | Allocations: 87)
+  Rendered students/_student.html.erb (Duration: 0.2ms | Allocations: 87)
+  Rendered students/_student.html.erb (Duration: 0.2ms | Allocations: 87)
+  Rendered students/index.html.erb within layouts/application (Duration: 19.5ms | Allocations: 7390)
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 3.2ms | Allocations: 9460)
+
+
+  
+ActionView::Template::Error (undefined method `all' for nil:NilClass):
+    13: 
+    14: <%= link_to 'New students', new_student_path %>
+    15: 
+    16: <%= @temp.all %>
+  
+app/views/students/index.html.erb:16
+Started GET "/students" for ::1 at 2019-12-03 20:37:02 +0700
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.8ms)[0m  [1m[34mSELECT "students".* FROM "students" ORDER BY id[0m
+  ↳ app/views/students/index.html.erb:8
+  Rendered students/_student.html.erb (Duration: 2.0ms | Allocations: 315)
+  Rendered students/_student.html.erb (Duration: 0.3ms | Allocations: 87)
+  Rendered students/_student.html.erb (Duration: 0.2ms | Allocations: 87)
+  Rendered students/_student.html.erb (Duration: 0.2ms | Allocations: 87)
+  Rendered students/_student.html.erb (Duration: 0.3ms | Allocations: 87)
+  Rendered students/index.html.erb within layouts/application (Duration: 8.9ms | Allocations: 2098)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 20ms (Views: 17.6ms | ActiveRecord: 0.8ms | Allocations: 7297)
+
+
+Started GET "/students" for ::1 at 2019-12-03 20:37:22 +0700
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  ↳ app/views/students/index.html.erb:8
+  Rendered students/_student.html.erb (Duration: 0.4ms | Allocations: 121)
+  Rendered students/_student.html.erb (Duration: 0.3ms | Allocations: 87)
+  Rendered students/_student.html.erb (Duration: 0.3ms | Allocations: 87)
+  Rendered students/_student.html.erb (Duration: 0.3ms | Allocations: 87)
+  Rendered students/_student.html.erb (Duration: 0.2ms | Allocations: 87)
+  Rendered students/index.html.erb within layouts/application (Duration: 12.0ms | Allocations: 5640)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 30ms (Views: 19.4ms | ActiveRecord: 3.4ms | Allocations: 10808)
+
+
+Started GET "/" for ::1 at 2019-12-03 20:37:25 +0700
+Processing by GroupsController#index as HTML
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.6ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:10
+  Rendered groups/index.html.erb within layouts/application (Duration: 66.4ms | Allocations: 4451)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 83ms (Views: 72.2ms | ActiveRecord: 4.3ms | Allocations: 10307)
+
+
+Started GET "/groups/12" for ::1 at 2019-12-03 20:37:27 +0700
+Processing by GroupsController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mGroup Load (0.7ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:7:in `show'
+  Rendering groups/show.html.erb within layouts/application
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."group_id" = $1[0m  [["group_id", 12]]
+  ↳ app/views/groups/show.html.erb:19
+  Rendered collection of students/_student.html.erb [3 times] (Duration: 5.2ms | Allocations: 501)
+  Rendered groups/show.html.erb within layouts/application (Duration: 17.3ms | Allocations: 3055)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 34ms (Views: 28.2ms | ActiveRecord: 1.1ms | Allocations: 7994)
+
+
+Started GET "/groups/12" for ::1 at 2019-12-03 20:37:29 +0700
+Processing by GroupsController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mGroup Load (1.0ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:7:in `show'
+  Rendering groups/show.html.erb within layouts/application
+  [1m[36mStudent Load (1.2ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."group_id" = $1[0m  [["group_id", 12]]
+  ↳ app/views/groups/show.html.erb:19
+  Rendered collection of students/_student.html.erb [3 times] (Duration: 0.5ms | Allocations: 292)
+  Rendered groups/show.html.erb within layouts/application (Duration: 8.3ms | Allocations: 1273)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 17ms (Views: 12.4ms | ActiveRecord: 2.2ms | Allocations: 6043)
+
+
+Started GET "/groups/12" for ::1 at 2019-12-03 20:37:29 +0700
+Processing by GroupsController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mGroup Load (0.5ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:7:in `show'
+  Rendering groups/show.html.erb within layouts/application
+  [1m[36mStudent Load (0.8ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."group_id" = $1[0m  [["group_id", 12]]
+  ↳ app/views/groups/show.html.erb:19
+  Rendered collection of students/_student.html.erb [3 times] (Duration: 0.7ms | Allocations: 292)
+  Rendered groups/show.html.erb within layouts/application (Duration: 4.9ms | Allocations: 1273)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 18ms (Views: 13.0ms | ActiveRecord: 1.3ms | Allocations: 6049)
+
+
+Started GET "/groups/12" for ::1 at 2019-12-03 20:37:30 +0700
+Processing by GroupsController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mGroup Load (1.8ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:7:in `show'
+  Rendering groups/show.html.erb within layouts/application
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."group_id" = $1[0m  [["group_id", 12]]
+  ↳ app/views/groups/show.html.erb:19
+  Rendered collection of students/_student.html.erb [3 times] (Duration: 0.7ms | Allocations: 292)
+  Rendered groups/show.html.erb within layouts/application (Duration: 3.6ms | Allocations: 1273)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 22ms (Views: 13.7ms | ActiveRecord: 2.1ms | Allocations: 6043)
+
+
+Started GET "/students" for ::1 at 2019-12-03 20:37:31 +0700
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.7ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  ↳ app/views/students/index.html.erb:8
+  Rendered students/_student.html.erb (Duration: 0.4ms | Allocations: 117)
+  Rendered students/_student.html.erb (Duration: 0.2ms | Allocations: 87)
+  Rendered students/_student.html.erb (Duration: 0.1ms | Allocations: 87)
+  Rendered students/_student.html.erb (Duration: 0.2ms | Allocations: 87)
+  Rendered students/_student.html.erb (Duration: 0.1ms | Allocations: 87)
+  Rendered students/index.html.erb within layouts/application (Duration: 6.7ms | Allocations: 1560)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 11.7ms | ActiveRecord: 0.7ms | Allocations: 5798)
+
+
+Started GET "/students" for ::1 at 2019-12-03 20:37:31 +0700
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.5ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  ↳ app/views/students/index.html.erb:8
+  Rendered students/_student.html.erb (Duration: 0.3ms | Allocations: 111)
+  Rendered students/_student.html.erb (Duration: 0.2ms | Allocations: 87)
+  Rendered students/_student.html.erb (Duration: 0.1ms | Allocations: 87)
+  Rendered students/_student.html.erb (Duration: 0.1ms | Allocations: 87)
+  Rendered students/_student.html.erb (Duration: 0.4ms | Allocations: 87)
+  Rendered students/index.html.erb within layouts/application (Duration: 4.2ms | Allocations: 1553)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 19ms (Views: 17.3ms | ActiveRecord: 0.5ms | Allocations: 5789)
+
+
+Started GET "/groups/12" for ::1 at 2019-12-03 20:37:33 +0700
+Processing by GroupsController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:7:in `show'
+  Rendering groups/show.html.erb within layouts/application
+  [1m[36mStudent Load (0.9ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."group_id" = $1[0m  [["group_id", 12]]
+  ↳ app/views/groups/show.html.erb:19
+  Rendered collection of students/_student.html.erb [3 times] (Duration: 0.8ms | Allocations: 292)
+  Rendered groups/show.html.erb within layouts/application (Duration: 6.4ms | Allocations: 1273)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 15ms (Views: 11.7ms | ActiveRecord: 1.2ms | Allocations: 6049)
+
+
+Started GET "/groups" for ::1 at 2019-12-03 20:38:10 +0700
+Processing by GroupsController#index as HTML
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:10
+  Rendered groups/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 888)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 9.2ms | ActiveRecord: 0.3ms | Allocations: 5129)
+
+
+Started GET "/students" for ::1 at 2019-12-03 20:38:11 +0700
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.6ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  ↳ app/views/students/index.html.erb:8
+  Rendered students/_student.html.erb (Duration: 0.5ms | Allocations: 111)
+  Rendered students/_student.html.erb (Duration: 0.1ms | Allocations: 87)
+  Rendered students/_student.html.erb (Duration: 0.2ms | Allocations: 87)
+  Rendered students/_student.html.erb (Duration: 0.1ms | Allocations: 87)
+  Rendered students/_student.html.erb (Duration: 0.1ms | Allocations: 87)
+  Rendered students/index.html.erb within layouts/application (Duration: 4.8ms | Allocations: 1553)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 9.4ms | ActiveRecord: 0.6ms | Allocations: 5794)
+
+
+Started GET "/students" for ::1 at 2019-12-03 20:38:19 +0700
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT "students".* FROM "students" ORDER BY id[0m
+  ↳ app/views/students/index.html.erb:8
+  Rendered students/_student.html.erb (Duration: 0.6ms | Allocations: 121)
+  Rendered students/_student.html.erb (Duration: 0.2ms | Allocations: 87)
+  Rendered students/_student.html.erb (Duration: 0.1ms | Allocations: 87)
+  Rendered students/_student.html.erb (Duration: 0.1ms | Allocations: 87)
+  Rendered students/_student.html.erb (Duration: 0.2ms | Allocations: 87)
+  Rendered students/index.html.erb within layouts/application (Duration: 13.4ms | Allocations: 5647)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 24ms (Views: 17.6ms | ActiveRecord: 3.5ms | Allocations: 10842)
+
+
