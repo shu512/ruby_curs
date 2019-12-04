@@ -1,6 +1,6 @@
 class QuestionsController < ApplicationController
   def edit
-    @discipline = Discipline.find(params[:id])
+    @discipline = Discipline.find(params[:id]) # ?
     @question = @discipline.questions.find(params[:discipline_id])
   end
 
@@ -8,6 +8,17 @@ class QuestionsController < ApplicationController
     @discipline = Discipline.find(params[:discipline_id])
     @question = @discipline.questions.create(question_params)
     redirect_to discipline_path(@discipline)
+  end
+
+  def update
+    @discipline = Discipline.find(params[:discipline_id])
+    @question = @discipline.questions.find(params[:id])
+
+    if @question.update(question_params)
+      redirect_to @discipline
+    else
+      render 'edit'
+    end
   end
 
   def destroy
