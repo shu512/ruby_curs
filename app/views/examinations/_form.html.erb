@@ -1,0 +1,23 @@
+<% if @examination.errors.any? %>
+  <div id="error_explanation">
+    <h2>
+      <%= pluralize(@examination.errors.count, "error") %> prohibited
+      this examination from being saved:
+    </h2>
+    <ul>
+      <% @examination.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+    </ul>
+  </div>
+<% end %>
+
+<% avaliable_groups = fill_avaliable_groups %>
+<% avaliable_disciplines = fill_avaliable_disciplines %>
+
+<%= simple_form_for @examination do |f| %>
+  <p><%= f.input :date %></p>
+  <p><%= f.select :group_id, avaliable_groups %></p>
+  <p><%= f.select :discipline_id, avaliable_disciplines %></p>
+  <p><%= f.button :submit %></p>
+<% end %>

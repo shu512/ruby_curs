@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  date: 2019-12-05 20:17:04
+  group: one
+  discipline: one
+
+two:
+  date: 2019-12-05 20:17:04
+  group: two
+  discipline: two

@@ -1,0 +1,17 @@
+<p>
+  <strong>Date:</strong>
+  <%= @examination.date %>
+</p>
+ 
+<p>
+  <strong>Group:</strong>
+  <%= @examination.group.name %>
+</p>
+
+<p>
+  <strong>Discipline:</strong>
+  <%= @examination.discipline.title %>
+</p>
+
+<%= link_to 'Edit', edit_examination_path(@examination) %> |
+<%= link_to 'Back', examinations_path %>
