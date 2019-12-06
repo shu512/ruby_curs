@@ -1,10 +1,8 @@
 module StudentsHelper
-  def fill_avaliable_groups
-    avaliable_groups = []
-    Group.all.each do |i|
-      arr = [].push(i.name, i.id)
-      avaliable_groups.push(arr)
+  # return array: [[group_name, group_id], ..]
+  def groups_to_a
+    Group.all.map do |i|
+      [].push(i.name, i.id)
     end
-    avaliable_groups
   end
 end

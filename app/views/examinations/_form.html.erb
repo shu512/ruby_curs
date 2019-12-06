@@ -12,8 +12,8 @@
   </div>
 <% end %>
 
-<% avaliable_groups = fill_avaliable_groups %>
-<% avaliable_disciplines = fill_avaliable_disciplines %>
+<% avaliable_groups = groups_to_a %>
+<% avaliable_disciplines = disciplines_to_a %>
 
 <%= simple_form_for @examination do |f| %>
   <p><%= f.input :date %></p>
