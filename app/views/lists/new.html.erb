@@ -1,0 +1,20 @@
+<% if @list.errors.any? %>
+  <div id="error_explanation">
+    <h2>
+      <%= pluralize(@list.errors.count, "error") %> prohibited
+      this list from being saved:
+    </h2>
+    <ul>
+      <% @list.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+    </ul>
+  </div>
+<% end %>
+
+<% avaliable_examinations = examinations_to_a %>
+
+<%= simple_form_for @list do |f| %>
+  <p><%= f.select :examination_id, avaliable_examinations %></p>
+  <p><%= f.button :submit %></p>
+<% end %>

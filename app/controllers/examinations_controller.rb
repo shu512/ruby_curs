@@ -42,6 +42,11 @@ class ExaminationsController < ApplicationController
     redirect_to examinations_path
   end
 
+  def questions
+    @group = Examination.find(params[:id]).group
+    @discipline = Examination.find(params[:id]).discipline
+  end
+
   private
 
   def examination_params

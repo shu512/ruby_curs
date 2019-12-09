@@ -1,0 +1,13 @@
+<table>
+  <tr>
+    <th>FIO</th>
+    <th>Questions</th>
+  </tr>
+ 
+  <% @group.students.each do |student| %>
+    <tr>
+      <td><%= student.full_name %></td>
+      <td><%= random_questions %></td>
+    </tr>
+  <% end %>
+</table>

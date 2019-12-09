@@ -1,8 +1,5 @@
 Rails.application.routes.draw do
-  #get 'groups/index'
-  #get 'students/index'
-  #get 'disciplines/index'
-  #get 'examinations/index'
+  get 'examinations/:id/questions', to: 'examinations#questions'
   resources :groups
   resources :students
 
@@ -11,6 +8,7 @@ Rails.application.routes.draw do
   end
 
   resources :examinations
+  resources :lists
 
   root 'groups#index'
 end
