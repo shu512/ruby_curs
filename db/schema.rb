@@ -38,13 +38,6 @@ ActiveRecord::Schema.define(version: 2019_12_09_113041) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
-  create_table "lists", force: :cascade do |t|
-    t.bigint "examination_id", null: false
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-    t.index ["examination_id"], name: "index_lists_on_examination_id"
-  end
-
   create_table "questions", force: :cascade do |t|
     t.text "content"
     t.bigint "discipline_id", null: false

@@ -1,11 +1,11 @@
-<% counter_students = 1 %>
+
 <table>
   <tr>
     <th>№</th>
     <th>FIO</th>
   </tr>
 </table>
-<% @students.each do |student| %>
+<% @students.each_with_index do |student, index| %>
   <% @number_student = counter_students %>
   <%= render student %>
   <% counter_students += 1 %>

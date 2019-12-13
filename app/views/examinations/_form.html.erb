@@ -12,12 +12,9 @@
   </div>
 <% end %>
 
-<% avaliable_groups = groups_to_a %>
-<% avaliable_disciplines = disciplines_to_a %>
-
 <%= simple_form_for @examination do |f| %>
   <p><%= f.input :date %></p>
-  <p><%= f.select :group_id, avaliable_groups %></p>
-  <p><%= f.select :discipline_id, avaliable_disciplines %></p>
+  <p><%= f.association :group %></p>
+  <p><%= f.association :discipline %></p>
   <p><%= f.button :submit %></p>
 <% end %>

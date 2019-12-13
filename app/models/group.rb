@@ -4,5 +4,9 @@ class Group < ApplicationRecord
                    length: { minimum: 3,
                              maximum: 10 }
   validates :size, presence: true,
-                   numericality: { greater_then: 0 } # ?
+                   numericality: { greater_than: 0 } # ?
+
+  def label
+    "Group: #{name}"
+  end
 end

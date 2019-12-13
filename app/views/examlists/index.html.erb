@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Examlists</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Student</th>
+      <th>Examination</th>
+      <th>Mark</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @examlists.each do |examlist| %>
+      <tr>
+        <td><%= examlist.student_id %></td>
+        <td><%= examlist.examination_id %></td>
+        <td><%= examlist.mark %></td>
+        <td><%= link_to 'Show', examlist %></td>
+        <td><%= link_to 'Edit', edit_examlist_path(examlist) %></td>
+        <td><%= link_to 'Destroy', examlist, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Examlist', new_examlist_path %>

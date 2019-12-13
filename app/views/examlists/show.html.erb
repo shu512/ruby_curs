@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Student:</strong>
+  <%= @examlist.student_id %>
+</p>
+
+<p>
+  <strong>Examination:</strong>
+  <%= @examlist.examination_id %>
+</p>
+
+<p>
+  <strong>Mark:</strong>
+  <%= @examlist.mark %>
+</p>
+
+<%= link_to 'Edit', edit_examlist_path(@examlist) %> |
+<%= link_to 'Back', examlists_path %>

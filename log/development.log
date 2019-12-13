@@ -21530,3 +21530,1815 @@ Processing by ListsController#new as HTML
 Completed 200 OK in 36ms (Views: 34.1ms | ActiveRecord: 0.4ms | Allocations: 6086)
 
 
+Started GET "/groups" for ::1 at 2019-12-09 23:09:17 +0700
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by GroupsController#index as HTML
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.5ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:10
+  Rendered groups/index.html.erb within layouts/application (Duration: 14.4ms | Allocations: 5217)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12933ms (Views: 12885.9ms | ActiveRecord: 4.7ms | Allocations: 120666)
+
+
+Started GET "/groups/12" for ::1 at 2019-12-09 23:09:34 +0700
+Processing by GroupsController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:7:in `show'
+  Rendering groups/show.html.erb within layouts/application
+  [1m[36mStudent Load (26.4ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."group_id" = $1[0m  [["group_id", 12]]
+  ↳ app/views/groups/show.html.erb:19
+  Rendered collection of students/_student.html.erb [3 times] (Duration: 18.3ms | Allocations: 610)
+  Rendered groups/show.html.erb within layouts/application (Duration: 82.0ms | Allocations: 12834)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 107ms (Views: 72.0ms | ActiveRecord: 29.7ms | Allocations: 22380)
+
+
+Started GET "/groups" for ::1 at 2019-12-09 23:09:36 +0700
+Processing by GroupsController#index as HTML
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (5.7ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:10
+  Rendered groups/index.html.erb within layouts/application (Duration: 9.8ms | Allocations: 897)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 37ms (Views: 30.0ms | ActiveRecord: 5.7ms | Allocations: 9101)
+
+
+Started GET "/groups/new" for ::1 at 2019-12-09 23:09:38 +0700
+Processing by GroupsController#new as HTML
+  Rendering groups/new.html.erb within layouts/application
+  Rendered groups/_form.html.erb (Duration: 240.2ms | Allocations: 19304)
+  Rendered groups/new.html.erb within layouts/application (Duration: 242.0ms | Allocations: 19653)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 255ms (Views: 253.4ms | ActiveRecord: 0.0ms | Allocations: 27928)
+
+
+Started GET "/groups" for ::1 at 2019-12-09 23:09:44 +0700
+Processing by GroupsController#index as HTML
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (1.0ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:10
+  Rendered groups/index.html.erb within layouts/application (Duration: 11.9ms | Allocations: 898)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 50ms (Views: 47.4ms | ActiveRecord: 1.0ms | Allocations: 9106)
+
+
+Started GET "/" for ::1 at 2019-12-10 13:49:54 +0700
+  [1m[35m (16.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by GroupsController#index as HTML
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (55.8ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:10
+  Rendered groups/index.html.erb within layouts/application (Duration: 99.3ms | Allocations: 5217)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 669ms (Views: 552.8ms | ActiveRecord: 73.3ms | Allocations: 27432)
+
+
+Started GET "/groups/12" for ::1 at 2019-12-10 13:51:34 +0700
+Processing by GroupsController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:7:in `show'
+  Rendering groups/show.html.erb within layouts/application
+  [1m[36mStudent Load (37.0ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."group_id" = $1[0m  [["group_id", 12]]
+  ↳ app/views/groups/show.html.erb:19
+  Rendered collection of students/_student.html.erb [3 times] (Duration: 8.2ms | Allocations: 609)
+  Rendered groups/show.html.erb within layouts/application (Duration: 1414.3ms | Allocations: 12740)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 1593ms (Views: 1387.1ms | ActiveRecord: 43.7ms | Allocations: 26695)
+
+
+Started GET "/examinations" for ::1 at 2019-12-10 14:09:02 +0700
+Processing by ExaminationsController#index as HTML
+  Rendering examinations/index.html.erb within layouts/application
+  [1m[36mExamination Load (211.6ms)[0m  [1m[34mSELECT "examinations".* FROM "examinations"[0m
+  ↳ app/views/examinations/index.html.erb:10
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/examinations/index.html.erb:13
+  [1m[36mDiscipline Load (35.6ms)[0m  [1m[34mSELECT "disciplines".* FROM "disciplines" WHERE "disciplines"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/examinations/index.html.erb:14
+  Rendered examinations/index.html.erb within layouts/application (Duration: 372.9ms | Allocations: 11658)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 458ms (Views: 131.8ms | ActiveRecord: 258.6ms | Allocations: 21116)
+
+
+Started GET "/examinations/new" for ::1 at 2019-12-10 14:09:07 +0700
+Processing by ExaminationsController#new as HTML
+  Rendering examinations/new.html.erb within layouts/application
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/helpers/students_helper.rb:4:in `map'
+  [1m[36mDiscipline Load (0.3ms)[0m  [1m[34mSELECT "disciplines".* FROM "disciplines"[0m
+  ↳ app/helpers/examinations_helper.rb:4:in `map'
+  Rendered examinations/_form.html.erb (Duration: 307.6ms | Allocations: 20474)
+  Rendered examinations/new.html.erb within layouts/application (Duration: 316.6ms | Allocations: 20822)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 333ms (Views: 329.8ms | ActiveRecord: 0.7ms | Allocations: 29098)
+
+
+Started GET "/examinations/new" for ::1 at 2019-12-10 14:11:38 +0700
+Processing by ExaminationsController#new as HTML
+  Rendering examinations/new.html.erb within layouts/application
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/helpers/students_helper.rb:4:in `map'
+  [1m[36mDiscipline Load (0.3ms)[0m  [1m[34mSELECT "disciplines".* FROM "disciplines"[0m
+  ↳ app/helpers/examinations_helper.rb:4:in `map'
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/examinations/_form.html.erb:20
+  Rendered examinations/_form.html.erb (Duration: 27.8ms | Allocations: 14607)
+  Rendered examinations/new.html.erb within layouts/application (Duration: 29.0ms | Allocations: 14957)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 53ms (Views: 34.3ms | ActiveRecord: 9.4ms | Allocations: 30067)
+
+
+Started GET "/examinations/new" for ::1 at 2019-12-10 14:12:39 +0700
+Processing by ExaminationsController#new as HTML
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.0ms | Allocations: 4959)
+
+
+  
+NameError (undefined method `name' for class `#<Class:0x0000559c3741f4a0>'):
+  
+app/models/group.rb:9:in `<class:Group>'
+app/models/group.rb:1:in `<top (required)>'
+app/controllers/examinations_controller.rb:11:in `new'
+Started GET "/examinations/new" for ::1 at 2019-12-10 14:12:53 +0700
+Processing by ExaminationsController#new as HTML
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms | Allocations: 5079)
+
+
+  
+NameError (undefined method `title' for class `#<Class:0x00007f8550b04578>'):
+  
+app/models/group.rb:9:in `<class:Group>'
+app/models/group.rb:1:in `<top (required)>'
+app/controllers/examinations_controller.rb:11:in `new'
+Started GET "/examinations/new" for ::1 at 2019-12-10 14:13:24 +0700
+Processing by ExaminationsController#new as HTML
+  Rendering examinations/new.html.erb within layouts/application
+  [1m[36mGroup Load (0.5ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/helpers/students_helper.rb:4:in `map'
+  [1m[36mDiscipline Load (0.4ms)[0m  [1m[34mSELECT "disciplines".* FROM "disciplines"[0m
+  ↳ app/helpers/examinations_helper.rb:4:in `map'
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/examinations/_form.html.erb:20
+  Rendered examinations/_form.html.erb (Duration: 49.4ms | Allocations: 14318)
+  Rendered examinations/new.html.erb within layouts/application (Duration: 49.9ms | Allocations: 14415)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 86ms (Views: 54.0ms | ActiveRecord: 19.7ms | Allocations: 28804)
+
+
+Started GET "/examinations/new" for ::1 at 2019-12-10 14:14:39 +0700
+Processing by ExaminationsController#new as HTML
+  Rendering examinations/new.html.erb within layouts/application
+  [1m[36mGroup Load (0.9ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/helpers/students_helper.rb:4:in `map'
+  [1m[36mDiscipline Load (0.8ms)[0m  [1m[34mSELECT "disciplines".* FROM "disciplines"[0m
+  ↳ app/helpers/examinations_helper.rb:4:in `map'
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/examinations/_form.html.erb:20
+  Rendered examinations/_form.html.erb (Duration: 49.9ms | Allocations: 14286)
+  Rendered examinations/new.html.erb within layouts/application (Duration: 50.7ms | Allocations: 14383)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 91ms (Views: 62.0ms | ActiveRecord: 15.5ms | Allocations: 28702)
+
+
+Started GET "/examinations/new" for ::1 at 2019-12-10 14:15:09 +0700
+Processing by ExaminationsController#new as HTML
+  Rendering examinations/new.html.erb within layouts/application
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/helpers/students_helper.rb:4:in `map'
+  [1m[36mDiscipline Load (0.3ms)[0m  [1m[34mSELECT "disciplines".* FROM "disciplines"[0m
+  ↳ app/helpers/examinations_helper.rb:4:in `map'
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/examinations/_form.html.erb:20
+  Rendered examinations/_form.html.erb (Duration: 170.6ms | Allocations: 19051)
+  Rendered examinations/new.html.erb within layouts/application (Duration: 172.7ms | Allocations: 19400)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 201ms (Views: 181.6ms | ActiveRecord: 11.4ms | Allocations: 33448)
+
+
+Started GET "/examinations/new" for ::1 at 2019-12-10 14:15:45 +0700
+Processing by ExaminationsController#new as HTML
+  Rendering examinations/new.html.erb within layouts/application
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/helpers/students_helper.rb:4:in `map'
+  [1m[36mDiscipline Load (0.4ms)[0m  [1m[34mSELECT "disciplines".* FROM "disciplines"[0m
+  ↳ app/helpers/examinations_helper.rb:4:in `map'
+  [1m[36mCACHE Group Load (0.1ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/examinations/_form.html.erb:20
+  Rendered examinations/_form.html.erb (Duration: 30.7ms | Allocations: 10032)
+  Rendered examinations/new.html.erb within layouts/application (Duration: 31.4ms | Allocations: 10130)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 43ms (Views: 40.9ms | ActiveRecord: 0.9ms | Allocations: 18260)
+
+
+Started GET "/examinations/new" for ::1 at 2019-12-10 14:15:50 +0700
+Processing by ExaminationsController#new as HTML
+  Rendering examinations/new.html.erb within layouts/application
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/examinations/_form.html.erb:17
+  [1m[36mDiscipline Load (0.3ms)[0m  [1m[34mSELECT "disciplines".* FROM "disciplines"[0m
+  ↳ app/views/examinations/_form.html.erb:18
+  Rendered examinations/_form.html.erb (Duration: 23.0ms | Allocations: 11102)
+  Rendered examinations/new.html.erb within layouts/application (Duration: 24.5ms | Allocations: 11446)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 41ms (Views: 39.1ms | ActiveRecord: 0.6ms | Allocations: 20510)
+
+
+Started GET "/students/" for ::1 at 2019-12-10 14:19:50 +0700
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.8ms)[0m  [1m[34mSELECT "students".* FROM "students" ORDER BY id[0m
+  ↳ app/views/students/index.html.erb:8
+  Rendered students/_student.html.erb (Duration: 1.4ms | Allocations: 361)
+  Rendered students/_student.html.erb (Duration: 0.4ms | Allocations: 113)
+  Rendered students/_student.html.erb (Duration: 0.4ms | Allocations: 113)
+  Rendered students/_student.html.erb (Duration: 0.4ms | Allocations: 113)
+  Rendered students/_student.html.erb (Duration: 0.3ms | Allocations: 113)
+  Rendered students/index.html.erb within layouts/application (Duration: 25.2ms | Allocations: 6303)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 45ms (Views: 36.9ms | ActiveRecord: 3.4ms | Allocations: 15694)
+
+
+Started GET "/students/12" for ::1 at 2019-12-10 14:24:08 +0700
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:7:in `show'
+  Rendering students/show.html.erb within layouts/application
+  Rendered students/show.html.erb within layouts/application (Duration: 43.5ms | Allocations: 252)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 62ms (Views: 56.0ms | ActiveRecord: 0.4ms | Allocations: 9258)
+
+
+Started GET "/students/12" for ::1 at 2019-12-10 14:24:21 +0700
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:7:in `show'
+  Rendering students/show.html.erb within layouts/application
+  Rendered students/show.html.erb within layouts/application (Duration: 0.5ms | Allocations: 82)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 38ms (Views: 29.1ms | ActiveRecord: 0.4ms | Allocations: 8824)
+
+
+Started GET "/" for ::1 at 2019-12-10 14:27:22 +0700
+Processing by GroupsController#index as HTML
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.7ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:10
+  Rendered groups/index.html.erb within layouts/application (Duration: 130.1ms | Allocations: 1138)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 156ms (Views: 153.1ms | ActiveRecord: 0.7ms | Allocations: 10253)
+
+
+Started GET "/groups/new" for ::1 at 2019-12-10 14:27:23 +0700
+Processing by GroupsController#new as HTML
+  Rendering groups/new.html.erb within layouts/application
+  Rendered groups/_form.html.erb (Duration: 43.9ms | Allocations: 6750)
+  Rendered groups/new.html.erb within layouts/application (Duration: 58.5ms | Allocations: 7096)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 78ms (Views: 75.2ms | ActiveRecord: 0.0ms | Allocations: 15358)
+
+
+Started POST "/groups" for ::1 at 2019-12-10 14:27:32 +0700
+Processing by GroupsController#create as HTML
+  Parameters: {"authenticity_token"=>"/YPcG3n9p2T67tOffIxL/WXReDBq/IS6KkYddKpfhbgsFMPVA3mEmxsu7Axu/rOUUdI7BNvvUD1g+DSQWghT7g==", "group"=>{"name"=>"asd", "size"=>"-1"}, "commit"=>"Create Group"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/groups_controller.rb:21:in `create'
+  [1m[36mGroup Create (461.2ms)[0m  [1m[32mINSERT INTO "groups" ("name", "size", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "asd"], ["size", -1], ["created_at", "2019-12-10 07:27:32.786866"], ["updated_at", "2019-12-10 07:27:32.786866"]]
+  ↳ app/controllers/groups_controller.rb:21:in `create'
+  [1m[35m (40.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/groups_controller.rb:21:in `create'
+Redirected to http://localhost:3000/groups/31
+Completed 302 Found in 520ms (ActiveRecord: 501.8ms | Allocations: 3073)
+
+
+Started GET "/groups/31" for ::1 at 2019-12-10 14:27:33 +0700
+Processing by GroupsController#show as HTML
+  Parameters: {"id"=>"31"}
+  [1m[36mGroup Load (0.7ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 31], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:7:in `show'
+  Rendering groups/show.html.erb within layouts/application
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."group_id" = $1[0m  [["group_id", 31]]
+  ↳ app/views/groups/show.html.erb:19
+  Rendered collection of templates [0 times] (Duration: 0.0ms | Allocations: 3)
+  Rendered groups/show.html.erb within layouts/application (Duration: 7.3ms | Allocations: 1828)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 23ms (Views: 16.7ms | ActiveRecord: 1.0ms | Allocations: 10731)
+
+
+Started GET "/groups" for ::1 at 2019-12-10 14:27:36 +0700
+Processing by GroupsController#index as HTML
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (2.9ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:10
+  Rendered groups/index.html.erb within layouts/application (Duration: 6.8ms | Allocations: 1007)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 25ms (Views: 20.3ms | ActiveRecord: 2.9ms | Allocations: 9208)
+
+
+Started GET "/groups/new" for ::1 at 2019-12-10 14:29:36 +0700
+Processing by GroupsController#new as HTML
+  Rendering groups/new.html.erb within layouts/application
+  Rendered groups/_form.html.erb (Duration: 13.4ms | Allocations: 5974)
+  Rendered groups/new.html.erb within layouts/application (Duration: 13.8ms | Allocations: 6071)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 38ms (Views: 25.4ms | ActiveRecord: 3.1ms | Allocations: 18975)
+
+
+Started POST "/groups" for ::1 at 2019-12-10 14:29:40 +0700
+Processing by GroupsController#create as HTML
+  Parameters: {"authenticity_token"=>"bNHJBmQsI39Wvg2A37kT4+CVLWrCXCGBBU9M6AloAoK9RtbIHqgAgLd+MhPNy+uK1JZuXnNP9QZP8WUM+T/U1A==", "group"=>{"name"=>"qwe", "size"=>"-5"}, "commit"=>"Create Group"}
+  Rendering groups/new.html.erb within layouts/application
+  Rendered groups/_form.html.erb (Duration: 27.6ms | Allocations: 6116)
+  Rendered groups/new.html.erb within layouts/application (Duration: 28.1ms | Allocations: 6213)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 48ms (Views: 45.5ms | ActiveRecord: 0.0ms | Allocations: 15413)
+
+
+Started GET "/groups" for ::1 at 2019-12-10 14:29:44 +0700
+Processing by GroupsController#index as HTML
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (2.1ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:10
+  Rendered groups/index.html.erb within layouts/application (Duration: 11.2ms | Allocations: 1023)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 32ms (Views: 28.9ms | ActiveRecord: 2.1ms | Allocations: 9251)
+
+
+Started GET "/disciplines" for ::1 at 2019-12-10 14:32:59 +0700
+Processing by DisciplinesController#index as HTML
+  Rendering disciplines/index.html.erb within layouts/application
+  [1m[36mDiscipline Load (0.4ms)[0m  [1m[34mSELECT "disciplines".* FROM "disciplines"[0m
+  ↳ app/views/disciplines/index.html.erb:9
+  Rendered disciplines/index.html.erb within layouts/application (Duration: 79.7ms | Allocations: 3649)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 94ms (Views: 86.6ms | ActiveRecord: 5.3ms | Allocations: 13555)
+
+
+Started GET "/disciplines/2" for ::1 at 2019-12-10 14:33:03 +0700
+Processing by DisciplinesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mDiscipline Load (0.7ms)[0m  [1m[34mSELECT "disciplines".* FROM "disciplines" WHERE "disciplines"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/disciplines_controller.rb:7:in `show'
+  Rendering disciplines/show.html.erb within layouts/application
+  [1m[36mQuestion Load (30.2ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."discipline_id" = $1[0m  [["discipline_id", 2]]
+  ↳ app/views/disciplines/show.html.erb:7
+  Rendered collection of questions/_question.html.erb [4 times] (Duration: 12.6ms | Allocations: 1296)
+  Rendered questions/_form_new.html.erb (Duration: 21.8ms | Allocations: 3471)
+  Rendered disciplines/show.html.erb within layouts/application (Duration: 102.1ms | Allocations: 11480)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 117ms (Views: 77.5ms | ActiveRecord: 34.3ms | Allocations: 20372)
+
+
+Started GET "/disciplines/17/questions/2/edit" for ::1 at 2019-12-10 14:33:10 +0700
+Processing by QuestionsController#edit as HTML
+  Parameters: {"discipline_id"=>"17", "id"=>"2"}
+  [1m[36mDiscipline Load (1.3ms)[0m  [1m[34mSELECT "disciplines".* FROM "disciplines" WHERE "disciplines"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/questions_controller.rb:3:in `edit'
+  [1m[36mQuestion Load (0.5ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."discipline_id" = $1 AND "questions"."id" = $2 LIMIT $3[0m  [["discipline_id", 2], ["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/questions_controller.rb:4:in `edit'
+  Rendering questions/edit.html.erb within layouts/application
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/views/questions/_form_edit.html.erb:3
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/views/questions/_form_edit.html.erb:3
+  [1m[36mDiscipline Load (0.3ms)[0m  [1m[34mSELECT "disciplines".* FROM "disciplines" WHERE "disciplines"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/questions/_form_edit.html.erb:3
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/views/questions/_form_edit.html.erb:3
+  Rendered questions/_form_edit.html.erb (Duration: 14.3ms | Allocations: 7039)
+  Rendered questions/edit.html.erb within layouts/application (Duration: 15.9ms | Allocations: 7404)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 37ms (Views: 24.5ms | ActiveRecord: 2.7ms | Allocations: 17503)
+
+
+Started GET "/disciplines/17/questions/2/edit" for ::1 at 2019-12-10 14:34:32 +0700
+Processing by QuestionsController#edit as HTML
+  Parameters: {"discipline_id"=>"17", "id"=>"2"}
+  [1m[36mDiscipline Load (0.3ms)[0m  [1m[34mSELECT "disciplines".* FROM "disciplines" WHERE "disciplines"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/questions_controller.rb:3:in `edit'
+  [1m[36mQuestion Load (0.5ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."discipline_id" = $1 AND "questions"."id" = $2 LIMIT $3[0m  [["discipline_id", 2], ["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/questions_controller.rb:4:in `edit'
+  Rendering questions/edit.html.erb within layouts/application
+  Rendered questions/_form_edit.html.erb (Duration: 194.0ms | Allocations: 94309)
+  Rendered questions/edit.html.erb within layouts/application (Duration: 197.5ms | Allocations: 94642)
+Completed 500 Internal Server Error in 207ms (ActiveRecord: 0.8ms | Allocations: 97271)
+
+
+  
+ActionView::Template::Error (undefined method `question_path' for #<#<Class:0x0000559c394b87c0>:0x0000559c394b3180>):
+    1: <%= simple_form_for @question do |f| %>
+    2:   <p><%= f.input :content %></p>
+    3:   <p><%= f.button :submit %></p>
+    4: <% end %>
+  
+app/views/questions/_form_edit.html.erb:1
+app/views/questions/edit.html.erb:3
+Started GET "/disciplines/17/questions/2/edit" for ::1 at 2019-12-10 14:34:53 +0700
+Processing by QuestionsController#edit as HTML
+  Parameters: {"discipline_id"=>"17", "id"=>"2"}
+  [1m[36mDiscipline Load (0.5ms)[0m  [1m[34mSELECT "disciplines".* FROM "disciplines" WHERE "disciplines"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/questions_controller.rb:3:in `edit'
+  [1m[36mQuestion Load (0.7ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."discipline_id" = $1 AND "questions"."id" = $2 LIMIT $3[0m  [["discipline_id", 2], ["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/questions_controller.rb:4:in `edit'
+  Rendering questions/edit.html.erb within layouts/application
+  Rendered questions/_form_edit.html.erb (Duration: 4.8ms | Allocations: 3307)
+  Rendered questions/edit.html.erb within layouts/application (Duration: 6.0ms | Allocations: 3665)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 32ms (Views: 20.1ms | ActiveRecord: 1.2ms | Allocations: 14113)
+
+
+Started PATCH "/disciplines/2/questions/17" for ::1 at 2019-12-10 14:34:58 +0700
+Processing by QuestionsController#update as HTML
+  Parameters: {"authenticity_token"=>"6HFBmmjh3nlVHVjKkvmP6p2IaqFmln3kukRMV5o4HdMweS8ZUCaFqefnHQuvpz9Ml64pdXROG6a34krqe0qBRA==", "question"=>{"content"=>"test1 Question1121"}, "commit"=>"Update Question", "discipline_id"=>"2", "id"=>"17"}
+  [1m[36mDiscipline Load (0.5ms)[0m  [1m[34mSELECT "disciplines".* FROM "disciplines" WHERE "disciplines"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/questions_controller.rb:14:in `update'
+  [1m[36mQuestion Load (2.0ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."discipline_id" = $1 AND "questions"."id" = $2 LIMIT $3[0m  [["discipline_id", 2], ["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/questions_controller.rb:15:in `update'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/questions_controller.rb:17:in `update'
+  [1m[36mQuestion Update (186.1ms)[0m  [1m[33mUPDATE "questions" SET "content" = $1, "updated_at" = $2 WHERE "questions"."id" = $3[0m  [["content", "test1 Question1121"], ["updated_at", "2019-12-10 07:34:58.095927"], ["id", 17]]
+  ↳ app/controllers/questions_controller.rb:17:in `update'
+  [1m[35m (53.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/questions_controller.rb:17:in `update'
+Redirected to http://localhost:3000/disciplines/2
+Completed 302 Found in 267ms (ActiveRecord: 242.7ms | Allocations: 4096)
+
+
+Started GET "/disciplines/2" for ::1 at 2019-12-10 14:34:58 +0700
+Processing by DisciplinesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mDiscipline Load (0.2ms)[0m  [1m[34mSELECT "disciplines".* FROM "disciplines" WHERE "disciplines"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/disciplines_controller.rb:7:in `show'
+  Rendering disciplines/show.html.erb within layouts/application
+  [1m[36mQuestion Load (0.6ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."discipline_id" = $1[0m  [["discipline_id", 2]]
+  ↳ app/views/disciplines/show.html.erb:7
+  Rendered collection of questions/_question.html.erb [4 times] (Duration: 1.3ms | Allocations: 877)
+  Rendered questions/_form_new.html.erb (Duration: 5.7ms | Allocations: 3334)
+  Rendered disciplines/show.html.erb within layouts/application (Duration: 13.8ms | Allocations: 5738)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 30ms (Views: 24.9ms | ActiveRecord: 0.8ms | Allocations: 14965)
+
+
+Started POST "/disciplines/2/questions" for ::1 at 2019-12-10 14:37:41 +0700
+Processing by QuestionsController#create as HTML
+  Parameters: {"authenticity_token"=>"HZgUFkhay9Anp53V1p44Sfg8SgITEOCGCvC2yeXPXp3FkHqVcJ2QAJVd2BTrwIjv8hoJ1gHIhsQHVrB0BL3CCg==", "question"=>{"content"=>"sdfsdf"}, "commit"=>"Create Question", "discipline_id"=>"2"}
+  [1m[36mDiscipline Load (0.2ms)[0m  [1m[34mSELECT "disciplines".* FROM "disciplines" WHERE "disciplines"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/questions_controller.rb:8:in `create'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/questions_controller.rb:9:in `create'
+  [1m[36mQuestion Create (31.8ms)[0m  [1m[32mINSERT INTO "questions" ("content", "discipline_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["content", "sdfsdf"], ["discipline_id", 2], ["created_at", "2019-12-10 07:37:41.903490"], ["updated_at", "2019-12-10 07:37:41.903490"]]
+  ↳ app/controllers/questions_controller.rb:9:in `create'
+  [1m[35m (39.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/questions_controller.rb:9:in `create'
+Redirected to http://localhost:3000/disciplines/2
+Completed 302 Found in 108ms (ActiveRecord: 81.5ms | Allocations: 12013)
+
+
+Started GET "/disciplines/2" for ::1 at 2019-12-10 14:37:41 +0700
+Processing by DisciplinesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mDiscipline Load (0.2ms)[0m  [1m[34mSELECT "disciplines".* FROM "disciplines" WHERE "disciplines"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/disciplines_controller.rb:7:in `show'
+  Rendering disciplines/show.html.erb within layouts/application
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."discipline_id" = $1[0m  [["discipline_id", 2]]
+  ↳ app/views/disciplines/show.html.erb:7
+  Rendered collection of questions/_question.html.erb [6 times] (Duration: 4.2ms | Allocations: 2322)
+  Rendered disciplines/show.html.erb within layouts/application (Duration: 9.7ms | Allocations: 3700)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.5ms | Allocations: 5651)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"edit", :controller=>"questions", :discipline_id=>#<Question id: nil, content: nil, discipline_id: 2, created_at: nil, updated_at: nil>, :id=>"2"}, possible unmatched constraints: [:discipline_id]):
+    1: <p>
+    2:   <strong><%= question.id.to_s + ':' %></strong>
+    3:   <%= question.content %>
+    4:   <%= link_to 'edit', edit_discipline_question_path(question) %> |
+    5:   <%= link_to 'destroy', [question.discipline, question],
+    6:                method: :delete,
+    7:                data: { confirm: 'Are you sure?' } %>
+  
+app/views/questions/_question.html.erb:4
+app/views/disciplines/show.html.erb:7
+Started GET "/disciplines/2" for ::1 at 2019-12-10 14:37:49 +0700
+Processing by DisciplinesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mDiscipline Load (0.2ms)[0m  [1m[34mSELECT "disciplines".* FROM "disciplines" WHERE "disciplines"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/disciplines_controller.rb:7:in `show'
+  Rendering disciplines/show.html.erb within layouts/application
+  [1m[36mQuestion Load (0.6ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."discipline_id" = $1[0m  [["discipline_id", 2]]
+  ↳ app/views/disciplines/show.html.erb:7
+  Rendered collection of questions/_question.html.erb [6 times] (Duration: 2.0ms | Allocations: 2050)
+  Rendered disciplines/show.html.erb within layouts/application (Duration: 4.7ms | Allocations: 2931)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.8ms | Allocations: 4127)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"edit", :controller=>"questions", :discipline_id=>#<Question id: nil, content: nil, discipline_id: 2, created_at: nil, updated_at: nil>, :id=>"2"}, possible unmatched constraints: [:discipline_id]):
+    1: <p>
+    2:   <strong><%= question.id.to_s + ':' %></strong>
+    3:   <%= question.content %>
+    4:   <%= link_to 'edit', edit_discipline_question_path(question) %> |
+    5:   <%= link_to 'destroy', [question.discipline, question],
+    6:                method: :delete,
+    7:                data: { confirm: 'Are you sure?' } %>
+  
+app/views/questions/_question.html.erb:4
+app/views/disciplines/show.html.erb:7
+Started GET "/disciplines/2" for ::1 at 2019-12-10 14:38:30 +0700
+Processing by DisciplinesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mDiscipline Load (0.8ms)[0m  [1m[34mSELECT "disciplines".* FROM "disciplines" WHERE "disciplines"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/disciplines_controller.rb:7:in `show'
+  Rendering disciplines/show.html.erb within layouts/application
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."discipline_id" = $1[0m  [["discipline_id", 2]]
+  ↳ app/views/disciplines/show.html.erb:7
+  Rendered collection of questions/_question.html.erb [6 times] (Duration: 2.1ms | Allocations: 2222)
+  Rendered disciplines/show.html.erb within layouts/application (Duration: 4.7ms | Allocations: 3415)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 1.1ms | Allocations: 5362)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"edit", :controller=>"questions", :discipline_id=>#<Question id: nil, content: nil, discipline_id: 2, created_at: nil, updated_at: nil>, :id=>"2"}, possible unmatched constraints: [:discipline_id]):
+    1: <p>
+    2:   <strong><%= question.id.to_s + ':' %></strong>
+    3:   <%= question.content %>
+    4:   <%= link_to 'edit', edit_discipline_question_path(question) %> |
+    5:   <%= link_to 'destroy', [question.discipline, question],
+    6:                method: :delete,
+    7:                data: { confirm: 'Are you sure?' } %>
+  
+app/views/questions/_question.html.erb:4
+app/views/disciplines/show.html.erb:7
+Started GET "/disciplines/2" for ::1 at 2019-12-10 14:38:37 +0700
+Processing by DisciplinesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mDiscipline Load (0.2ms)[0m  [1m[34mSELECT "disciplines".* FROM "disciplines" WHERE "disciplines"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/disciplines_controller.rb:7:in `show'
+  Rendering disciplines/show.html.erb within layouts/application
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."discipline_id" = $1[0m  [["discipline_id", 2]]
+  ↳ app/views/disciplines/show.html.erb:7
+  Rendered collection of questions/_question.html.erb [5 times] (Duration: 2.8ms | Allocations: 984)
+  Rendered questions/_form_new.html.erb (Duration: 11.1ms | Allocations: 3239)
+  Rendered disciplines/show.html.erb within layouts/application (Duration: 28.9ms | Allocations: 10505)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 56ms (Views: 39.5ms | ActiveRecord: 7.1ms | Allocations: 23318)
+
+
+Started GET "/disciplines" for ::1 at 2019-12-10 14:43:35 +0700
+Processing by DisciplinesController#index as HTML
+  Rendering disciplines/index.html.erb within layouts/application
+  [1m[36mDiscipline Load (0.3ms)[0m  [1m[34mSELECT "disciplines".* FROM "disciplines"[0m
+  ↳ app/views/disciplines/index.html.erb:9
+  Rendered disciplines/index.html.erb within layouts/application (Duration: 10.1ms | Allocations: 3714)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 23ms (Views: 16.8ms | ActiveRecord: 3.4ms | Allocations: 13178)
+
+
+Started GET "/disciplines.json" for ::1 at 2019-12-10 14:43:43 +0700
+Processing by DisciplinesController#index as JSON
+Completed 406 Not Acceptable in 3ms (ActiveRecord: 0.0ms | Allocations: 1392)
+
+
+  
+ActionController::UnknownFormat (DisciplinesController#index is missing a template for this request format and variant.
+
+request.formats: ["application/json"]
+request.variant: []):
+  
+actionpack (6.0.1) lib/action_controller/metal/implicit_render.rb:42:in `default_render'
+actionpack (6.0.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+actionpack (6.0.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `tap'
+actionpack (6.0.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (6.0.1) lib/abstract_controller/base.rb:196:in `process_action'
+actionpack (6.0.1) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (6.0.1) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (6.0.1) lib/active_support/callbacks.rb:135:in `run_callbacks'
+actionpack (6.0.1) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.0.1) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.0.1) lib/action_controller/metal/instrumentation.rb:33:in `block in process_action'
+activesupport (6.0.1) lib/active_support/notifications.rb:180:in `block in instrument'
+activesupport (6.0.1) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.0.1) lib/active_support/notifications.rb:180:in `instrument'
+actionpack (6.0.1) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (6.0.1) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+activerecord (6.0.1) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.0.1) lib/abstract_controller/base.rb:136:in `process'
+actionview (6.0.1) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.0.1) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (6.0.1) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (6.0.1) lib/action_dispatch/routing/route_set.rb:51:in `dispatch'
+actionpack (6.0.1) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.1) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.1) lib/action_dispatch/routing/route_set.rb:837:in `call'
+rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (6.0.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.1) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.1) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.2.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.0) lib/puma/configuration.rb:228:in `call'
+puma (4.3.0) lib/puma/server.rb:667:in `handle_request'
+puma (4.3.0) lib/puma/server.rb:470:in `process_client'
+puma (4.3.0) lib/puma/server.rb:328:in `block in run'
+puma (4.3.0) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/" for ::1 at 2019-12-12 17:53:47 +0700
+  [1m[35m (28.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by GroupsController#index as HTML
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (77.4ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:10
+  Rendered groups/index.html.erb within layouts/application (Duration: 145.3ms | Allocations: 5337)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 1239ms (Views: 1086.8ms | ActiveRecord: 120.4ms | Allocations: 27569)
+
+
+Started DELETE "/groups/31" for ::1 at 2019-12-12 17:53:54 +0700
+Processing by GroupsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Ajn/bEg591IEGq6ncL7C45YSWYvFXnsREKUjMkqwZ+XcmaIU/mhrMqKc5oHkpBk1RwHyFHZw7Qs1RbP/OG2OiQ==", "id"=>"31"}
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 31], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:39:in `destroy'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/groups_controller.rb:40:in `destroy'
+  [1m[36mStudent Load (56.9ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."group_id" = $1[0m  [["group_id", 31]]
+  ↳ app/controllers/groups_controller.rb:40:in `destroy'
+  [1m[36mGroup Destroy (32.8ms)[0m  [1m[31mDELETE FROM "groups" WHERE "groups"."id" = $1[0m  [["id", 31]]
+  ↳ app/controllers/groups_controller.rb:40:in `destroy'
+  [1m[35m (47.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/groups_controller.rb:40:in `destroy'
+Redirected to http://localhost:3000/groups
+Completed 302 Found in 210ms (ActiveRecord: 139.1ms | Allocations: 10450)
+
+
+Started GET "/groups" for ::1 at 2019-12-12 17:53:54 +0700
+Processing by GroupsController#index as HTML
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (1.1ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:10
+  Rendered groups/index.html.erb within layouts/application (Duration: 43.7ms | Allocations: 894)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 59ms (Views: 56.5ms | ActiveRecord: 1.1ms | Allocations: 9093)
+
+
+Started GET "/groups/13" for ::1 at 2019-12-12 17:53:56 +0700
+Processing by GroupsController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:7:in `show'
+  Rendering groups/show.html.erb within layouts/application
+  [1m[36mStudent Load (1.9ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."group_id" = $1[0m  [["group_id", 13]]
+  ↳ app/views/groups/show.html.erb:19
+  Rendered collection of students/_student.html.erb [2 times] (Duration: 12.3ms | Allocations: 495)
+  Rendered groups/show.html.erb within layouts/application (Duration: 35.6ms | Allocations: 6872)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 53ms (Views: 46.5ms | ActiveRecord: 3.9ms | Allocations: 15673)
+
+
+Started GET "/groups/new" for ::1 at 2019-12-12 17:53:58 +0700
+Processing by GroupsController#new as HTML
+  Rendering groups/new.html.erb within layouts/application
+  Rendered groups/_form.html.erb (Duration: 311.3ms | Allocations: 19299)
+  Rendered groups/new.html.erb within layouts/application (Duration: 315.6ms | Allocations: 19647)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 332ms (Views: 330.6ms | ActiveRecord: 0.0ms | Allocations: 27915)
+
+
+Started GET "/" for ::1 at 2019-12-14 02:32:00 +0700
+  [1m[35m (63.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by GroupsController#index as HTML
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (55.7ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:10
+  Rendered groups/index.html.erb within layouts/application (Duration: 119.6ms | Allocations: 5217)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 744ms (Views: 628.1ms | ActiveRecord: 92.9ms | Allocations: 27449)
+
+
+Started GET "/examinations" for ::1 at 2019-12-14 02:32:03 +0700
+Processing by ExaminationsController#index as HTML
+  Rendering examinations/index.html.erb within layouts/application
+  [1m[36mExamination Load (111.7ms)[0m  [1m[34mSELECT "examinations".* FROM "examinations"[0m
+  ↳ app/views/examinations/index.html.erb:10
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/examinations/index.html.erb:13
+  [1m[36mDiscipline Load (36.3ms)[0m  [1m[34mSELECT "disciplines".* FROM "disciplines" WHERE "disciplines"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/examinations/index.html.erb:14
+  Rendered examinations/index.html.erb within layouts/application (Duration: 265.6ms | Allocations: 14567)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 367ms (Views: 115.2ms | ActiveRecord: 161.2ms | Allocations: 24645)
+
+
+Started GET "/examinations/new" for ::1 at 2019-12-14 02:32:05 +0700
+Processing by ExaminationsController#new as HTML
+  Rendering examinations/new.html.erb within layouts/application
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/examinations/_form.html.erb:17
+  [1m[36mDiscipline Load (0.4ms)[0m  [1m[34mSELECT "disciplines".* FROM "disciplines"[0m
+  ↳ app/views/examinations/_form.html.erb:18
+  Rendered examinations/_form.html.erb (Duration: 144.6ms | Allocations: 24062)
+  Rendered examinations/new.html.erb within layouts/application (Duration: 159.9ms | Allocations: 24415)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 169ms (Views: 167.7ms | ActiveRecord: 0.7ms | Allocations: 32690)
+
+
+Started GET "/lists/1" for ::1 at 2019-12-14 02:32:53 +0700
+Processing by ListsController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering lists/show.html.erb within layouts/application
+  Rendered lists/show.html.erb within layouts/application (Duration: 65.5ms | Allocations: 94)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 83ms (Views: 79.6ms | ActiveRecord: 0.0ms | Allocations: 9160)
+
+
+Started GET "/lists" for ::1 at 2019-12-14 02:32:53 +0700
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (15.5ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  ↳ app/views/lists/index.html.erb:2
+  [1m[36mExamination Load (0.5ms)[0m  [1m[34mSELECT "examinations".* FROM "examinations" WHERE "examinations"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/helpers/lists_helper.rb:12:in `examination_by_id'
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/helpers/lists_helper.rb:20:in `group_by_id'
+  [1m[36mDiscipline Load (0.2ms)[0m  [1m[34mSELECT "disciplines".* FROM "disciplines" WHERE "disciplines"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/helpers/lists_helper.rb:16:in `discipline_by_id'
+  Rendered lists/index.html.erb within layouts/application (Duration: 37.4ms | Allocations: 5654)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 63ms (Views: 29.9ms | ActiveRecord: 19.9ms | Allocations: 14497)
+
+
+Started GET "/lists/new" for ::1 at 2019-12-14 02:32:55 +0700
+Processing by ListsController#new as HTML
+  Rendering lists/new.html.erb within layouts/application
+  [1m[36mExamination Load (0.5ms)[0m  [1m[34mSELECT "examinations".* FROM "examinations"[0m
+  ↳ app/helpers/lists_helper.rb:4:in `map'
+  [1m[36mCACHE Examination Load (0.0ms)[0m  [1m[34mSELECT "examinations".* FROM "examinations"[0m
+  ↳ app/views/lists/new.html.erb:18
+  Rendered lists/new.html.erb within layouts/application (Duration: 20.8ms | Allocations: 5272)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 35ms (Views: 31.4ms | ActiveRecord: 0.6ms | Allocations: 13539)
+
+
+Started GET "/disciplines" for ::1 at 2019-12-14 02:35:03 +0700
+Processing by DisciplinesController#index as HTML
+  Rendering disciplines/index.html.erb within layouts/application
+  [1m[36mDiscipline Load (0.9ms)[0m  [1m[34mSELECT "disciplines".* FROM "disciplines"[0m
+  ↳ app/views/disciplines/index.html.erb:9
+  Rendered disciplines/index.html.erb within layouts/application (Duration: 15.6ms | Allocations: 1008)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 35ms (Views: 31.8ms | ActiveRecord: 0.9ms | Allocations: 10119)
+
+
+Started GET "/disciplines/2" for ::1 at 2019-12-14 02:35:06 +0700
+Processing by DisciplinesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mDiscipline Load (0.4ms)[0m  [1m[34mSELECT "disciplines".* FROM "disciplines" WHERE "disciplines"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/disciplines_controller.rb:7:in `show'
+  Rendering disciplines/show.html.erb within layouts/application
+  [1m[36mQuestion Load (31.0ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."discipline_id" = $1[0m  [["discipline_id", 2]]
+  ↳ app/views/disciplines/show.html.erb:7
+  Rendered collection of questions/_question.html.erb [5 times] (Duration: 3.8ms | Allocations: 1468)
+  Rendered questions/_form_new.html.erb (Duration: 6.6ms | Allocations: 3474)
+  Rendered disciplines/show.html.erb within layouts/application (Duration: 111.6ms | Allocations: 13485)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 125ms (Views: 84.3ms | ActiveRecord: 37.6ms | Allocations: 22269)
+
+
+Started POST "/disciplines/2/questions" for ::1 at 2019-12-14 02:35:11 +0700
+Processing by QuestionsController#create as HTML
+  Parameters: {"authenticity_token"=>"ozL8cooKegsxMAvy72gOS2HiZjpi7T82v3rW18+hs2bElYr/FaZFV5DG/Ao975kSik7cPd5A/HIbWMPfdOHmKg==", "question"=>{"content"=>"test"}, "commit"=>"Create Question", "discipline_id"=>"2"}
+  [1m[36mDiscipline Load (0.5ms)[0m  [1m[34mSELECT "disciplines".* FROM "disciplines" WHERE "disciplines"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/questions_controller.rb:8:in `create'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/questions_controller.rb:9:in `create'
+  [1m[36mQuestion Create (84.7ms)[0m  [1m[32mINSERT INTO "questions" ("content", "discipline_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["content", "test"], ["discipline_id", 2], ["created_at", "2019-12-13 19:35:11.213928"], ["updated_at", "2019-12-13 19:35:11.213928"]]
+  ↳ app/controllers/questions_controller.rb:9:in `create'
+  [1m[35m (88.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/questions_controller.rb:9:in `create'
+Redirected to http://localhost:3000/disciplines/2
+Completed 302 Found in 187ms (ActiveRecord: 173.8ms | Allocations: 3831)
+
+
+Started GET "/disciplines/2" for ::1 at 2019-12-14 02:35:11 +0700
+Processing by DisciplinesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mDiscipline Load (2.5ms)[0m  [1m[34mSELECT "disciplines".* FROM "disciplines" WHERE "disciplines"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/disciplines_controller.rb:7:in `show'
+  Rendering disciplines/show.html.erb within layouts/application
+  [1m[36mQuestion Load (0.5ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."discipline_id" = $1[0m  [["discipline_id", 2]]
+  ↳ app/views/disciplines/show.html.erb:7
+  Rendered collection of questions/_question.html.erb [6 times] (Duration: 1.6ms | Allocations: 1047)
+  Rendered questions/_form_new.html.erb (Duration: 5.8ms | Allocations: 3166)
+  Rendered disciplines/show.html.erb within layouts/application (Duration: 11.5ms | Allocations: 5316)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 29ms (Views: 22.7ms | ActiveRecord: 3.0ms | Allocations: 13962)
+
+
+Started GET "/disciplines/2" for ::1 at 2019-12-14 02:35:27 +0700
+Processing by DisciplinesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mDiscipline Load (1.1ms)[0m  [1m[34mSELECT "disciplines".* FROM "disciplines" WHERE "disciplines"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/disciplines_controller.rb:7:in `show'
+  Rendering disciplines/show.html.erb within layouts/application
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."discipline_id" = $1[0m  [["discipline_id", 2]]
+  ↳ app/views/disciplines/show.html.erb:7
+  Rendered collection of questions/_question.html.erb [6 times] (Duration: 2.4ms | Allocations: 1215)
+  Rendered questions/_form_new.html.erb (Duration: 7.2ms | Allocations: 3317)
+  Rendered disciplines/show.html.erb within layouts/application (Duration: 14.5ms | Allocations: 6088)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 35ms (Views: 27.5ms | ActiveRecord: 1.4ms | Allocations: 15675)
+
+
+Started GET "/disciplines/2" for ::1 at 2019-12-14 02:35:28 +0700
+Processing by DisciplinesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mDiscipline Load (1.4ms)[0m  [1m[34mSELECT "disciplines".* FROM "disciplines" WHERE "disciplines"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/disciplines_controller.rb:7:in `show'
+  Rendering disciplines/show.html.erb within layouts/application
+  [1m[36mQuestion Load (0.6ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."discipline_id" = $1[0m  [["discipline_id", 2]]
+  ↳ app/views/disciplines/show.html.erb:7
+  Rendered collection of questions/_question.html.erb [6 times] (Duration: 2.1ms | Allocations: 1052)
+  Rendered questions/_form_new.html.erb (Duration: 5.5ms | Allocations: 3172)
+  Rendered disciplines/show.html.erb within layouts/application (Duration: 23.5ms | Allocations: 5329)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 45ms (Views: 38.6ms | ActiveRecord: 1.9ms | Allocations: 13977)
+
+
+Started POST "/disciplines/2/questions" for ::1 at 2019-12-14 02:35:30 +0700
+Processing by QuestionsController#create as HTML
+  Parameters: {"authenticity_token"=>"cymOteczdeguva0Dj8hkbL8b2m1beYZmNdbNgwqGDnVvdfPhCnfO2FCSu38G5ZqOO28b8G1wYvsVbFGvJN18Yw==", "question"=>{"content"=>"test"}, "commit"=>"Create Question", "discipline_id"=>"2"}
+  [1m[36mDiscipline Load (1.5ms)[0m  [1m[34mSELECT "disciplines".* FROM "disciplines" WHERE "disciplines"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/questions_controller.rb:8:in `create'
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/questions_controller.rb:9:in `create'
+  [1m[36mQuestion Create (1.2ms)[0m  [1m[32mINSERT INTO "questions" ("content", "discipline_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["content", "test"], ["discipline_id", 2], ["created_at", "2019-12-13 19:35:30.339135"], ["updated_at", "2019-12-13 19:35:30.339135"]]
+  ↳ app/controllers/questions_controller.rb:9:in `create'
+  [1m[35m (16.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/questions_controller.rb:9:in `create'
+Redirected to http://localhost:3000/disciplines/2
+Completed 302 Found in 44ms (ActiveRecord: 19.4ms | Allocations: 3576)
+
+
+Started GET "/disciplines/2" for ::1 at 2019-12-14 02:35:30 +0700
+Processing by DisciplinesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mDiscipline Load (0.5ms)[0m  [1m[34mSELECT "disciplines".* FROM "disciplines" WHERE "disciplines"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/disciplines_controller.rb:7:in `show'
+  Rendering disciplines/show.html.erb within layouts/application
+  [1m[36mQuestion Load (1.4ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."discipline_id" = $1[0m  [["discipline_id", 2]]
+  ↳ app/views/disciplines/show.html.erb:7
+  Rendered collection of questions/_question.html.erb [7 times] (Duration: 3.3ms | Allocations: 1212)
+  Rendered questions/_form_new.html.erb (Duration: 5.3ms | Allocations: 3166)
+  Rendered disciplines/show.html.erb within layouts/application (Duration: 18.0ms | Allocations: 5498)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 39ms (Views: 32.3ms | ActiveRecord: 1.9ms | Allocations: 14142)
+
+
+Started GET "/disciplines/22/questions/2/edit" for ::1 at 2019-12-14 02:35:34 +0700
+Processing by QuestionsController#edit as HTML
+  Parameters: {"discipline_id"=>"22", "id"=>"2"}
+  [1m[36mDiscipline Load (0.4ms)[0m  [1m[34mSELECT "disciplines".* FROM "disciplines" WHERE "disciplines"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/questions_controller.rb:3:in `edit'
+  [1m[36mQuestion Load (0.5ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."discipline_id" = $1 AND "questions"."id" = $2 LIMIT $3[0m  [["discipline_id", 2], ["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/questions_controller.rb:4:in `edit'
+  Rendering questions/edit.html.erb within layouts/application
+  Rendered questions/_form_edit.html.erb (Duration: 15.5ms | Allocations: 6586)
+  Rendered questions/edit.html.erb within layouts/application (Duration: 17.0ms | Allocations: 6933)
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 0.9ms | Allocations: 9429)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 2, expected 1)):
+    1: <%= simple_form_for @question.update(params[:discipline_id], { content: @question.content }) do |f| %>
+    2:   <p><%= f.input :content %></p>
+    3:   <p><%= f.button :submit %></p>
+    4: <% end %>
+  
+app/views/questions/_form_edit.html.erb:1
+app/views/questions/edit.html.erb:3
+Started GET "/disciplines/22/questions/2/edit" for ::1 at 2019-12-14 02:35:53 +0700
+Processing by QuestionsController#edit as HTML
+  Parameters: {"discipline_id"=>"22", "id"=>"2"}
+  [1m[36mDiscipline Load (0.3ms)[0m  [1m[34mSELECT "disciplines".* FROM "disciplines" WHERE "disciplines"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/questions_controller.rb:3:in `edit'
+  [1m[36mQuestion Load (0.7ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."discipline_id" = $1 AND "questions"."id" = $2 LIMIT $3[0m  [["discipline_id", 2], ["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/questions_controller.rb:4:in `edit'
+  Rendering questions/edit.html.erb within layouts/application
+  Rendered questions/_form_edit.html.erb (Duration: 3.5ms | Allocations: 1627)
+  Rendered questions/edit.html.erb within layouts/application (Duration: 5.0ms | Allocations: 1964)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 1.0ms | Allocations: 4661)
+
+
+  
+ActionView::Template::Error (undefined method `model_name' for true:TrueClass):
+    1: <%= simple_form_for @question.update({ content: @question.content }) do |f| %>
+    2:   <p><%= f.input :content %></p>
+    3:   <p><%= f.button :submit %></p>
+    4: <% end %>
+  
+app/views/questions/_form_edit.html.erb:1
+app/views/questions/edit.html.erb:3
+Started GET "/disciplines/22/questions/2/edit" for ::1 at 2019-12-14 02:36:05 +0700
+Processing by QuestionsController#edit as HTML
+  Parameters: {"discipline_id"=>"22", "id"=>"2"}
+  [1m[36mDiscipline Load (0.6ms)[0m  [1m[34mSELECT "disciplines".* FROM "disciplines" WHERE "disciplines"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/questions_controller.rb:3:in `edit'
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."discipline_id" = $1 AND "questions"."id" = $2 LIMIT $3[0m  [["discipline_id", 2], ["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/questions_controller.rb:4:in `edit'
+  Rendering questions/edit.html.erb within layouts/application
+  Rendered questions/_form_edit.html.erb (Duration: 3.1ms | Allocations: 1223)
+  Rendered questions/edit.html.erb within layouts/application (Duration: 5.2ms | Allocations: 1557)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 1.0ms | Allocations: 4190)
+
+
+  
+ActionView::Template::Error (When assigning attributes, you must pass a hash as an argument, String passed.):
+    1: <%= simple_form_for @question.update(params[:discipline_id]) do |f| %>
+    2:   <p><%= f.input :content %></p>
+    3:   <p><%= f.button :submit %></p>
+    4: <% end %>
+  
+app/views/questions/_form_edit.html.erb:1
+app/views/questions/edit.html.erb:3
+Started GET "/disciplines/22/questions/2/edit" for ::1 at 2019-12-14 02:36:07 +0700
+Processing by QuestionsController#edit as HTML
+  Parameters: {"discipline_id"=>"22", "id"=>"2"}
+  [1m[36mDiscipline Load (0.4ms)[0m  [1m[34mSELECT "disciplines".* FROM "disciplines" WHERE "disciplines"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/questions_controller.rb:3:in `edit'
+  [1m[36mQuestion Load (1.1ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."discipline_id" = $1 AND "questions"."id" = $2 LIMIT $3[0m  [["discipline_id", 2], ["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/questions_controller.rb:4:in `edit'
+  Rendering questions/edit.html.erb within layouts/application
+  Rendered questions/_form_edit.html.erb (Duration: 1.1ms | Allocations: 1081)
+  Rendered questions/edit.html.erb within layouts/application (Duration: 1.4ms | Allocations: 1159)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 1.5ms | Allocations: 3041)
+
+
+  
+ActionView::Template::Error (When assigning attributes, you must pass a hash as an argument, String passed.):
+    1: <%= simple_form_for @question.update(params[:discipline_id]) do |f| %>
+    2:   <p><%= f.input :content %></p>
+    3:   <p><%= f.button :submit %></p>
+    4: <% end %>
+  
+app/views/questions/_form_edit.html.erb:1
+app/views/questions/edit.html.erb:3
+Started GET "/disciplines/22/questions/2/edit" for ::1 at 2019-12-14 02:36:20 +0700
+Processing by QuestionsController#edit as HTML
+  Parameters: {"discipline_id"=>"22", "id"=>"2"}
+  [1m[36mDiscipline Load (0.6ms)[0m  [1m[34mSELECT "disciplines".* FROM "disciplines" WHERE "disciplines"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/questions_controller.rb:3:in `edit'
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."discipline_id" = $1 AND "questions"."id" = $2 LIMIT $3[0m  [["discipline_id", 2], ["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/questions_controller.rb:4:in `edit'
+  Rendering questions/edit.html.erb within layouts/application
+  Rendered questions/_form_edit.html.erb (Duration: 1.0ms | Allocations: 1146)
+  Rendered questions/edit.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1480)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.9ms | Allocations: 4113)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 0, expected 1)):
+    1: <%= simple_form_for @question.update do |f| %>
+    2:   <p><%= f.input :content %></p>
+    3:   <p><%= f.button :submit %></p>
+    4: <% end %>
+  
+app/views/questions/_form_edit.html.erb:1
+app/views/questions/edit.html.erb:3
+Started GET "/disciplines/22/questions/2/edit" for ::1 at 2019-12-14 02:37:36 +0700
+Processing by QuestionsController#edit as HTML
+  Parameters: {"discipline_id"=>"22", "id"=>"2"}
+  [1m[36mDiscipline Load (0.4ms)[0m  [1m[34mSELECT "disciplines".* FROM "disciplines" WHERE "disciplines"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/questions_controller.rb:3:in `edit'
+  [1m[36mQuestion Load (0.6ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."discipline_id" = $1 AND "questions"."id" = $2 LIMIT $3[0m  [["discipline_id", 2], ["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/questions_controller.rb:4:in `edit'
+  Rendering questions/edit.html.erb within layouts/application
+  Rendered questions/_form_edit.html.erb (Duration: 222.1ms | Allocations: 94287)
+  Rendered questions/edit.html.erb within layouts/application (Duration: 223.8ms | Allocations: 94621)
+Completed 500 Internal Server Error in 244ms (ActiveRecord: 1.0ms | Allocations: 97256)
+
+
+  
+ActionView::Template::Error (undefined method `question_path' for #<#<Class:0x00007f5b151cab48>:0x00007f5b151c9130>):
+    1: <%= simple_form_for @question do |f| %>
+    2:   <p><%= f.input :content %></p>
+    3:   <p><%= f.button :submit %></p>
+    4: <% end %>
+  
+app/views/questions/_form_edit.html.erb:1
+app/views/questions/edit.html.erb:3
+Started GET "/disciplines/2" for ::1 at 2019-12-14 02:38:34 +0700
+Processing by DisciplinesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mDiscipline Load (0.2ms)[0m  [1m[34mSELECT "disciplines".* FROM "disciplines" WHERE "disciplines"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/disciplines_controller.rb:7:in `show'
+  Rendering disciplines/show.html.erb within layouts/application
+  [1m[36mQuestion Load (0.5ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."discipline_id" = $1[0m  [["discipline_id", 2]]
+  ↳ app/views/disciplines/show.html.erb:7
+  Rendered collection of questions/_question.html.erb [7 times] (Duration: 2.0ms | Allocations: 1385)
+  Rendered questions/_form_new.html.erb (Duration: 6.7ms | Allocations: 3364)
+  Rendered disciplines/show.html.erb within layouts/application (Duration: 13.8ms | Allocations: 6327)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 32ms (Views: 26.1ms | ActiveRecord: 0.7ms | Allocations: 15941)
+
+
+Started GET "/disciplines/2" for ::1 at 2019-12-14 02:38:35 +0700
+Processing by DisciplinesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mDiscipline Load (0.3ms)[0m  [1m[34mSELECT "disciplines".* FROM "disciplines" WHERE "disciplines"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/disciplines_controller.rb:7:in `show'
+  Rendering disciplines/show.html.erb within layouts/application
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."discipline_id" = $1[0m  [["discipline_id", 2]]
+  ↳ app/views/disciplines/show.html.erb:7
+  Rendered collection of questions/_question.html.erb [7 times] (Duration: 2.3ms | Allocations: 1221)
+  Rendered questions/_form_new.html.erb (Duration: 5.5ms | Allocations: 3185)
+  Rendered disciplines/show.html.erb within layouts/application (Duration: 14.2ms | Allocations: 5528)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 34ms (Views: 28.1ms | ActiveRecord: 0.6ms | Allocations: 14176)
+
+
+Started GET "/disciplines/2" for ::1 at 2019-12-14 02:38:36 +0700
+Processing by DisciplinesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mDiscipline Load (1.0ms)[0m  [1m[34mSELECT "disciplines".* FROM "disciplines" WHERE "disciplines"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/disciplines_controller.rb:7:in `show'
+  Rendering disciplines/show.html.erb within layouts/application
+  [1m[36mQuestion Load (0.7ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."discipline_id" = $1[0m  [["discipline_id", 2]]
+  ↳ app/views/disciplines/show.html.erb:7
+  Rendered collection of questions/_question.html.erb [7 times] (Duration: 1.6ms | Allocations: 1212)
+  Rendered questions/_form_new.html.erb (Duration: 5.4ms | Allocations: 3183)
+  Rendered disciplines/show.html.erb within layouts/application (Duration: 12.3ms | Allocations: 5515)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 31ms (Views: 26.7ms | ActiveRecord: 1.7ms | Allocations: 14160)
+
+
+Started GET "/disciplines/2" for ::1 at 2019-12-14 02:38:36 +0700
+Processing by DisciplinesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mDiscipline Load (0.3ms)[0m  [1m[34mSELECT "disciplines".* FROM "disciplines" WHERE "disciplines"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/disciplines_controller.rb:7:in `show'
+  Rendering disciplines/show.html.erb within layouts/application
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."discipline_id" = $1[0m  [["discipline_id", 2]]
+  ↳ app/views/disciplines/show.html.erb:7
+  Rendered collection of questions/_question.html.erb [7 times] (Duration: 1.9ms | Allocations: 1212)
+  Rendered questions/_form_new.html.erb (Duration: 10.4ms | Allocations: 3183)
+  Rendered disciplines/show.html.erb within layouts/application (Duration: 15.3ms | Allocations: 5515)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 31ms (Views: 27.8ms | ActiveRecord: 0.5ms | Allocations: 14162)
+
+
+Started GET "/disciplines/21/questions/2/edit" for ::1 at 2019-12-14 02:39:01 +0700
+Processing by QuestionsController#edit as HTML
+  Parameters: {"discipline_id"=>"21", "id"=>"2"}
+  [1m[36mDiscipline Load (2.8ms)[0m  [1m[34mSELECT "disciplines".* FROM "disciplines" WHERE "disciplines"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/questions_controller.rb:3:in `edit'
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."discipline_id" = $1 AND "questions"."id" = $2 LIMIT $3[0m  [["discipline_id", 2], ["id", 21], ["LIMIT", 1]]
+  ↳ app/controllers/questions_controller.rb:4:in `edit'
+  Rendering questions/edit.html.erb within layouts/application
+  Rendered questions/_form_edit.html.erb (Duration: 1.4ms | Allocations: 1146)
+  Rendered questions/edit.html.erb within layouts/application (Duration: 2.8ms | Allocations: 1483)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 3.1ms | Allocations: 3945)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 0, expected 1)):
+    1: <%= simple_form_for @question.update do |f| %>
+    2:   <p><%= f.input :content %></p>
+    3:   <p><%= f.button :submit %></p>
+    4: <% end %>
+  
+app/views/questions/_form_edit.html.erb:1
+app/views/questions/edit.html.erb:3
+Started GET "/disciplines/21/questions/2/edit" for ::1 at 2019-12-14 02:39:12 +0700
+Processing by QuestionsController#edit as HTML
+  Parameters: {"discipline_id"=>"21", "id"=>"2"}
+  [1m[36mDiscipline Load (0.3ms)[0m  [1m[34mSELECT "disciplines".* FROM "disciplines" WHERE "disciplines"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/questions_controller.rb:3:in `edit'
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."discipline_id" = $1 AND "questions"."id" = $2 LIMIT $3[0m  [["discipline_id", 2], ["id", 21], ["LIMIT", 1]]
+  ↳ app/controllers/questions_controller.rb:4:in `edit'
+  Rendering questions/edit.html.erb within layouts/application
+  Rendered questions/_form_edit.html.erb (Duration: 227.9ms | Allocations: 94269)
+  Rendered questions/edit.html.erb within layouts/application (Duration: 229.1ms | Allocations: 94603)
+Completed 500 Internal Server Error in 238ms (ActiveRecord: 0.6ms | Allocations: 97235)
+
+
+  
+ActionView::Template::Error (undefined method `question_path' for #<#<Class:0x00007f5b14947e08>:0x00007f5b14946300>):
+    1: <%= simple_form_for @question do |f| %>
+    2:   <p><%= f.input :content %></p>
+    3:   <p><%= f.button :submit %></p>
+    4: <% end %>
+  
+app/views/questions/_form_edit.html.erb:1
+app/views/questions/edit.html.erb:3
+Started GET "/disciplines/21/questions/2/edit" for ::1 at 2019-12-14 02:39:13 +0700
+Processing by QuestionsController#edit as HTML
+  Parameters: {"discipline_id"=>"21", "id"=>"2"}
+  [1m[36mDiscipline Load (0.3ms)[0m  [1m[34mSELECT "disciplines".* FROM "disciplines" WHERE "disciplines"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/questions_controller.rb:3:in `edit'
+  [1m[36mQuestion Load (0.4ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."discipline_id" = $1 AND "questions"."id" = $2 LIMIT $3[0m  [["discipline_id", 2], ["id", 21], ["LIMIT", 1]]
+  ↳ app/controllers/questions_controller.rb:4:in `edit'
+  Rendering questions/edit.html.erb within layouts/application
+  Rendered questions/_form_edit.html.erb (Duration: 250.9ms | Allocations: 94127)
+  Rendered questions/edit.html.erb within layouts/application (Duration: 251.3ms | Allocations: 94207)
+Completed 500 Internal Server Error in 263ms (ActiveRecord: 0.8ms | Allocations: 96088)
+
+
+  
+ActionView::Template::Error (undefined method `question_path' for #<#<Class:0x00007f5b14947e08>:0x00007f5b2025faf8>):
+    1: <%= simple_form_for @question do |f| %>
+    2:   <p><%= f.input :content %></p>
+    3:   <p><%= f.button :submit %></p>
+    4: <% end %>
+  
+app/views/questions/_form_edit.html.erb:1
+app/views/questions/edit.html.erb:3
+Started GET "/disciplines/2" for ::1 at 2019-12-14 02:39:26 +0700
+Processing by DisciplinesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mDiscipline Load (0.3ms)[0m  [1m[34mSELECT "disciplines".* FROM "disciplines" WHERE "disciplines"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/disciplines_controller.rb:7:in `show'
+  Rendering disciplines/show.html.erb within layouts/application
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."discipline_id" = $1[0m  [["discipline_id", 2]]
+  ↳ app/views/disciplines/show.html.erb:7
+  Rendered collection of questions/_question.html.erb [7 times] (Duration: 2.2ms | Allocations: 1384)
+  Rendered questions/_form_new.html.erb (Duration: 5.5ms | Allocations: 3342)
+  Rendered disciplines/show.html.erb within layouts/application (Duration: 12.0ms | Allocations: 6304)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 30ms (Views: 25.2ms | ActiveRecord: 0.6ms | Allocations: 15723)
+
+
+Started GET "/disciplines/2" for ::1 at 2019-12-14 02:39:27 +0700
+Processing by DisciplinesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mDiscipline Load (0.2ms)[0m  [1m[34mSELECT "disciplines".* FROM "disciplines" WHERE "disciplines"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/disciplines_controller.rb:7:in `show'
+  Rendering disciplines/show.html.erb within layouts/application
+  [1m[36mQuestion Load (2.0ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."discipline_id" = $1[0m  [["discipline_id", 2]]
+  ↳ app/views/disciplines/show.html.erb:7
+  Rendered collection of questions/_question.html.erb [7 times] (Duration: 1.5ms | Allocations: 1221)
+  Rendered questions/_form_new.html.erb (Duration: 5.0ms | Allocations: 3185)
+  Rendered disciplines/show.html.erb within layouts/application (Duration: 11.7ms | Allocations: 5528)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 27ms (Views: 22.4ms | ActiveRecord: 2.3ms | Allocations: 14174)
+
+
+Started GET "/disciplines/2" for ::1 at 2019-12-14 02:39:40 +0700
+Processing by DisciplinesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mDiscipline Load (0.2ms)[0m  [1m[34mSELECT "disciplines".* FROM "disciplines" WHERE "disciplines"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/disciplines_controller.rb:7:in `show'
+  Rendering disciplines/show.html.erb within layouts/application
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."discipline_id" = $1[0m  [["discipline_id", 2]]
+  ↳ app/views/disciplines/show.html.erb:7
+  Rendered collection of questions/_question.html.erb [7 times] (Duration: 2.3ms | Allocations: 1384)
+  Rendered questions/_form_new.html.erb (Duration: 1.8ms | Allocations: 1478)
+  Rendered disciplines/show.html.erb within layouts/application (Duration: 8.2ms | Allocations: 4388)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.4ms | Allocations: 6156)
+
+
+  
+ActionView::Template::Error (undefined method `build' for nil:NilClass):
+    1: <%= simple_form_for @question.build do |f| %>
+    2:   <p><%= f.input :content %></p>
+    3:   <p><%= f.button :submit %></p>
+    4: <% end %>
+  
+app/views/questions/_form_new.html.erb:1
+app/views/disciplines/show.html.erb:10
+Started GET "/disciplines/2" for ::1 at 2019-12-14 02:40:25 +0700
+Processing by DisciplinesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mDiscipline Load (0.3ms)[0m  [1m[34mSELECT "disciplines".* FROM "disciplines" WHERE "disciplines"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/disciplines_controller.rb:7:in `show'
+  Rendering disciplines/show.html.erb within layouts/application
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."discipline_id" = $1[0m  [["discipline_id", 2]]
+  ↳ app/views/disciplines/show.html.erb:7
+  Rendered collection of questions/_question.html.erb [7 times] (Duration: 2.0ms | Allocations: 1384)
+  Rendered questions/_form_new.html.erb (Duration: 8.5ms | Allocations: 3271)
+  Rendered disciplines/show.html.erb within layouts/application (Duration: 14.9ms | Allocations: 6183)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.5ms | Allocations: 7954)
+
+
+  
+ActionView::Template::Error (undefined method `build' for #<Class:0x00007f5b152d3a80>):
+    1: <%= simple_form_for Question.build do |f| %>
+    2:   <p><%= f.input :content %></p>
+    3:   <p><%= f.button :submit %></p>
+    4: <% end %>
+  
+app/views/questions/_form_new.html.erb:1
+app/views/disciplines/show.html.erb:10
+Started GET "/disciplines/2" for ::1 at 2019-12-14 02:40:31 +0700
+Processing by DisciplinesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mDiscipline Load (0.3ms)[0m  [1m[34mSELECT "disciplines".* FROM "disciplines" WHERE "disciplines"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/disciplines_controller.rb:7:in `show'
+  Rendering disciplines/show.html.erb within layouts/application
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."discipline_id" = $1[0m  [["discipline_id", 2]]
+  ↳ app/views/disciplines/show.html.erb:7
+  Rendered collection of questions/_question.html.erb [7 times] (Duration: 2.0ms | Allocations: 1384)
+  Rendered questions/_form_new.html.erb (Duration: 229.6ms | Allocations: 94170)
+  Rendered disciplines/show.html.erb within layouts/application (Duration: 235.6ms | Allocations: 97082)
+Completed 500 Internal Server Error in 240ms (ActiveRecord: 0.4ms | Allocations: 98855)
+
+
+  
+ActionView::Template::Error (undefined method `questions_path' for #<#<Class:0x00007f5afc1eefc0>:0x00007f5afc1ed3f0>):
+    1: <%= simple_form_for Question.new do |f| %>
+    2:   <p><%= f.input :content %></p>
+    3:   <p><%= f.button :submit %></p>
+    4: <% end %>
+  
+app/views/questions/_form_new.html.erb:1
+app/views/disciplines/show.html.erb:10
+Started GET "/disciplines/2" for ::1 at 2019-12-14 02:40:45 +0700
+Processing by DisciplinesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mDiscipline Load (0.4ms)[0m  [1m[34mSELECT "disciplines".* FROM "disciplines" WHERE "disciplines"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/disciplines_controller.rb:7:in `show'
+  Rendering disciplines/show.html.erb within layouts/application
+  [1m[36mQuestion Load (0.4ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."discipline_id" = $1[0m  [["discipline_id", 2]]
+  ↳ app/views/disciplines/show.html.erb:7
+  Rendered collection of questions/_question.html.erb [7 times] (Duration: 2.6ms | Allocations: 1384)
+  Rendered questions/_form_new.html.erb (Duration: 7.6ms | Allocations: 3340)
+  Rendered disciplines/show.html.erb within layouts/application (Duration: 18.7ms | Allocations: 6299)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 36ms (Views: 31.3ms | ActiveRecord: 0.9ms | Allocations: 15887)
+
+
+Started POST "/disciplines/2/questions" for ::1 at 2019-12-14 02:40:48 +0700
+Processing by QuestionsController#create as HTML
+  Parameters: {"authenticity_token"=>"SkZODDxmjI9af3iLP7pDmlGL8XfXkBK10QhjzfgRkq9WGjNY0SI3vyRQbve2l7141f8w6uGZ9ijxsv/h1krguQ==", "question"=>{"content"=>"test123"}, "commit"=>"Create Question", "discipline_id"=>"2"}
+  [1m[36mDiscipline Load (2.2ms)[0m  [1m[34mSELECT "disciplines".* FROM "disciplines" WHERE "disciplines"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/questions_controller.rb:8:in `create'
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/questions_controller.rb:9:in `create'
+  [1m[36mQuestion Create (0.8ms)[0m  [1m[32mINSERT INTO "questions" ("content", "discipline_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["content", "test123"], ["discipline_id", 2], ["created_at", "2019-12-13 19:40:48.844843"], ["updated_at", "2019-12-13 19:40:48.844843"]]
+  ↳ app/controllers/questions_controller.rb:9:in `create'
+  [1m[35m (18.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/questions_controller.rb:9:in `create'
+Redirected to http://localhost:3000/disciplines/2
+Completed 302 Found in 43ms (ActiveRecord: 21.6ms | Allocations: 3585)
+
+
+Started GET "/disciplines/2" for ::1 at 2019-12-14 02:40:48 +0700
+Processing by DisciplinesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mDiscipline Load (0.4ms)[0m  [1m[34mSELECT "disciplines".* FROM "disciplines" WHERE "disciplines"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/disciplines_controller.rb:7:in `show'
+  Rendering disciplines/show.html.erb within layouts/application
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."discipline_id" = $1[0m  [["discipline_id", 2]]
+  ↳ app/views/disciplines/show.html.erb:7
+  Rendered collection of questions/_question.html.erb [8 times] (Duration: 2.0ms | Allocations: 1390)
+  Rendered questions/_form_new.html.erb (Duration: 5.5ms | Allocations: 3185)
+  Rendered disciplines/show.html.erb within layouts/application (Duration: 11.4ms | Allocations: 5714)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 30ms (Views: 25.0ms | ActiveRecord: 0.7ms | Allocations: 14363)
+
+
+Started GET "/disciplines/23/questions/2/edit" for ::1 at 2019-12-14 02:40:50 +0700
+Processing by QuestionsController#edit as HTML
+  Parameters: {"discipline_id"=>"23", "id"=>"2"}
+  [1m[36mDiscipline Load (0.3ms)[0m  [1m[34mSELECT "disciplines".* FROM "disciplines" WHERE "disciplines"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/questions_controller.rb:3:in `edit'
+  [1m[36mQuestion Load (0.8ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."discipline_id" = $1 AND "questions"."id" = $2 LIMIT $3[0m  [["discipline_id", 2], ["id", 23], ["LIMIT", 1]]
+  ↳ app/controllers/questions_controller.rb:4:in `edit'
+  Rendering questions/edit.html.erb within layouts/application
+  [1m[36mQuestion Load (0.6ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+  ↳ app/views/questions/_form_edit.html.erb:1
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/views/questions/_form_edit.html.erb:1
+  [1m[36mDiscipline Load (0.3ms)[0m  [1m[34mSELECT "disciplines".* FROM "disciplines" WHERE "disciplines"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/questions/_form_edit.html.erb:1
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/views/questions/_form_edit.html.erb:1
+  Rendered questions/_form_edit.html.erb (Duration: 39.0ms | Allocations: 6995)
+  Rendered questions/edit.html.erb within layouts/application (Duration: 40.3ms | Allocations: 7353)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 68ms (Views: 49.7ms | ActiveRecord: 2.9ms | Allocations: 17451)
+
+
+Started PATCH "/disciplines/2/questions/23" for ::1 at 2019-12-14 02:40:52 +0700
+Processing by QuestionsController#update as HTML
+  Parameters: {"authenticity_token"=>"IyR3I1JnxbutFYYW9iEo2Iq7MFJ41MAYsWwOj/a3nOxn34TY+39seZxKIQ9/7xvzm3yOggtMcwOoxM3WscT/7Q==", "question"=>{"content"=>"aha"}, "commit"=>"Update Question", "discipline_id"=>"2", "id"=>"23"}
+  [1m[36mDiscipline Load (0.3ms)[0m  [1m[34mSELECT "disciplines".* FROM "disciplines" WHERE "disciplines"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/questions_controller.rb:14:in `update'
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."discipline_id" = $1 AND "questions"."id" = $2 LIMIT $3[0m  [["discipline_id", 2], ["id", 23], ["LIMIT", 1]]
+  ↳ app/controllers/questions_controller.rb:15:in `update'
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/questions_controller.rb:17:in `update'
+  [1m[36mQuestion Update (1.4ms)[0m  [1m[33mUPDATE "questions" SET "content" = $1, "updated_at" = $2 WHERE "questions"."id" = $3[0m  [["content", "aha"], ["updated_at", "2019-12-13 19:40:52.090173"], ["id", 23]]
+  ↳ app/controllers/questions_controller.rb:17:in `update'
+  [1m[35m (20.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/questions_controller.rb:17:in `update'
+Redirected to http://localhost:3000/disciplines/2
+Completed 302 Found in 41ms (ActiveRecord: 23.1ms | Allocations: 4117)
+
+
+Started GET "/disciplines/2" for ::1 at 2019-12-14 02:40:52 +0700
+Processing by DisciplinesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mDiscipline Load (0.9ms)[0m  [1m[34mSELECT "disciplines".* FROM "disciplines" WHERE "disciplines"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/disciplines_controller.rb:7:in `show'
+  Rendering disciplines/show.html.erb within layouts/application
+  [1m[36mQuestion Load (0.4ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."discipline_id" = $1[0m  [["discipline_id", 2]]
+  ↳ app/views/disciplines/show.html.erb:7
+  Rendered collection of questions/_question.html.erb [8 times] (Duration: 2.9ms | Allocations: 1390)
+  Rendered questions/_form_new.html.erb (Duration: 8.8ms | Allocations: 3187)
+  Rendered disciplines/show.html.erb within layouts/application (Duration: 17.1ms | Allocations: 5716)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 39ms (Views: 32.3ms | ActiveRecord: 1.3ms | Allocations: 14363)
+
+
+Started GET "/disciplines/2/edit" for ::1 at 2019-12-14 02:41:00 +0700
+Processing by DisciplinesController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mDiscipline Load (0.8ms)[0m  [1m[34mSELECT "disciplines".* FROM "disciplines" WHERE "disciplines"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/disciplines_controller.rb:15:in `edit'
+  Rendering disciplines/edit.html.erb within layouts/application
+  Rendered disciplines/_form.html.erb (Duration: 54.4ms | Allocations: 8935)
+  Rendered disciplines/edit.html.erb within layouts/application (Duration: 150.9ms | Allocations: 9295)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 176ms (Views: 165.9ms | ActiveRecord: 0.8ms | Allocations: 18074)
+
+
+Started GET "/disciplines" for ::1 at 2019-12-14 02:41:02 +0700
+Processing by DisciplinesController#index as HTML
+  Rendering disciplines/index.html.erb within layouts/application
+  [1m[36mDiscipline Load (0.6ms)[0m  [1m[34mSELECT "disciplines".* FROM "disciplines"[0m
+  ↳ app/views/disciplines/index.html.erb:9
+  Rendered disciplines/index.html.erb within layouts/application (Duration: 5.2ms | Allocations: 997)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 30ms (Views: 28.0ms | ActiveRecord: 0.6ms | Allocations: 9345)
+
+
+Started GET "/disciplines/2" for ::1 at 2019-12-14 02:41:03 +0700
+Processing by DisciplinesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mDiscipline Load (0.3ms)[0m  [1m[34mSELECT "disciplines".* FROM "disciplines" WHERE "disciplines"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/disciplines_controller.rb:7:in `show'
+  Rendering disciplines/show.html.erb within layouts/application
+  [1m[36mQuestion Load (0.4ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."discipline_id" = $1[0m  [["discipline_id", 2]]
+  ↳ app/views/disciplines/show.html.erb:7
+  Rendered collection of questions/_question.html.erb [8 times] (Duration: 7.6ms | Allocations: 1387)
+  Rendered questions/_form_new.html.erb (Duration: 15.2ms | Allocations: 3184)
+  Rendered disciplines/show.html.erb within layouts/application (Duration: 30.7ms | Allocations: 5710)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 63ms (Views: 54.6ms | ActiveRecord: 0.7ms | Allocations: 14360)
+
+
+Started GET "/disciplines/2/edit" for ::1 at 2019-12-14 02:41:04 +0700
+Processing by DisciplinesController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mDiscipline Load (2.6ms)[0m  [1m[34mSELECT "disciplines".* FROM "disciplines" WHERE "disciplines"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/disciplines_controller.rb:15:in `edit'
+  Rendering disciplines/edit.html.erb within layouts/application
+  Rendered disciplines/_form.html.erb (Duration: 16.2ms | Allocations: 3247)
+  Rendered disciplines/edit.html.erb within layouts/application (Duration: 17.4ms | Allocations: 3344)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 44ms (Views: 36.7ms | ActiveRecord: 2.6ms | Allocations: 11990)
+
+
+Started GET "/disciplines" for ::1 at 2019-12-14 02:41:06 +0700
+Processing by DisciplinesController#index as HTML
+  Rendering disciplines/index.html.erb within layouts/application
+  [1m[36mDiscipline Load (0.5ms)[0m  [1m[34mSELECT "disciplines".* FROM "disciplines"[0m
+  ↳ app/views/disciplines/index.html.erb:9
+  Rendered disciplines/index.html.erb within layouts/application (Duration: 5.3ms | Allocations: 761)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 39ms (Views: 34.2ms | ActiveRecord: 0.5ms | Allocations: 8966)
+
+
+Started GET "/disciplines" for ::1 at 2019-12-14 02:44:40 +0700
+Processing by DisciplinesController#index as HTML
+  Rendering disciplines/index.html.erb within layouts/application
+  [1m[36mDiscipline Load (0.6ms)[0m  [1m[34mSELECT "disciplines".* FROM "disciplines"[0m
+  ↳ app/views/disciplines/index.html.erb:9
+  Rendered disciplines/index.html.erb within layouts/application (Duration: 16.6ms | Allocations: 3753)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 35ms (Views: 25.0ms | ActiveRecord: 4.9ms | Allocations: 13915)
+
+
+Started GET "/disciplines/2" for ::1 at 2019-12-14 02:44:41 +0700
+Processing by DisciplinesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mDiscipline Load (0.4ms)[0m  [1m[34mSELECT "disciplines".* FROM "disciplines" WHERE "disciplines"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/disciplines_controller.rb:7:in `show'
+  Rendering disciplines/show.html.erb within layouts/application
+  [1m[36mQuestion Load (1.1ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."discipline_id" = $1[0m  [["discipline_id", 2]]
+  ↳ app/views/disciplines/show.html.erb:7
+  Rendered collection of questions/_question.html.erb [8 times] (Duration: 5.3ms | Allocations: 1653)
+  Rendered questions/_form_new.html.erb (Duration: 0.8ms | Allocations: 1063)
+  Rendered disciplines/show.html.erb within layouts/application (Duration: 19.4ms | Allocations: 5599)
+Completed 500 Internal Server Error in 42ms (ActiveRecord: 7.2ms | Allocations: 10647)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <%= simple_form_for @question.build ] do |f| %>
+  <p><%= f.input :content %></p>
+  <p><%= f.button :submit %></p>
+<% end %>
+):
+1:    <%= simple_form_for @question.build ] do |f| %>
+2:      <p><%= f.input :content %></p>
+3:      <p><%= f.button :submit %></p>
+4:    <% end %>
+  
+app/views/questions/_form_new.html.erb:1: syntax error, unexpected ']', expecting keyword_end
+app/views/questions/_form_new.html.erb:6: syntax error, unexpected keyword_end, expecting end-of-input
+app/views/questions/_form_new.html.erb:1: syntax error, unexpected ']', expecting keyword_end
+app/views/questions/_form_new.html.erb:6: syntax error, unexpected keyword_end, expecting end-of-input
+app/views/questions/_form_new.html.erb:1: syntax error, unexpected ']', expecting keyword_end
+app/views/questions/_form_new.html.erb:6: syntax error, unexpected keyword_end, expecting end-of-input
+app/views/questions/_form_new.html.erb:1: syntax error, unexpected ']', expecting keyword_end
+app/views/questions/_form_new.html.erb:6: syntax error, unexpected keyword_end, expecting end-of-input
+app/views/questions/_form_new.html.erb:1: syntax error, unexpected ']', expecting keyword_end
+app/views/questions/_form_new.html.erb:6: syntax error, unexpected keyword_end, expecting end-of-input
+app/views/questions/_form_new.html.erb:1: syntax error, unexpected ']', expecting keyword_end
+app/views/questions/_form_new.html.erb:6: syntax error, unexpected keyword_end, expecting end-of-input
+app/views/disciplines/show.html.erb:10
+Started GET "/disciplines/2" for ::1 at 2019-12-14 02:44:51 +0700
+Processing by DisciplinesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mDiscipline Load (0.3ms)[0m  [1m[34mSELECT "disciplines".* FROM "disciplines" WHERE "disciplines"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/disciplines_controller.rb:7:in `show'
+  Rendering disciplines/show.html.erb within layouts/application
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."discipline_id" = $1[0m  [["discipline_id", 2]]
+  ↳ app/views/disciplines/show.html.erb:7
+  Rendered collection of questions/_question.html.erb [8 times] (Duration: 2.5ms | Allocations: 1553)
+  Rendered questions/_form_new.html.erb (Duration: 6.3ms | Allocations: 2508)
+  Rendered disciplines/show.html.erb within layouts/application (Duration: 13.3ms | Allocations: 5606)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.6ms | Allocations: 7392)
+
+
+  
+ActionView::Template::Error (undefined method `build' for #<Question:0x00007f5b2002e220>):
+    1: <%= simple_form_for @question.build do |f| %>
+    2:   <p><%= f.input :content %></p>
+    3:   <p><%= f.button :submit %></p>
+    4: <% end %>
+  
+app/views/questions/_form_new.html.erb:1
+app/views/disciplines/show.html.erb:10
+Started GET "/disciplines/2" for ::1 at 2019-12-14 02:45:06 +0700
+Processing by DisciplinesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mDiscipline Load (0.3ms)[0m  [1m[34mSELECT "disciplines".* FROM "disciplines" WHERE "disciplines"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/disciplines_controller.rb:7:in `show'
+  Rendering disciplines/show.html.erb within layouts/application
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."discipline_id" = $1[0m  [["discipline_id", 2]]
+  ↳ app/views/disciplines/show.html.erb:7
+  Rendered collection of questions/_question.html.erb [8 times] (Duration: 3.0ms | Allocations: 1553)
+  Rendered questions/_form_new.html.erb (Duration: 221.9ms | Allocations: 94250)
+  Rendered disciplines/show.html.erb within layouts/application (Duration: 229.7ms | Allocations: 97348)
+Completed 500 Internal Server Error in 240ms (ActiveRecord: 0.5ms | Allocations: 99136)
+
+
+  
+ActionView::Template::Error (undefined method `questions_path' for #<#<Class:0x00007f5b201b9400>:0x00007f5b201af590>):
+    1: <%= simple_form_for Question.new do |f| %>
+    2:   <p><%= f.input :content %></p>
+    3:   <p><%= f.button :submit %></p>
+    4: <% end %>
+  
+app/views/questions/_form_new.html.erb:1
+app/views/disciplines/show.html.erb:10
+Started GET "/disciplines/2" for ::1 at 2019-12-14 02:45:45 +0700
+Processing by DisciplinesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mDiscipline Load (0.3ms)[0m  [1m[34mSELECT "disciplines".* FROM "disciplines" WHERE "disciplines"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/disciplines_controller.rb:7:in `show'
+  Rendering disciplines/show.html.erb within layouts/application
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."discipline_id" = $1[0m  [["discipline_id", 2]]
+  ↳ app/views/disciplines/show.html.erb:7
+  Rendered collection of questions/_question.html.erb [8 times] (Duration: 2.5ms | Allocations: 1553)
+  Rendered questions/_form_new.html.erb (Duration: 7.2ms | Allocations: 3346)
+  Rendered disciplines/show.html.erb within layouts/application (Duration: 14.1ms | Allocations: 6491)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 30ms (Views: 26.3ms | ActiveRecord: 0.6ms | Allocations: 16094)
+
+
+Started GET "/disciplines/2" for ::1 at 2019-12-14 02:46:46 +0700
+Processing by DisciplinesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mDiscipline Load (0.3ms)[0m  [1m[34mSELECT "disciplines".* FROM "disciplines" WHERE "disciplines"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/disciplines_controller.rb:7:in `show'
+  Rendering disciplines/show.html.erb within layouts/application
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."discipline_id" = $1[0m  [["discipline_id", 2]]
+  ↳ app/views/disciplines/show.html.erb:7
+  Rendered collection of questions/_question.html.erb [8 times] (Duration: 4.5ms | Allocations: 1491)
+  Rendered questions/_form_new.html.erb (Duration: 10.3ms | Allocations: 3085)
+  Rendered disciplines/show.html.erb within layouts/application (Duration: 39.6ms | Allocations: 10767)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 76ms (Views: 50.4ms | ActiveRecord: 8.6ms | Allocations: 23411)
+
+
+Started GET "/examinations" for ::1 at 2019-12-14 02:49:30 +0700
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (6.0.1) lib/active_record/migration.rb:587:in `check_pending!'
+activerecord (6.0.1) lib/active_record/migration.rb:564:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.1) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.2.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.0) lib/puma/configuration.rb:228:in `call'
+puma (4.3.0) lib/puma/server.rb:667:in `handle_request'
+puma (4.3.0) lib/puma/server.rb:470:in `process_client'
+puma (4.3.0) lib/puma/server.rb:328:in `block in run'
+puma (4.3.0) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/examlist" for ::1 at 2019-12-14 02:49:32 +0700
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (6.0.1) lib/active_record/migration.rb:587:in `check_pending!'
+activerecord (6.0.1) lib/active_record/migration.rb:564:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.1) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.2.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.0) lib/puma/configuration.rb:228:in `call'
+puma (4.3.0) lib/puma/server.rb:667:in `handle_request'
+puma (4.3.0) lib/puma/server.rb:470:in `process_client'
+puma (4.3.0) lib/puma/server.rb:328:in `block in run'
+puma (4.3.0) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/examlists" for ::1 at 2019-12-14 02:49:35 +0700
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (6.0.1) lib/active_record/migration.rb:587:in `check_pending!'
+activerecord (6.0.1) lib/active_record/migration.rb:564:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.1) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.2.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.0) lib/puma/configuration.rb:228:in `call'
+puma (4.3.0) lib/puma/server.rb:667:in `handle_request'
+puma (4.3.0) lib/puma/server.rb:470:in `process_client'
+puma (4.3.0) lib/puma/server.rb:328:in `block in run'
+puma (4.3.0) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started POST "/rails/actions" for ::1 at 2019-12-14 02:49:39 +0700
+  [1m[35m (10.0ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7571439449366376255)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateExamlists (20191213194920)
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (802.4ms)[0m  [1m[35mCREATE TABLE "examlists" ("id" bigserial primary key, "student_id" bigint NOT NULL, "examination_id" bigint NOT NULL, "mark" integer, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, CONSTRAINT "fk_rails_ba1a441eb2"
+FOREIGN KEY ("student_id")
+  REFERENCES "students" ("id")
+, CONSTRAINT "fk_rails_7a78648258"
+FOREIGN KEY ("examination_id")
+  REFERENCES "examinations" ("id")
+)[0m
+  [1m[35m (59.4ms)[0m  [1m[35mCREATE  INDEX  "index_examlists_on_student_id" ON "examlists"  ("student_id")[0m
+  [1m[35m (37.7ms)[0m  [1m[35mCREATE  INDEX  "index_examlists_on_examination_id" ON "examlists"  ("examination_id")[0m
+  [1m[36mprimary::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20191213194920"]]
+  [1m[35m (11.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (20.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(7571439449366376255)[0m
+Started GET "/examlists" for ::1 at 2019-12-14 02:49:40 +0700
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ExamlistsController#index as HTML
+  Rendering examlists/index.html.erb within layouts/application
+  [1m[36mExamlist Load (0.5ms)[0m  [1m[34mSELECT "examlists".* FROM "examlists"[0m
+  ↳ app/views/examlists/index.html.erb:16
+  Rendered examlists/index.html.erb within layouts/application (Duration: 5.2ms | Allocations: 1310)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7249ms (Views: 7244.6ms | ActiveRecord: 2.0ms | Allocations: 85666)
+
+
+Started GET "/examlists/new" for ::1 at 2019-12-14 02:49:52 +0700
+Processing by ExamlistsController#new as HTML
+  Rendering examlists/new.html.erb within layouts/application
+  [1m[36mStudent Load (33.3ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  ↳ app/views/examlists/_form.html.erb:7
+  [1m[36mExamination Load (0.5ms)[0m  [1m[34mSELECT "examinations".* FROM "examinations"[0m
+  ↳ app/views/examlists/_form.html.erb:8
+  Rendered examlists/_form.html.erb (Duration: 146.6ms | Allocations: 19511)
+  Rendered examlists/new.html.erb within layouts/application (Duration: 148.2ms | Allocations: 19878)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 176ms (Views: 115.6ms | ActiveRecord: 47.7ms | Allocations: 32256)
+
+
+Started GET "/examlists" for ::1 at 2019-12-14 02:49:58 +0700
+Processing by ExamlistsController#index as HTML
+  Rendering examlists/index.html.erb within layouts/application
+  [1m[36mExamlist Load (0.4ms)[0m  [1m[34mSELECT "examlists".* FROM "examlists"[0m
+  ↳ app/views/examlists/index.html.erb:16
+  Rendered examlists/index.html.erb within layouts/application (Duration: 2.5ms | Allocations: 666)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 30ms (Views: 26.6ms | ActiveRecord: 0.4ms | Allocations: 9192)
+
+
+Started GET "/examlists/new" for ::1 at 2019-12-14 02:50:02 +0700
+Processing by ExamlistsController#new as HTML
+  Rendering examlists/new.html.erb within layouts/application
+  [1m[36mStudent Load (0.5ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  ↳ app/views/examlists/_form.html.erb:7
+  [1m[36mExamination Load (0.5ms)[0m  [1m[34mSELECT "examinations".* FROM "examinations"[0m
+  ↳ app/views/examlists/_form.html.erb:8
+  Rendered examlists/_form.html.erb (Duration: 46.6ms | Allocations: 8125)
+  Rendered examlists/new.html.erb within layouts/application (Duration: 47.8ms | Allocations: 8223)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 80ms (Views: 76.6ms | ActiveRecord: 1.1ms | Allocations: 16674)
+
+
+Started GET "/" for ::1 at 2019-12-14 02:55:03 +0700
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by GroupsController#index as HTML
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.6ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:10
+  Rendered groups/index.html.erb within layouts/application (Duration: 33.2ms | Allocations: 5217)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9568ms (Views: 9529.7ms | ActiveRecord: 8.6ms | Allocations: 116418)
+
+
+Started GET "/groups/new" for ::1 at 2019-12-14 02:55:18 +0700
+Processing by GroupsController#new as HTML
+  Rendering groups/new.html.erb within layouts/application
+  Rendered groups/_form.html.erb (Duration: 185.9ms | Allocations: 19317)
+  Rendered groups/new.html.erb within layouts/application (Duration: 255.7ms | Allocations: 19675)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 273ms (Views: 267.7ms | ActiveRecord: 0.0ms | Allocations: 28420)
+
+
+Started GET "/groups" for ::1 at 2019-12-14 02:55:22 +0700
+Processing by GroupsController#index as HTML
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:10
+  Rendered groups/index.html.erb within layouts/application (Duration: 2.4ms | Allocations: 898)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 11.6ms | ActiveRecord: 0.4ms | Allocations: 9576)
+
+
+Started GET "/examlists" for ::1 at 2019-12-14 02:55:25 +0700
+Processing by ExamlistsController#index as HTML
+  Rendering examlists/index.html.erb within layouts/application
+  [1m[36mExamlist Load (0.5ms)[0m  [1m[34mSELECT "examlists".* FROM "examlists"[0m
+  ↳ app/views/examlists/index.html.erb:16
+  Rendered examlists/index.html.erb within layouts/application (Duration: 7.0ms | Allocations: 1327)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 29ms (Views: 19.9ms | ActiveRecord: 2.2ms | Allocations: 11983)
+
+
+Started GET "/examlists/new" for ::1 at 2019-12-14 02:55:27 +0700
+Processing by ExamlistsController#new as HTML
+  Rendering examlists/new.html.erb within layouts/application
+  [1m[36mStudent Load (0.5ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  ↳ app/views/examlists/_form.html.erb:7
+  [1m[36mExamination Load (2.6ms)[0m  [1m[34mSELECT "examinations".* FROM "examinations"[0m
+  ↳ app/views/examlists/_form.html.erb:8
+  Rendered examlists/_form.html.erb (Duration: 79.1ms | Allocations: 19912)
+  Rendered examlists/new.html.erb within layouts/application (Duration: 83.6ms | Allocations: 20268)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 113ms (Views: 87.4ms | ActiveRecord: 13.2ms | Allocations: 32769)
+
+
+Started GET "/examlists" for ::1 at 2019-12-14 02:55:30 +0700
+Processing by ExamlistsController#index as HTML
+  Rendering examlists/index.html.erb within layouts/application
+  [1m[36mExamlist Load (0.6ms)[0m  [1m[34mSELECT "examlists".* FROM "examlists"[0m
+  ↳ app/views/examlists/index.html.erb:16
+  Rendered examlists/index.html.erb within layouts/application (Duration: 5.7ms | Allocations: 666)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 49ms (Views: 45.5ms | ActiveRecord: 0.6ms | Allocations: 9344)
+
+
