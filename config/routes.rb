@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   resources :examlists
   get 'examinations/:id/questions', to: 'examinations#questions'
   resources :groups

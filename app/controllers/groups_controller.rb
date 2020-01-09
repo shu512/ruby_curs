@@ -1,4 +1,6 @@
 class GroupsController < ApplicationController
+  before_action :authenticate_user!
+
   def index
     @groups = Group.all
   end
@@ -17,7 +19,7 @@ class GroupsController < ApplicationController
 
   def create
     @group = Group.new(group_params)
-
+    authorize @group
     if @group.save
       redirect_to @group
     else
@@ -27,7 +29,7 @@ class GroupsController < ApplicationController
 
   def update
     @group = Group.find(params[:id])
-
+    authorize @group
     if @group.update(group_params)
       redirect_to @group
     else
@@ -37,6 +39,7 @@ class GroupsController < ApplicationController
 
   def destroy
     @group = Group.find(params[:id])
+    authorize @group
     @group.destroy
 
     redirect_to groups_path
