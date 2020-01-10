@@ -8,17 +8,23 @@
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
     <%= stylesheet_link_tag 'header' %>
+    <%= stylesheet_link_tag 'work-page' %>
   </head>
 
   <body>
-    <ul class="header-menu">
-      <li><a href="">Меню 1</a></li>
-      <li><a href="">Меню 2</a></li>
-      <li><a href="">Меню 3</a></li>
-      <li><a href="">Меню 4</a></li>
-    </ul>
+    <nav>
+      <ul class="header-menu">
+        <li><a href="/groups">Groups</a></li>
+        <li><a href="/students">Students</a></li>
+        <li><a href="/disciplines">Disciplines</a></li>
+        <li><a href="/examinations">Examinations</a></li>
+        <li><a href="/examlists">Examlists</a></li>
+      </ul>
+    </nav>
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
-    <%= yield %>
+    <div class=work-page>
+      <%= yield %>
+    </div>
   </body>
 </html>

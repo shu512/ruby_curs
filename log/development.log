@@ -27347,3 +27347,2258 @@ Processing by GroupsController#index as HTML
 Completed 200 OK in 27ms (Views: 20.5ms | ActiveRecord: 0.8ms | Allocations: 13456)
 
 
+Started GET "/" for ::1 at 2020-01-10 21:48:47 +0700
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.6ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:10
+  Rendered groups/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 916)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 513ms (Views: 498.7ms | ActiveRecord: 1.5ms | Allocations: 12267)
+
+
+Started GET "/" for ::1 at 2020-01-10 21:49:26 +0700
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:10
+  Rendered groups/index.html.erb within layouts/application (Duration: 10.0ms | Allocations: 1135)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 248ms (Views: 240.2ms | ActiveRecord: 1.0ms | Allocations: 13470)
+
+
+Started GET "/" for ::1 at 2020-01-10 21:49:27 +0700
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:10
+  Rendered groups/index.html.erb within layouts/application (Duration: 2.5ms | Allocations: 895)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 33ms (Views: 25.2ms | ActiveRecord: 1.3ms | Allocations: 12117)
+
+
+Started GET "/groups" for ::1 at 2020-01-10 21:49:28 +0700
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (1.9ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:10
+  Rendered groups/index.html.erb within layouts/application (Duration: 6.0ms | Allocations: 888)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 31ms (Views: 22.7ms | ActiveRecord: 2.4ms | Allocations: 12105)
+
+
+Started GET "/groups" for ::1 at 2020-01-10 21:49:30 +0700
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:10
+  Rendered groups/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 888)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 24ms (Views: 19.6ms | ActiveRecord: 0.9ms | Allocations: 12111)
+
+
+Started GET "/groups" for ::1 at 2020-01-10 21:49:45 +0700
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:10
+  Rendered groups/index.html.erb within layouts/application (Duration: 8.7ms | Allocations: 1139)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 50ms (Views: 37.4ms | ActiveRecord: 0.9ms | Allocations: 13467)
+
+
+Started GET "/students" for ::1 at 2020-01-10 21:49:46 +0700
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (177.1ms)[0m  [1m[34mSELECT "students".* FROM "students" ORDER BY id[0m
+  ↳ app/views/students/index.html.erb:8:in `each_with_index'
+  Rendered students/index.html.erb within layouts/application (Duration: 703.1ms | Allocations: 206988)
+Completed 500 Internal Server Error in 750ms (ActiveRecord: 183.1ms | Allocations: 209483)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `counter_students' for #<#<Class:0x00007f0a6403e600>:0x00007f0a64031d38>):
+     6:   </tr>
+     7: </table>
+     8: <% @students.each_with_index do |student, index| %>
+     9:   <% @number_student = counter_students %>
+    10:   <%= render student %>
+    11:   <% counter_students += 1 %>
+    12: <% end %>
+  
+app/views/students/index.html.erb:9
+app/views/students/index.html.erb:8:in `each_with_index'
+app/views/students/index.html.erb:8
+Started GET "/students" for ::1 at 2020-01-10 21:50:04 +0700
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT "students".* FROM "students" ORDER BY id[0m
+  ↳ app/views/students/index.html.erb:8:in `each_with_index'
+  Rendered students/index.html.erb within layouts/application (Duration: 418.5ms | Allocations: 202486)
+Completed 500 Internal Server Error in 420ms (ActiveRecord: 0.4ms | Allocations: 203010)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `counter_students' for #<#<Class:0x00007f0a6403e600>:0x00007f0a8827b1b0>):
+     6:   </tr>
+     7: </table>
+     8: <% @students.each_with_index do |student, index| %>
+     9:   <% @number_student = counter_students %>
+    10:   <%= render student %>
+    11:   <% counter_students += 1 %>
+    12: <% end %>
+  
+app/views/students/index.html.erb:9
+app/views/students/index.html.erb:8:in `each_with_index'
+app/views/students/index.html.erb:8
+Started GET "/disciplines" for ::1 at 2020-01-10 21:50:20 +0700
+Processing by DisciplinesController#index as HTML
+  Rendering disciplines/index.html.erb within layouts/application
+  [1m[36mDiscipline Load (145.7ms)[0m  [1m[34mSELECT "disciplines".* FROM "disciplines"[0m
+  ↳ app/views/disciplines/index.html.erb:9
+  Rendered disciplines/index.html.erb within layouts/application (Duration: 265.6ms | Allocations: 3719)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 347ms (Views: 131.6ms | ActiveRecord: 149.8ms | Allocations: 15001)
+
+
+Started GET "/disciplines" for ::1 at 2020-01-10 21:50:35 +0700
+Processing by DisciplinesController#index as HTML
+  Rendering disciplines/index.html.erb within layouts/application
+  [1m[36mDiscipline Load (1.4ms)[0m  [1m[34mSELECT "disciplines".* FROM "disciplines"[0m
+  ↳ app/views/disciplines/index.html.erb:9
+  Rendered disciplines/index.html.erb within layouts/application (Duration: 9.7ms | Allocations: 998)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 31ms (Views: 28.6ms | ActiveRecord: 1.4ms | Allocations: 11898)
+
+
+Started GET "/disciplines" for ::1 at 2020-01-10 21:50:36 +0700
+Processing by DisciplinesController#index as HTML
+  Rendering disciplines/index.html.erb within layouts/application
+  [1m[36mDiscipline Load (0.5ms)[0m  [1m[34mSELECT "disciplines".* FROM "disciplines"[0m
+  ↳ app/views/disciplines/index.html.erb:9
+  Rendered disciplines/index.html.erb within layouts/application (Duration: 6.7ms | Allocations: 771)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 30ms (Views: 28.4ms | ActiveRecord: 0.5ms | Allocations: 10559)
+
+
+Started GET "/groups" for ::1 at 2020-01-10 21:50:39 +0700
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:10
+  Rendered groups/index.html.erb within layouts/application (Duration: 7.7ms | Allocations: 1134)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 37ms (Views: 28.3ms | ActiveRecord: 1.0ms | Allocations: 13038)
+
+
+Started GET "/disciplines" for ::1 at 2020-01-10 21:50:40 +0700
+Processing by DisciplinesController#index as HTML
+  Rendering disciplines/index.html.erb within layouts/application
+  [1m[36mDiscipline Load (1.0ms)[0m  [1m[34mSELECT "disciplines".* FROM "disciplines"[0m
+  ↳ app/views/disciplines/index.html.erb:9
+  Rendered disciplines/index.html.erb within layouts/application (Duration: 3.3ms | Allocations: 771)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 30ms (Views: 27.6ms | ActiveRecord: 1.0ms | Allocations: 10566)
+
+
+Started GET "/groups" for ::1 at 2020-01-10 21:50:41 +0700
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:10
+  Rendered groups/index.html.erb within layouts/application (Duration: 12.2ms | Allocations: 888)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 44ms (Views: 35.9ms | ActiveRecord: 0.7ms | Allocations: 12111)
+
+
+Started GET "/disciplines" for ::1 at 2020-01-10 21:51:10 +0700
+Processing by DisciplinesController#index as HTML
+  Rendering disciplines/index.html.erb within layouts/application
+  [1m[36mDiscipline Load (2.4ms)[0m  [1m[34mSELECT "disciplines".* FROM "disciplines"[0m
+  ↳ app/views/disciplines/index.html.erb:9
+  Rendered disciplines/index.html.erb within layouts/application (Duration: 7.8ms | Allocations: 764)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 41ms (Views: 36.9ms | ActiveRecord: 2.4ms | Allocations: 10550)
+
+
+Started GET "/disciplines/2" for ::1 at 2020-01-10 21:51:11 +0700
+Processing by DisciplinesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mDiscipline Load (0.6ms)[0m  [1m[34mSELECT "disciplines".* FROM "disciplines" WHERE "disciplines"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/disciplines_controller.rb:7:in `show'
+  Rendering disciplines/show.html.erb within layouts/application
+  [1m[36mQuestion Load (51.1ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."discipline_id" = $1[0m  [["discipline_id", 2]]
+  ↳ app/views/disciplines/show.html.erb:7
+  Rendered collection of questions/_question.html.erb [8 times] (Duration: 30.4ms | Allocations: 1975)
+  Rendered questions/_form_new.html.erb (Duration: 158.2ms | Allocations: 15009)
+  Rendered disciplines/show.html.erb within layouts/application (Duration: 430.1ms | Allocations: 32988)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 457ms (Views: 393.8ms | ActiveRecord: 56.7ms | Allocations: 43484)
+
+
+Started GET "/examinations" for ::1 at 2020-01-10 21:51:30 +0700
+Processing by ExaminationsController#index as HTML
+  Rendering examinations/index.html.erb within layouts/application
+  [1m[36mExamination Load (200.9ms)[0m  [1m[34mSELECT "examinations".* FROM "examinations"[0m
+  ↳ app/views/examinations/index.html.erb:10
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/examinations/index.html.erb:13
+  [1m[36mDiscipline Load (0.8ms)[0m  [1m[34mSELECT "disciplines".* FROM "disciplines" WHERE "disciplines"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/examinations/index.html.erb:14
+  Rendered examinations/index.html.erb within layouts/application (Duration: 281.6ms | Allocations: 7904)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 477ms (Views: 91.2ms | ActiveRecord: 205.9ms | Allocations: 19022)
+
+
+Started GET "/examinations" for ::1 at 2020-01-10 21:51:31 +0700
+Processing by ExaminationsController#index as HTML
+  Rendering examinations/index.html.erb within layouts/application
+  [1m[36mExamination Load (0.4ms)[0m  [1m[34mSELECT "examinations".* FROM "examinations"[0m
+  ↳ app/views/examinations/index.html.erb:10
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/examinations/index.html.erb:13
+  [1m[36mDiscipline Load (0.6ms)[0m  [1m[34mSELECT "disciplines".* FROM "disciplines" WHERE "disciplines"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/examinations/index.html.erb:14
+  Rendered examinations/index.html.erb within layouts/application (Duration: 7.6ms | Allocations: 2232)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 24ms (Views: 21.5ms | ActiveRecord: 1.3ms | Allocations: 12019)
+
+
+Started GET "/examinations" for ::1 at 2020-01-10 21:51:49 +0700
+Processing by ExaminationsController#index as HTML
+  Rendering examinations/index.html.erb within layouts/application
+  [1m[36mExamination Load (0.6ms)[0m  [1m[34mSELECT "examinations".* FROM "examinations"[0m
+  ↳ app/views/examinations/index.html.erb:10
+  [1m[36mGroup Load (1.8ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/examinations/index.html.erb:13
+  [1m[36mDiscipline Load (1.3ms)[0m  [1m[34mSELECT "disciplines".* FROM "disciplines" WHERE "disciplines"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/examinations/index.html.erb:14
+  Rendered examinations/index.html.erb within layouts/application (Duration: 16.8ms | Allocations: 2492)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 42ms (Views: 35.8ms | ActiveRecord: 3.6ms | Allocations: 13377)
+
+
+Started GET "/examinations" for ::1 at 2020-01-10 21:51:49 +0700
+Processing by ExaminationsController#index as HTML
+  Rendering examinations/index.html.erb within layouts/application
+  [1m[36mExamination Load (0.6ms)[0m  [1m[34mSELECT "examinations".* FROM "examinations"[0m
+  ↳ app/views/examinations/index.html.erb:10
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/examinations/index.html.erb:13
+  [1m[36mDiscipline Load (1.8ms)[0m  [1m[34mSELECT "disciplines".* FROM "disciplines" WHERE "disciplines"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/examinations/index.html.erb:14
+  Rendered examinations/index.html.erb within layouts/application (Duration: 10.6ms | Allocations: 2239)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 36ms (Views: 32.5ms | ActiveRecord: 2.8ms | Allocations: 12033)
+
+
+Started GET "/examinations/2" for ::1 at 2020-01-10 21:51:51 +0700
+Processing by ExaminationsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mExamination Load (0.5ms)[0m  [1m[34mSELECT "examinations".* FROM "examinations" WHERE "examinations"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/examinations_controller.rb:7:in `show'
+  Rendering examinations/show.html.erb within layouts/application
+  [1m[36mGroup Load (0.7ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/examinations/show.html.erb:8
+  [1m[36mDiscipline Load (0.7ms)[0m  [1m[34mSELECT "disciplines".* FROM "disciplines" WHERE "disciplines"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/examinations/show.html.erb:13
+  Rendered examinations/show.html.erb within layouts/application (Duration: 131.8ms | Allocations: 1757)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 153ms (Views: 147.4ms | ActiveRecord: 1.8ms | Allocations: 12340)
+
+
+Started GET "/examinations/2/questions" for ::1 at 2020-01-10 21:51:53 +0700
+Processing by ExaminationsController#questions as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mExamination Load (0.4ms)[0m  [1m[34mSELECT "examinations".* FROM "examinations" WHERE "examinations"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/examinations_controller.rb:46:in `questions'
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/examinations_controller.rb:46:in `questions'
+  [1m[36mCACHE Examination Load (0.1ms)[0m  [1m[34mSELECT "examinations".* FROM "examinations" WHERE "examinations"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/examinations_controller.rb:47:in `questions'
+  [1m[36mDiscipline Load (0.3ms)[0m  [1m[34mSELECT "disciplines".* FROM "disciplines" WHERE "disciplines"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/examinations_controller.rb:47:in `questions'
+  Rendering examinations/questions.html.erb within layouts/application
+  [1m[36mStudent Load (0.5ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."group_id" = $1[0m  [["group_id", 12]]
+  ↳ app/views/examinations/questions.html.erb:7
+  [1m[36mQuestion Load (0.5ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."discipline_id" = $1[0m  [["discipline_id", 2]]
+  ↳ app/helpers/examinations_helper.rb:10:in `map'
+  Rendered examinations/questions.html.erb within layouts/application (Duration: 180.5ms | Allocations: 3141)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 214ms (Views: 194.7ms | ActiveRecord: 2.2ms | Allocations: 15349)
+
+
+Started GET "/students" for ::1 at 2020-01-10 21:52:02 +0700
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (1.0ms)[0m  [1m[34mSELECT "students".* FROM "students" ORDER BY id[0m
+  ↳ app/views/students/index.html.erb:8:in `each_with_index'
+  Rendered students/index.html.erb within layouts/application (Duration: 723.2ms | Allocations: 202721)
+Completed 500 Internal Server Error in 742ms (ActiveRecord: 1.0ms | Allocations: 203921)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `counter_students' for #<#<Class:0x000055bd97a17bb0>:0x000055bd97a12890>):
+     6:   </tr>
+     7: </table>
+     8: <% @students.each_with_index do |student, index| %>
+     9:   <% @number_student = counter_students %>
+    10:   <%= render student %>
+    11:   <% counter_students += 1 %>
+    12: <% end %>
+  
+app/views/students/index.html.erb:9
+app/views/students/index.html.erb:8:in `each_with_index'
+app/views/students/index.html.erb:8
+Started GET "/examlists" for ::1 at 2020-01-10 21:52:20 +0700
+Processing by ExamlistsController#index as HTML
+  Rendering examlists/index.html.erb within layouts/application
+  [1m[36mExamlist Load (138.4ms)[0m  [1m[34mSELECT "examlists".* FROM "examlists"[0m
+  ↳ app/views/examlists/index.html.erb:16
+  Rendered examlists/index.html.erb within layouts/application (Duration: 250.0ms | Allocations: 5430)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 315ms (Views: 124.0ms | ActiveRecord: 143.9ms | Allocations: 16681)
+
+
+Started GET "/groups" for ::1 at 2020-01-10 21:52:24 +0700
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:10
+  Rendered groups/index.html.erb within layouts/application (Duration: 4.4ms | Allocations: 1134)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 35ms (Views: 25.6ms | ActiveRecord: 0.8ms | Allocations: 13035)
+
+
+Started GET "/groups" for ::1 at 2020-01-10 21:52:39 +0700
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:10
+  Rendered groups/index.html.erb within layouts/application (Duration: 3.1ms | Allocations: 1134)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 36ms (Views: 28.1ms | ActiveRecord: 1.9ms | Allocations: 13488)
+
+
+Started GET "/examlists" for ::1 at 2020-01-10 21:52:40 +0700
+Processing by ExamlistsController#index as HTML
+  Rendering examlists/index.html.erb within layouts/application
+  [1m[36mExamlist Load (0.4ms)[0m  [1m[34mSELECT "examlists".* FROM "examlists"[0m
+  ↳ app/views/examlists/index.html.erb:16
+  Rendered examlists/index.html.erb within layouts/application (Duration: 4.0ms | Allocations: 1216)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 34ms (Views: 32.5ms | ActiveRecord: 0.4ms | Allocations: 11672)
+
+
+Started GET "/groups" for ::1 at 2020-01-10 21:52:42 +0700
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.7ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:10
+  Rendered groups/index.html.erb within layouts/application (Duration: 6.3ms | Allocations: 895)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 38ms (Views: 26.7ms | ActiveRecord: 1.0ms | Allocations: 12122)
+
+
+Started GET "/groups" for ::1 at 2020-01-10 21:52:53 +0700
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.7ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:10
+  Rendered groups/index.html.erb within layouts/application (Duration: 6.0ms | Allocations: 888)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 50ms (Views: 41.0ms | ActiveRecord: 1.2ms | Allocations: 12110)
+
+
+Started GET "/groups" for ::1 at 2020-01-10 21:52:54 +0700
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:10
+  Rendered groups/index.html.erb within layouts/application (Duration: 7.9ms | Allocations: 888)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 32ms (Views: 25.1ms | ActiveRecord: 1.7ms | Allocations: 12115)
+
+
+Started GET "/disciplines" for ::1 at 2020-01-10 21:53:40 +0700
+Processing by DisciplinesController#index as HTML
+  Rendering disciplines/index.html.erb within layouts/application
+  [1m[36mDiscipline Load (0.5ms)[0m  [1m[34mSELECT "disciplines".* FROM "disciplines"[0m
+  ↳ app/views/disciplines/index.html.erb:9
+  Rendered disciplines/index.html.erb within layouts/application (Duration: 4.5ms | Allocations: 996)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 48ms (Views: 46.0ms | ActiveRecord: 0.5ms | Allocations: 11469)
+
+
+Started GET "/examinations" for ::1 at 2020-01-10 21:53:40 +0700
+Processing by ExaminationsController#index as HTML
+  Rendering examinations/index.html.erb within layouts/application
+  [1m[36mExamination Load (0.4ms)[0m  [1m[34mSELECT "examinations".* FROM "examinations"[0m
+  ↳ app/views/examinations/index.html.erb:10
+  [1m[36mGroup Load (0.7ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/examinations/index.html.erb:13
+  [1m[36mDiscipline Load (0.3ms)[0m  [1m[34mSELECT "disciplines".* FROM "disciplines" WHERE "disciplines"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/examinations/index.html.erb:14
+  Rendered examinations/index.html.erb within layouts/application (Duration: 9.6ms | Allocations: 2497)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 32ms (Views: 29.4ms | ActiveRecord: 1.4ms | Allocations: 12965)
+
+
+Started GET "/examlists" for ::1 at 2020-01-10 21:53:41 +0700
+Processing by ExamlistsController#index as HTML
+  Rendering examlists/index.html.erb within layouts/application
+  [1m[36mExamlist Load (0.4ms)[0m  [1m[34mSELECT "examlists".* FROM "examlists"[0m
+  ↳ app/views/examlists/index.html.erb:16
+  Rendered examlists/index.html.erb within layouts/application (Duration: 3.4ms | Allocations: 938)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 28ms (Views: 25.2ms | ActiveRecord: 0.4ms | Allocations: 10731)
+
+
+Started GET "/groups" for ::1 at 2020-01-10 21:53:42 +0700
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.6ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:10
+  Rendered groups/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 895)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 29ms (Views: 23.8ms | ActiveRecord: 0.9ms | Allocations: 12130)
+
+
+Started GET "/groups" for ::1 at 2020-01-10 21:55:33 +0700
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:10
+  Rendered groups/index.html.erb within layouts/application (Duration: 2.4ms | Allocations: 1134)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 24ms (Views: 15.1ms | ActiveRecord: 1.1ms | Allocations: 13464)
+
+
+Started GET "/groups" for ::1 at 2020-01-10 21:56:31 +0700
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:10
+  Rendered groups/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1134)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 6307ms (Views: 6303.2ms | ActiveRecord: 0.6ms | Allocations: 114816)
+
+
+Started GET "/groups" for ::1 at 2020-01-10 21:56:57 +0700
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.7ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:10
+  Rendered groups/index.html.erb within layouts/application (Duration: 3.5ms | Allocations: 916)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 3141ms (Views: 3134.0ms | ActiveRecord: 1.7ms | Allocations: 94693)
+
+
+Started GET "/groups/12" for ::1 at 2020-01-10 21:57:03 +0700
+Processing by GroupsController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mGroup Load (0.7ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:9:in `show'
+  Rendering groups/show.html.erb within layouts/application
+  [1m[36mStudent Load (1.4ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."group_id" = $1[0m  [["group_id", 12]]
+  ↳ app/views/groups/show.html.erb:19
+  Rendered collection of students/_student.html.erb [3 times] (Duration: 13.0ms | Allocations: 604)
+  Rendered groups/show.html.erb within layouts/application (Duration: 40.0ms | Allocations: 1947)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 66ms (Views: 53.6ms | ActiveRecord: 2.4ms | Allocations: 15037)
+
+
+Started GET "/groups" for ::1 at 2020-01-10 21:57:23 +0700
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:10
+  Rendered groups/index.html.erb within layouts/application (Duration: 2.4ms | Allocations: 890)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 3282ms (Views: 3279.0ms | ActiveRecord: 0.7ms | Allocations: 94177)
+
+
+Started GET "/groups" for ::1 at 2020-01-10 21:58:42 +0700
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:10
+  Rendered groups/index.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1139)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 3492ms (Views: 3488.2ms | ActiveRecord: 0.6ms | Allocations: 97272)
+
+
+Started GET "/groups" for ::1 at 2020-01-10 21:58:54 +0700
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.6ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:10
+  Rendered groups/index.html.erb within layouts/application (Duration: 2.4ms | Allocations: 895)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 4239ms (Views: 4232.8ms | ActiveRecord: 0.9ms | Allocations: 94621)
+
+
+Started GET "/groups" for ::1 at 2020-01-10 21:59:04 +0700
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:10
+  Rendered groups/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 888)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 3239ms (Views: 3234.7ms | ActiveRecord: 0.7ms | Allocations: 95071)
+
+
+Started GET "/groups" for ::1 at 2020-01-10 22:00:00 +0700
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:10
+  Rendered groups/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 888)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 3407ms (Views: 3402.8ms | ActiveRecord: 0.6ms | Allocations: 96360)
+
+
+Started GET "/groups" for ::1 at 2020-01-10 22:00:14 +0700
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:10
+  Rendered groups/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 888)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 3438ms (Views: 3431.9ms | ActiveRecord: 1.0ms | Allocations: 96238)
+
+
+Started GET "/examinations" for ::1 at 2020-01-10 22:00:20 +0700
+Processing by ExaminationsController#index as HTML
+  Rendering examinations/index.html.erb within layouts/application
+  [1m[36mExamination Load (1.1ms)[0m  [1m[34mSELECT "examinations".* FROM "examinations"[0m
+  ↳ app/views/examinations/index.html.erb:10
+  [1m[36mGroup Load (0.5ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/examinations/index.html.erb:13
+  [1m[36mDiscipline Load (1.3ms)[0m  [1m[34mSELECT "disciplines".* FROM "disciplines" WHERE "disciplines"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/examinations/index.html.erb:14
+  Rendered examinations/index.html.erb within layouts/application (Duration: 17.4ms | Allocations: 2500)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 52ms (Views: 47.5ms | ActiveRecord: 2.8ms | Allocations: 14041)
+
+
+Started GET "/groups" for ::1 at 2020-01-10 22:00:21 +0700
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:10
+  Rendered groups/index.html.erb within layouts/application (Duration: 2.4ms | Allocations: 895)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 24ms (Views: 17.8ms | ActiveRecord: 1.9ms | Allocations: 13200)
+
+
+Started GET "/groups" for ::1 at 2020-01-10 22:00:35 +0700
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (1.4ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:10
+  Rendered groups/index.html.erb within layouts/application (Duration: 10.2ms | Allocations: 888)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 3440ms (Views: 3431.4ms | ActiveRecord: 1.7ms | Allocations: 95495)
+
+
+Started GET "/groups" for ::1 at 2020-01-10 22:01:00 +0700
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:10
+  Rendered groups/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 888)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 3443ms (Views: 3440.1ms | ActiveRecord: 0.6ms | Allocations: 96695)
+
+
+Started GET "/groups" for ::1 at 2020-01-10 22:01:16 +0700
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:10
+  Rendered groups/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 888)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 3454ms (Views: 3449.0ms | ActiveRecord: 0.7ms | Allocations: 95802)
+
+
+Started GET "/groups" for ::1 at 2020-01-10 22:01:24 +0700
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.6ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:10
+  Rendered groups/index.html.erb within layouts/application (Duration: 2.9ms | Allocations: 888)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 3300ms (Views: 3293.2ms | ActiveRecord: 1.1ms | Allocations: 97158)
+
+
+Started GET "/groups" for ::1 at 2020-01-10 22:02:31 +0700
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:10
+  Rendered groups/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 888)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 3389ms (Views: 3383.3ms | ActiveRecord: 0.9ms | Allocations: 96266)
+
+
+Started GET "/groups" for ::1 at 2020-01-10 22:03:28 +0700
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:10
+  Rendered groups/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 888)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 3425ms (Views: 3420.2ms | ActiveRecord: 0.8ms | Allocations: 95921)
+
+
+Started GET "/groups" for ::1 at 2020-01-10 22:03:52 +0700
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.6ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:10
+  Rendered groups/index.html.erb within layouts/application (Duration: 3.3ms | Allocations: 888)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 4904ms (Views: 4896.5ms | ActiveRecord: 1.1ms | Allocations: 96322)
+
+
+Started GET "/groups" for ::1 at 2020-01-10 22:09:27 +0700
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.7ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:10
+  Rendered groups/index.html.erb within layouts/application (Duration: 2.7ms | Allocations: 909)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 3576ms (Views: 3568.7ms | ActiveRecord: 2.2ms | Allocations: 96125)
+
+
+Started GET "/groups" for ::1 at 2020-01-10 22:09:42 +0700
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.6ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:10
+  Rendered groups/index.html.erb within layouts/application (Duration: 3.3ms | Allocations: 909)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 3299ms (Views: 3292.2ms | ActiveRecord: 2.5ms | Allocations: 96511)
+
+
+Started GET "/groups" for ::1 at 2020-01-10 22:09:52 +0700
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.6ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:10
+  Rendered groups/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 888)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 3963ms (Views: 3957.5ms | ActiveRecord: 1.0ms | Allocations: 95469)
+
+
+Started GET "/groups" for ::1 at 2020-01-10 22:10:51 +0700
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (1.2ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:10
+  Rendered groups/index.html.erb within layouts/application (Duration: 4.1ms | Allocations: 888)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 3413ms (Views: 3405.2ms | ActiveRecord: 2.7ms | Allocations: 95504)
+
+
+Started GET "/groups/new" for ::1 at 2020-01-10 22:11:01 +0700
+Processing by GroupsController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/new.html.erb within layouts/application
+  Rendered groups/_form.html.erb (Duration: 397.5ms | Allocations: 6702)
+  Rendered groups/new.html.erb within layouts/application (Duration: 605.6ms | Allocations: 7055)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 644ms (Views: 625.2ms | ActiveRecord: 0.5ms | Allocations: 19412)
+
+
+Started GET "/examinations" for ::1 at 2020-01-10 22:11:19 +0700
+Processing by ExaminationsController#index as HTML
+  Rendering examinations/index.html.erb within layouts/application
+  [1m[36mExamination Load (0.7ms)[0m  [1m[34mSELECT "examinations".* FROM "examinations"[0m
+  ↳ app/views/examinations/index.html.erb:10
+  [1m[36mGroup Load (0.9ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/examinations/index.html.erb:13
+  [1m[36mDiscipline Load (0.4ms)[0m  [1m[34mSELECT "disciplines".* FROM "disciplines" WHERE "disciplines"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/examinations/index.html.erb:14
+  Rendered examinations/index.html.erb within layouts/application (Duration: 15.7ms | Allocations: 2244)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 40ms (Views: 34.1ms | ActiveRecord: 2.0ms | Allocations: 13124)
+
+
+Started GET "/groups" for ::1 at 2020-01-10 22:11:36 +0700
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:10
+  Rendered groups/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 891)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 3325ms (Views: 3321.7ms | ActiveRecord: 0.5ms | Allocations: 96279)
+
+
+Started GET "/groups" for ::1 at 2020-01-10 22:12:46 +0700
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.5ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:10
+  Rendered groups/index.html.erb within layouts/application (Duration: 3.2ms | Allocations: 888)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 3338ms (Views: 3331.6ms | ActiveRecord: 1.2ms | Allocations: 95915)
+
+
+Started GET "/groups/new" for ::1 at 2020-01-10 22:12:52 +0700
+Processing by GroupsController#new as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/new.html.erb within layouts/application
+  Rendered groups/_form.html.erb (Duration: 23.8ms | Allocations: 5952)
+  Rendered groups/new.html.erb within layouts/application (Duration: 24.2ms | Allocations: 6049)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 56ms (Views: 49.2ms | ActiveRecord: 0.7ms | Allocations: 18261)
+
+
+Started GET "/groups" for ::1 at 2020-01-10 22:12:57 +0700
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.5ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:10
+  Rendered groups/index.html.erb within layouts/application (Duration: 7.0ms | Allocations: 888)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 47ms (Views: 35.0ms | ActiveRecord: 1.9ms | Allocations: 13185)
+
+
+Started GET "/disciplines" for ::1 at 2020-01-10 22:12:59 +0700
+Processing by DisciplinesController#index as HTML
+  Rendering disciplines/index.html.erb within layouts/application
+  [1m[36mDiscipline Load (0.3ms)[0m  [1m[34mSELECT "disciplines".* FROM "disciplines"[0m
+  ↳ app/views/disciplines/index.html.erb:9
+  Rendered disciplines/index.html.erb within layouts/application (Duration: 4.9ms | Allocations: 1002)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 152ms (Views: 149.2ms | ActiveRecord: 0.3ms | Allocations: 12552)
+
+
+Started GET "/disciplines/2" for ::1 at 2020-01-10 22:13:02 +0700
+Processing by DisciplinesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mDiscipline Load (0.3ms)[0m  [1m[34mSELECT "disciplines".* FROM "disciplines" WHERE "disciplines"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/disciplines_controller.rb:7:in `show'
+  Rendering disciplines/show.html.erb within layouts/application
+  [1m[36mQuestion Load (0.7ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."discipline_id" = $1[0m  [["discipline_id", 2]]
+  ↳ app/views/disciplines/show.html.erb:7
+  Rendered collection of questions/_question.html.erb [8 times] (Duration: 72.1ms | Allocations: 1559)
+  Rendered questions/_form_new.html.erb (Duration: 73.5ms | Allocations: 3408)
+  Rendered disciplines/show.html.erb within layouts/application (Duration: 215.0ms | Allocations: 6598)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 230ms (Views: 227.2ms | ActiveRecord: 1.0ms | Allocations: 18049)
+
+
+Started DELETE "/disciplines/2/questions/23" for ::1 at 2020-01-10 22:13:19 +0700
+Processing by QuestionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"+OFsMk9jf3t2tfwWFYRHKlvXjnnNnx2ItBLAveh+B9m/zryFgRpF1QdKdtH3dScyst0k2O8b8k0TgX2ukvCB7g==", "discipline_id"=>"2", "id"=>"23"}
+  [1m[36mDiscipline Load (0.6ms)[0m  [1m[34mSELECT "disciplines".* FROM "disciplines" WHERE "disciplines"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/questions_controller.rb:25:in `destroy'
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."discipline_id" = $1 AND "questions"."id" = $2 LIMIT $3[0m  [["discipline_id", 2], ["id", 23], ["LIMIT", 1]]
+  ↳ app/controllers/questions_controller.rb:26:in `destroy'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/questions_controller.rb:27:in `destroy'
+  [1m[36mQuestion Destroy (0.3ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 23]]
+  ↳ app/controllers/questions_controller.rb:27:in `destroy'
+  [1m[35m (175.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/questions_controller.rb:27:in `destroy'
+Redirected to http://localhost:3000/disciplines/2
+Completed 302 Found in 189ms (ActiveRecord: 176.5ms | Allocations: 3559)
+
+
+Started GET "/disciplines/2" for ::1 at 2020-01-10 22:13:19 +0700
+Processing by DisciplinesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mDiscipline Load (0.4ms)[0m  [1m[34mSELECT "disciplines".* FROM "disciplines" WHERE "disciplines"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/disciplines_controller.rb:7:in `show'
+  Rendering disciplines/show.html.erb within layouts/application
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."discipline_id" = $1[0m  [["discipline_id", 2]]
+  ↳ app/views/disciplines/show.html.erb:7
+  Rendered collection of questions/_question.html.erb [7 times] (Duration: 1.7ms | Allocations: 1216)
+  Rendered questions/_form_new.html.erb (Duration: 5.3ms | Allocations: 3248)
+  Rendered disciplines/show.html.erb within layouts/application (Duration: 9.8ms | Allocations: 5590)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 24ms (Views: 21.5ms | ActiveRecord: 0.6ms | Allocations: 16907)
+
+
+Started DELETE "/disciplines/2/questions/22" for ::1 at 2020-01-10 22:13:22 +0700
+Processing by QuestionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"kNn7E5tM7NecswlnqxBtbSzdygbyuNCOVCPVQGfy1xjX9iukVTXWee1Mg6BJ4Q11xddgp9A8P0vzsGhTHXxRLw==", "discipline_id"=>"2", "id"=>"22"}
+  [1m[36mDiscipline Load (0.4ms)[0m  [1m[34mSELECT "disciplines".* FROM "disciplines" WHERE "disciplines"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/questions_controller.rb:25:in `destroy'
+  [1m[36mQuestion Load (0.4ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."discipline_id" = $1 AND "questions"."id" = $2 LIMIT $3[0m  [["discipline_id", 2], ["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/questions_controller.rb:26:in `destroy'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/questions_controller.rb:27:in `destroy'
+  [1m[36mQuestion Destroy (0.8ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 22]]
+  ↳ app/controllers/questions_controller.rb:27:in `destroy'
+  [1m[35m (113.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/questions_controller.rb:27:in `destroy'
+Redirected to http://localhost:3000/disciplines/2
+Completed 302 Found in 130ms (ActiveRecord: 115.0ms | Allocations: 3503)
+
+
+Started GET "/disciplines/2" for ::1 at 2020-01-10 22:13:22 +0700
+Processing by DisciplinesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mDiscipline Load (0.3ms)[0m  [1m[34mSELECT "disciplines".* FROM "disciplines" WHERE "disciplines"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/disciplines_controller.rb:7:in `show'
+  Rendering disciplines/show.html.erb within layouts/application
+  [1m[36mQuestion Load (0.4ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."discipline_id" = $1[0m  [["discipline_id", 2]]
+  ↳ app/views/disciplines/show.html.erb:7
+  Rendered collection of questions/_question.html.erb [6 times] (Duration: 1.5ms | Allocations: 1043)
+  Rendered questions/_form_new.html.erb (Duration: 11.3ms | Allocations: 3249)
+  Rendered disciplines/show.html.erb within layouts/application (Duration: 19.9ms | Allocations: 5398)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 46ms (Views: 40.7ms | ActiveRecord: 0.7ms | Allocations: 16714)
+
+
+Started GET "/disciplines" for ::1 at 2020-01-10 22:13:24 +0700
+Processing by DisciplinesController#index as HTML
+  Rendering disciplines/index.html.erb within layouts/application
+  [1m[36mDiscipline Load (0.4ms)[0m  [1m[34mSELECT "disciplines".* FROM "disciplines"[0m
+  ↳ app/views/disciplines/index.html.erb:9
+  Rendered disciplines/index.html.erb within layouts/application (Duration: 4.1ms | Allocations: 766)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 32ms (Views: 30.0ms | ActiveRecord: 0.4ms | Allocations: 11636)
+
+
+Started GET "/examinations" for ::1 at 2020-01-10 22:13:26 +0700
+Processing by ExaminationsController#index as HTML
+  Rendering examinations/index.html.erb within layouts/application
+  [1m[36mExamination Load (0.4ms)[0m  [1m[34mSELECT "examinations".* FROM "examinations"[0m
+  ↳ app/views/examinations/index.html.erb:10
+  [1m[36mGroup Load (2.8ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/examinations/index.html.erb:13
+  [1m[36mDiscipline Load (0.2ms)[0m  [1m[34mSELECT "disciplines".* FROM "disciplines" WHERE "disciplines"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/examinations/index.html.erb:14
+  Rendered examinations/index.html.erb within layouts/application (Duration: 14.2ms | Allocations: 2239)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 52ms (Views: 46.0ms | ActiveRecord: 3.4ms | Allocations: 13115)
+
+
+Started GET "/examlists" for ::1 at 2020-01-10 22:13:27 +0700
+Processing by ExamlistsController#index as HTML
+  Rendering examlists/index.html.erb within layouts/application
+  [1m[36mExamlist Load (0.6ms)[0m  [1m[34mSELECT "examlists".* FROM "examlists"[0m
+  ↳ app/views/examlists/index.html.erb:16
+  Rendered examlists/index.html.erb within layouts/application (Duration: 6.3ms | Allocations: 1221)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 32ms (Views: 30.1ms | ActiveRecord: 0.6ms | Allocations: 12760)
+
+
+Started GET "/examlists/new" for ::1 at 2020-01-10 22:13:28 +0700
+Processing by ExamlistsController#new as HTML
+  Rendering examlists/new.html.erb within layouts/application
+  [1m[36mStudent Load (0.5ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  ↳ app/views/examlists/_form.html.erb:7
+  [1m[36mExamination Load (0.3ms)[0m  [1m[34mSELECT "examinations".* FROM "examinations"[0m
+  ↳ app/views/examlists/_form.html.erb:8
+  Rendered examlists/_form.html.erb (Duration: 66.3ms | Allocations: 10423)
+  Rendered examlists/new.html.erb within layouts/application (Duration: 108.5ms | Allocations: 10779)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 123ms (Views: 120.1ms | ActiveRecord: 0.8ms | Allocations: 21707)
+
+
+Started GET "/examlists" for ::1 at 2020-01-10 22:13:30 +0700
+Processing by ExamlistsController#index as HTML
+  Rendering examlists/index.html.erb within layouts/application
+  [1m[36mExamlist Load (0.6ms)[0m  [1m[34mSELECT "examlists".* FROM "examlists"[0m
+  ↳ app/views/examlists/index.html.erb:16
+  Rendered examlists/index.html.erb within layouts/application (Duration: 3.2ms | Allocations: 933)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 27ms (Views: 25.9ms | ActiveRecord: 0.6ms | Allocations: 11796)
+
+
+Started GET "/groups" for ::1 at 2020-01-10 22:13:39 +0700
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.8ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:10
+  Rendered groups/index.html.erb within layouts/application (Duration: 4.9ms | Allocations: 895)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 33ms (Views: 27.6ms | ActiveRecord: 1.1ms | Allocations: 13202)
+
+
+Started GET "/groups" for ::1 at 2020-01-10 22:14:15 +0700
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (5.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (1.6ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:10
+  Rendered groups/index.html.erb within layouts/application (Duration: 4.6ms | Allocations: 888)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 3534ms (Views: 3519.5ms | ActiveRecord: 7.1ms | Allocations: 96366)
+
+
+Started GET "/groups" for ::1 at 2020-01-10 22:14:25 +0700
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.5ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:10
+  Rendered groups/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 888)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 3743ms (Views: 3735.3ms | ActiveRecord: 1.2ms | Allocations: 98394)
+
+
+Started GET "/groups" for ::1 at 2020-01-10 22:14:35 +0700
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:10
+  Rendered groups/index.html.erb within layouts/application (Duration: 3.4ms | Allocations: 888)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 4163ms (Views: 4158.4ms | ActiveRecord: 0.7ms | Allocations: 98432)
+
+
+Started GET "/groups" for ::1 at 2020-01-10 22:14:52 +0700
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.5ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:10
+  Rendered groups/index.html.erb within layouts/application (Duration: 4.5ms | Allocations: 888)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 3525ms (Views: 3519.7ms | ActiveRecord: 0.7ms | Allocations: 97550)
+
+
+Started GET "/groups" for ::1 at 2020-01-10 22:15:11 +0700
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:10
+  Rendered groups/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 888)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 3820ms (Views: 3815.2ms | ActiveRecord: 0.5ms | Allocations: 96293)
+
+
+Started GET "/groups" for ::1 at 2020-01-10 22:15:22 +0700
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:10
+  Rendered groups/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 888)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 3408ms (Views: 3404.9ms | ActiveRecord: 0.5ms | Allocations: 95542)
+
+
+Started GET "/groups" for ::1 at 2020-01-10 22:16:05 +0700
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:10
+  Rendered groups/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 888)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 3460ms (Views: 3457.4ms | ActiveRecord: 0.4ms | Allocations: 96371)
+
+
+Started GET "/groups" for ::1 at 2020-01-10 22:16:37 +0700
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:10
+  Rendered groups/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 888)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 3301ms (Views: 3295.7ms | ActiveRecord: 0.9ms | Allocations: 96429)
+
+
+Started GET "/groups" for ::1 at 2020-01-10 22:18:16 +0700
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:10
+  Rendered groups/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 888)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 4160ms (Views: 4154.9ms | ActiveRecord: 0.6ms | Allocations: 96362)
+
+
+Started GET "/examlists" for ::1 at 2020-01-10 22:18:25 +0700
+Processing by ExamlistsController#index as HTML
+  Rendering examlists/index.html.erb within layouts/application
+  [1m[36mExamlist Load (0.9ms)[0m  [1m[34mSELECT "examlists".* FROM "examlists"[0m
+  ↳ app/views/examlists/index.html.erb:16
+  Rendered examlists/index.html.erb within layouts/application (Duration: 14.4ms | Allocations: 929)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 47ms (Views: 44.9ms | ActiveRecord: 0.9ms | Allocations: 11797)
+
+
+Started GET "/groups" for ::1 at 2020-01-10 22:18:30 +0700
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:10
+  Rendered groups/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 888)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 3351ms (Views: 3347.1ms | ActiveRecord: 0.8ms | Allocations: 97135)
+
+
+Started GET "/groups" for ::1 at 2020-01-10 22:18:42 +0700
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:10
+  Rendered groups/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 888)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 3250ms (Views: 3245.8ms | ActiveRecord: 0.8ms | Allocations: 98380)
+
+
+Started GET "/groups" for ::1 at 2020-01-10 22:18:53 +0700
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:10
+  Rendered groups/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 888)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 3361ms (Views: 3357.3ms | ActiveRecord: 0.7ms | Allocations: 97630)
+
+
+Started GET "/groups" for ::1 at 2020-01-10 22:19:04 +0700
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.5ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:10
+  Rendered groups/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 888)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 3306ms (Views: 3299.1ms | ActiveRecord: 0.9ms | Allocations: 97578)
+
+
+Started GET "/groups" for ::1 at 2020-01-10 22:19:17 +0700
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:10
+  Rendered groups/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 888)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 39ms (Views: 35.1ms | ActiveRecord: 0.6ms | Allocations: 13191)
+
+
+Started GET "/groups" for ::1 at 2020-01-10 22:19:21 +0700
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.8ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:10
+  Rendered groups/index.html.erb within layouts/application (Duration: 3.6ms | Allocations: 888)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 22ms (Views: 17.3ms | ActiveRecord: 1.0ms | Allocations: 13238)
+
+
+Started GET "/groups" for ::1 at 2020-01-10 22:19:38 +0700
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:10
+  Rendered groups/index.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1142)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 23ms (Views: 18.6ms | ActiveRecord: 0.6ms | Allocations: 14569)
+
+
+Started GET "/groups" for ::1 at 2020-01-10 22:20:27 +0700
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.7ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:10
+  Rendered groups/index.html.erb within layouts/application (Duration: 3.3ms | Allocations: 895)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 3342ms (Views: 3334.6ms | ActiveRecord: 1.4ms | Allocations: 96394)
+
+
+Started GET "/groups" for ::1 at 2020-01-10 22:20:43 +0700
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:10
+  Rendered groups/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 888)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 3264ms (Views: 3257.6ms | ActiveRecord: 0.8ms | Allocations: 97201)
+
+
+Started GET "/groups" for ::1 at 2020-01-10 22:21:08 +0700
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:10
+  Rendered groups/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1138)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 23ms (Views: 19.9ms | ActiveRecord: 0.5ms | Allocations: 14568)
+
+
+Started GET "/groups" for ::1 at 2020-01-10 22:21:16 +0700
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.5ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:10
+  Rendered groups/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 895)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 3617ms (Views: 3610.5ms | ActiveRecord: 1.2ms | Allocations: 97226)
+
+
+Started GET "/groups" for ::1 at 2020-01-10 22:21:23 +0700
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:10
+  Rendered groups/index.html.erb within layouts/application (Duration: 2.5ms | Allocations: 888)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 3339ms (Views: 3333.5ms | ActiveRecord: 0.7ms | Allocations: 96349)
+
+
+Started GET "/groups" for ::1 at 2020-01-10 22:22:04 +0700
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:10
+  Rendered groups/index.html.erb within layouts/application (Duration: 4.0ms | Allocations: 888)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 3860ms (Views: 3853.6ms | ActiveRecord: 0.6ms | Allocations: 97191)
+
+
+Started GET "/groups" for ::1 at 2020-01-10 22:22:14 +0700
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:10
+  Rendered groups/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 1139)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 27ms (Views: 18.7ms | ActiveRecord: 1.6ms | Allocations: 14560)
+
+
+Started GET "/groups" for ::1 at 2020-01-10 22:22:37 +0700
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:10
+  Rendered groups/index.html.erb within layouts/application (Duration: 6.9ms | Allocations: 895)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 4659ms (Views: 4652.6ms | ActiveRecord: 0.8ms | Allocations: 96856)
+
+
+Started GET "/groups" for ::1 at 2020-01-10 22:23:46 +0700
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:10
+  Rendered groups/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 888)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 3797ms (Views: 3788.8ms | ActiveRecord: 0.7ms | Allocations: 97648)
+
+
+Started GET "/groups" for ::1 at 2020-01-10 22:24:08 +0700
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.9ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:10
+  Rendered groups/index.html.erb within layouts/application (Duration: 7.1ms | Allocations: 888)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 3673ms (Views: 3669.2ms | ActiveRecord: 1.1ms | Allocations: 96803)
+
+
+Started GET "/groups" for ::1 at 2020-01-10 22:25:01 +0700
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:10
+  Rendered groups/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 888)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 3590ms (Views: 3583.6ms | ActiveRecord: 0.8ms | Allocations: 95932)
+
+
+Started GET "/groups" for ::1 at 2020-01-10 22:25:24 +0700
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (1.5ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:10
+  Rendered groups/index.html.erb within layouts/application (Duration: 5.1ms | Allocations: 888)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 3669ms (Views: 3658.5ms | ActiveRecord: 3.2ms | Allocations: 96790)
+
+
+Started GET "/groups" for ::1 at 2020-01-10 22:25:55 +0700
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.5ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:10
+  Rendered groups/index.html.erb within layouts/application (Duration: 3.4ms | Allocations: 888)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 3558ms (Views: 3550.7ms | ActiveRecord: 1.4ms | Allocations: 96666)
+
+
+Started GET "/groups" for ::1 at 2020-01-10 22:26:12 +0700
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:10
+  Rendered groups/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 888)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 3592ms (Views: 3586.4ms | ActiveRecord: 1.0ms | Allocations: 96781)
+
+
+Started GET "/groups" for ::1 at 2020-01-10 22:26:19 +0700
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:10
+  Rendered groups/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 888)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 24ms (Views: 17.5ms | ActiveRecord: 1.0ms | Allocations: 13229)
+
+
+Started GET "/groups" for ::1 at 2020-01-10 22:26:20 +0700
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.5ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:10
+  Rendered groups/index.html.erb within layouts/application (Duration: 3.3ms | Allocations: 888)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 27ms (Views: 19.6ms | ActiveRecord: 0.9ms | Allocations: 13185)
+
+
+Started GET "/groups" for ::1 at 2020-01-10 22:26:29 +0700
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:10
+  Rendered groups/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 888)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 3473ms (Views: 3470.3ms | ActiveRecord: 0.4ms | Allocations: 96346)
+
+
+Started GET "/groups" for ::1 at 2020-01-10 22:26:40 +0700
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (1.2ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:10
+  Rendered groups/index.html.erb within layouts/application (Duration: 3.4ms | Allocations: 888)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 3573ms (Views: 3565.3ms | ActiveRecord: 1.9ms | Allocations: 96281)
+
+
+Started GET "/disciplines" for ::1 at 2020-01-10 22:26:50 +0700
+Processing by DisciplinesController#index as HTML
+  Rendering disciplines/index.html.erb within layouts/application
+  [1m[36mDiscipline Load (5.2ms)[0m  [1m[34mSELECT "disciplines".* FROM "disciplines"[0m
+  ↳ app/views/disciplines/index.html.erb:9
+  Rendered disciplines/index.html.erb within layouts/application (Duration: 8.6ms | Allocations: 1000)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 45ms (Views: 35.7ms | ActiveRecord: 5.2ms | Allocations: 12545)
+
+
+Started GET "/examinations" for ::1 at 2020-01-10 22:26:51 +0700
+Processing by ExaminationsController#index as HTML
+  Rendering examinations/index.html.erb within layouts/application
+  [1m[36mExamination Load (0.6ms)[0m  [1m[34mSELECT "examinations".* FROM "examinations"[0m
+  ↳ app/views/examinations/index.html.erb:10
+  [1m[36mGroup Load (0.9ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/examinations/index.html.erb:13
+  [1m[36mDiscipline Load (0.3ms)[0m  [1m[34mSELECT "disciplines".* FROM "disciplines" WHERE "disciplines"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/examinations/index.html.erb:14
+  Rendered examinations/index.html.erb within layouts/application (Duration: 13.4ms | Allocations: 2498)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 53ms (Views: 50.0ms | ActiveRecord: 1.8ms | Allocations: 14046)
+
+
+Started GET "/disciplines" for ::1 at 2020-01-10 22:26:52 +0700
+Processing by DisciplinesController#index as HTML
+  Rendering disciplines/index.html.erb within layouts/application
+  [1m[36mDiscipline Load (0.8ms)[0m  [1m[34mSELECT "disciplines".* FROM "disciplines"[0m
+  ↳ app/views/disciplines/index.html.erb:9
+  Rendered disciplines/index.html.erb within layouts/application (Duration: 6.9ms | Allocations: 771)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 43ms (Views: 40.2ms | ActiveRecord: 0.8ms | Allocations: 11645)
+
+
+Started GET "/groups" for ::1 at 2020-01-10 22:26:57 +0700
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (3.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.5ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:10
+  Rendered groups/index.html.erb within layouts/application (Duration: 6.8ms | Allocations: 895)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 47ms (Views: 39.3ms | ActiveRecord: 3.7ms | Allocations: 13201)
+
+
+Started GET "/groups" for ::1 at 2020-01-10 22:27:42 +0700
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:10
+  Rendered groups/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 888)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 3688ms (Views: 3682.5ms | ActiveRecord: 0.8ms | Allocations: 97212)
+
+
+Started GET "/groups" for ::1 at 2020-01-10 22:28:09 +0700
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:10
+  Rendered groups/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 888)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 3479ms (Views: 3475.2ms | ActiveRecord: 0.5ms | Allocations: 96364)
+
+
+Started GET "/groups" for ::1 at 2020-01-10 22:28:41 +0700
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:10
+  Rendered groups/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 888)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 3567ms (Views: 3564.2ms | ActiveRecord: 0.4ms | Allocations: 96822)
+
+
+Started GET "/groups" for ::1 at 2020-01-10 22:28:50 +0700
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:10
+  Rendered groups/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 888)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 3414ms (Views: 3408.1ms | ActiveRecord: 0.7ms | Allocations: 95952)
+
+
+Started GET "/groups" for ::1 at 2020-01-10 22:29:03 +0700
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.7ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:10
+  Rendered groups/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 888)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 3472ms (Views: 3462.3ms | ActiveRecord: 1.6ms | Allocations: 96778)
+
+
+Started GET "/groups" for ::1 at 2020-01-10 22:29:37 +0700
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:10
+  Rendered groups/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 888)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 3592ms (Views: 3588.3ms | ActiveRecord: 0.5ms | Allocations: 96363)
+
+
+Started GET "/groups" for ::1 at 2020-01-10 22:29:55 +0700
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.7ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:10
+  Rendered groups/index.html.erb within layouts/application (Duration: 3.3ms | Allocations: 888)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 4709ms (Views: 4702.6ms | ActiveRecord: 1.0ms | Allocations: 98954)
+
+
+Started GET "/groups" for ::1 at 2020-01-10 22:30:05 +0700
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:10
+  Rendered groups/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 888)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 39ms (Views: 32.9ms | ActiveRecord: 0.6ms | Allocations: 13672)
+
+
+Started GET "/groups" for ::1 at 2020-01-10 22:31:31 +0700
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:10
+  Rendered groups/index.html.erb within layouts/application (Duration: 2.4ms | Allocations: 888)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 3337ms (Views: 3328.2ms | ActiveRecord: 0.7ms | Allocations: 97591)
+
+
+Started GET "/groups" for ::1 at 2020-01-10 22:31:42 +0700
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.5ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:10
+  Rendered groups/index.html.erb within layouts/application (Duration: 2.4ms | Allocations: 888)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 3245ms (Views: 3238.4ms | ActiveRecord: 1.4ms | Allocations: 99725)
+
+
+Started GET "/groups" for ::1 at 2020-01-10 22:31:56 +0700
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.6ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:10
+  Rendered groups/index.html.erb within layouts/application (Duration: 2.4ms | Allocations: 888)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 3321ms (Views: 3316.2ms | ActiveRecord: 1.1ms | Allocations: 95948)
+
+
+Started GET "/groups" for ::1 at 2020-01-10 22:33:32 +0700
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:10
+  Rendered groups/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 888)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 28ms (Views: 21.4ms | ActiveRecord: 1.0ms | Allocations: 13232)
+
+
+Started GET "/groups" for ::1 at 2020-01-10 22:34:27 +0700
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.5ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:10
+  Rendered groups/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 888)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 19ms (Views: 14.6ms | ActiveRecord: 0.8ms | Allocations: 13186)
+
+
+Started GET "/groups" for ::1 at 2020-01-10 22:34:28 +0700
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.7ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:10
+  Rendered groups/index.html.erb within layouts/application (Duration: 3.4ms | Allocations: 888)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 22ms (Views: 17.0ms | ActiveRecord: 0.9ms | Allocations: 13189)
+
+
+Started GET "/disciplines" for ::1 at 2020-01-10 22:34:59 +0700
+Processing by DisciplinesController#index as HTML
+  Rendering disciplines/index.html.erb within layouts/application
+  [1m[36mDiscipline Load (1.9ms)[0m  [1m[34mSELECT "disciplines".* FROM "disciplines"[0m
+  ↳ app/views/disciplines/index.html.erb:9
+  Rendered disciplines/index.html.erb within layouts/application (Duration: 5.6ms | Allocations: 764)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 35ms (Views: 32.4ms | ActiveRecord: 1.9ms | Allocations: 11624)
+
+
+Started GET "/disciplines" for ::1 at 2020-01-10 22:35:05 +0700
+Processing by DisciplinesController#index as HTML
+  Rendering disciplines/index.html.erb within layouts/application
+  [1m[36mDiscipline Load (3.3ms)[0m  [1m[34mSELECT "disciplines".* FROM "disciplines"[0m
+  ↳ app/views/disciplines/index.html.erb:9
+  Rendered disciplines/index.html.erb within layouts/application (Duration: 5.2ms | Allocations: 764)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 31ms (Views: 26.6ms | ActiveRecord: 3.3ms | Allocations: 11631)
+
+
+Started GET "/examinations" for ::1 at 2020-01-10 22:35:07 +0700
+Processing by ExaminationsController#index as HTML
+  Rendering examinations/index.html.erb within layouts/application
+  [1m[36mExamination Load (2.3ms)[0m  [1m[34mSELECT "examinations".* FROM "examinations"[0m
+  ↳ app/views/examinations/index.html.erb:10
+  [1m[36mGroup Load (0.5ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/examinations/index.html.erb:13
+  [1m[36mDiscipline Load (0.4ms)[0m  [1m[34mSELECT "disciplines".* FROM "disciplines" WHERE "disciplines"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/examinations/index.html.erb:14
+  Rendered examinations/index.html.erb within layouts/application (Duration: 22.2ms | Allocations: 2232)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 72ms (Views: 67.2ms | ActiveRecord: 3.2ms | Allocations: 13096)
+
+
+Started GET "/disciplines" for ::1 at 2020-01-10 22:35:10 +0700
+Processing by DisciplinesController#index as HTML
+  Rendering disciplines/index.html.erb within layouts/application
+  [1m[36mDiscipline Load (0.4ms)[0m  [1m[34mSELECT "disciplines".* FROM "disciplines"[0m
+  ↳ app/views/disciplines/index.html.erb:9
+  Rendered disciplines/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 764)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 39ms (Views: 37.6ms | ActiveRecord: 0.4ms | Allocations: 11625)
+
+
+Started GET "/disciplines" for ::1 at 2020-01-10 22:35:22 +0700
+Processing by DisciplinesController#index as HTML
+  Rendering disciplines/index.html.erb within layouts/application
+  [1m[36mDiscipline Load (0.4ms)[0m  [1m[34mSELECT "disciplines".* FROM "disciplines"[0m
+  ↳ app/views/disciplines/index.html.erb:9
+  Rendered disciplines/index.html.erb within layouts/application (Duration: 4.8ms | Allocations: 1003)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 32ms (Views: 29.2ms | ActiveRecord: 0.4ms | Allocations: 13004)
+
+
+Started GET "/examinations" for ::1 at 2020-01-10 22:35:26 +0700
+Processing by ExaminationsController#index as HTML
+  Rendering examinations/index.html.erb within layouts/application
+  [1m[36mExamination Load (0.6ms)[0m  [1m[34mSELECT "examinations".* FROM "examinations"[0m
+  ↳ app/views/examinations/index.html.erb:10
+  [1m[36mGroup Load (1.8ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/examinations/index.html.erb:13
+  [1m[36mDiscipline Load (0.3ms)[0m  [1m[34mSELECT "disciplines".* FROM "disciplines" WHERE "disciplines"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/examinations/index.html.erb:14
+  Rendered examinations/index.html.erb within layouts/application (Duration: 17.6ms | Allocations: 2492)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 43ms (Views: 38.9ms | ActiveRecord: 2.6ms | Allocations: 14035)
+
+
+Started GET "/examinations" for ::1 at 2020-01-10 22:35:57 +0700
+Processing by ExaminationsController#index as HTML
+  Rendering examinations/index.html.erb within layouts/application
+  [1m[36mExamination Load (0.3ms)[0m  [1m[34mSELECT "examinations".* FROM "examinations"[0m
+  ↳ app/views/examinations/index.html.erb:11
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/examinations/index.html.erb:14
+  [1m[36mDiscipline Load (0.3ms)[0m  [1m[34mSELECT "disciplines".* FROM "disciplines" WHERE "disciplines"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/examinations/index.html.erb:15
+  Rendered examinations/index.html.erb within layouts/application (Duration: 6.8ms | Allocations: 2494)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 24ms (Views: 21.5ms | ActiveRecord: 0.9ms | Allocations: 14472)
+
+
+Started GET "/examlists" for ::1 at 2020-01-10 22:35:59 +0700
+Processing by ExamlistsController#index as HTML
+  Rendering examlists/index.html.erb within layouts/application
+  [1m[36mExamlist Load (0.5ms)[0m  [1m[34mSELECT "examlists".* FROM "examlists"[0m
+  ↳ app/views/examlists/index.html.erb:16
+  Rendered examlists/index.html.erb within layouts/application (Duration: 7.6ms | Allocations: 1216)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 51ms (Views: 49.3ms | ActiveRecord: 0.5ms | Allocations: 12755)
+
+
+Started GET "/students" for ::1 at 2020-01-10 22:36:02 +0700
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (1.0ms)[0m  [1m[34mSELECT "students".* FROM "students" ORDER BY id[0m
+  ↳ app/views/students/index.html.erb:8:in `each_with_index'
+  Rendered students/index.html.erb within layouts/application (Duration: 651.6ms | Allocations: 202729)
+Completed 500 Internal Server Error in 655ms (ActiveRecord: 1.0ms | Allocations: 203930)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `counter_students' for #<#<Class:0x00007f0a948b8490>:0x00007f0a948ad7e8>):
+     6:   </tr>
+     7: </table>
+     8: <% @students.each_with_index do |student, index| %>
+     9:   <% @number_student = counter_students %>
+    10:   <%= render student %>
+    11:   <% counter_students += 1 %>
+    12: <% end %>
+  
+app/views/students/index.html.erb:9
+app/views/students/index.html.erb:8:in `each_with_index'
+app/views/students/index.html.erb:8
+Started GET "/groups" for ::1 at 2020-01-10 22:37:44 +0700
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:10
+  Rendered groups/index.html.erb within layouts/application (Duration: 6.8ms | Allocations: 1134)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 57ms (Views: 48.9ms | ActiveRecord: 2.7ms | Allocations: 14113)
+
+
+Started GET "/groups" for ::1 at 2020-01-10 22:38:21 +0700
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:10
+  Rendered groups/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 888)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 4831ms (Views: 4827.4ms | ActiveRecord: 0.5ms | Allocations: 98110)
+
+
+Started GET "/groups" for ::1 at 2020-01-10 22:38:51 +0700
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:10
+  Rendered groups/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 888)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 3449ms (Views: 3445.2ms | ActiveRecord: 0.5ms | Allocations: 95526)
+
+
+Started GET "/groups" for ::1 at 2020-01-10 22:39:53 +0700
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:10
+  Rendered groups/index.html.erb within layouts/application (Duration: 2.7ms | Allocations: 888)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 4122ms (Views: 4112.6ms | ActiveRecord: 0.9ms | Allocations: 98071)
+
+
+Started GET "/groups" for ::1 at 2020-01-10 22:40:14 +0700
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:10
+  Rendered groups/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 888)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 3886ms (Views: 3880.1ms | ActiveRecord: 1.1ms | Allocations: 97261)
+
+
+Started GET "/groups" for ::1 at 2020-01-10 22:42:50 +0700
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (3.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:10
+  Rendered groups/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 888)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 4257ms (Views: 4247.5ms | ActiveRecord: 4.3ms | Allocations: 98065)
+
+
+Started GET "/groups" for ::1 at 2020-01-10 22:43:13 +0700
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.5ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:10
+  Rendered groups/index.html.erb within layouts/application (Duration: 2.9ms | Allocations: 888)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 3698ms (Views: 3690.4ms | ActiveRecord: 1.0ms | Allocations: 96384)
+
+
+Started GET "/groups" for ::1 at 2020-01-10 22:43:41 +0700
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:10
+  Rendered groups/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 888)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 3527ms (Views: 3522.4ms | ActiveRecord: 0.7ms | Allocations: 98948)
+
+
+Started GET "/groups" for ::1 at 2020-01-10 22:44:00 +0700
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:10
+  Rendered groups/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 888)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 3592ms (Views: 3585.8ms | ActiveRecord: 0.9ms | Allocations: 95960)
+
+
+Started GET "/groups" for ::1 at 2020-01-10 22:44:26 +0700
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:10
+  Rendered groups/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 888)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 3755ms (Views: 3750.9ms | ActiveRecord: 0.8ms | Allocations: 95944)
+
+
+Started GET "/groups" for ::1 at 2020-01-10 22:44:35 +0700
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.5ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:10
+  Rendered groups/index.html.erb within layouts/application (Duration: 3.5ms | Allocations: 888)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 3737ms (Views: 3729.1ms | ActiveRecord: 1.7ms | Allocations: 98082)
+
+
+Started GET "/groups" for ::1 at 2020-01-10 22:46:49 +0700
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:10
+  Rendered groups/index.html.erb within layouts/application (Duration: 5.1ms | Allocations: 888)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 3522ms (Views: 3518.0ms | ActiveRecord: 0.6ms | Allocations: 99352)
+
+
+Started GET "/groups" for ::1 at 2020-01-10 22:47:23 +0700
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:10
+  Rendered groups/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 888)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 3419ms (Views: 3415.8ms | ActiveRecord: 0.6ms | Allocations: 98116)
+
+
+Started GET "/groups" for ::1 at 2020-01-10 22:47:49 +0700
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.5ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:10
+  Rendered groups/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 888)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 3460ms (Views: 3452.9ms | ActiveRecord: 0.8ms | Allocations: 98866)
+
+
+Started GET "/groups" for ::1 at 2020-01-10 22:48:02 +0700
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.5ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:10
+  Rendered groups/index.html.erb within layouts/application (Duration: 7.2ms | Allocations: 888)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 3630ms (Views: 3621.8ms | ActiveRecord: 0.8ms | Allocations: 97716)
+
+
+Started GET "/groups" for ::1 at 2020-01-10 22:48:15 +0700
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:10
+  Rendered groups/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 888)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 3314ms (Views: 3310.3ms | ActiveRecord: 0.6ms | Allocations: 97195)
+
+
+Started GET "/groups" for ::1 at 2020-01-10 22:48:42 +0700
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.5ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:10
+  Rendered groups/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 888)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 3345ms (Views: 3340.1ms | ActiveRecord: 0.9ms | Allocations: 95579)
+
+
+Started GET "/groups" for ::1 at 2020-01-10 22:49:06 +0700
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:10
+  Rendered groups/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 888)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 3583ms (Views: 3579.0ms | ActiveRecord: 0.6ms | Allocations: 97282)
+
+
+Started GET "/groups/13/edit" for ::1 at 2020-01-10 22:49:32 +0700
+Processing by GroupsController#edit as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:17:in `edit'
+  Rendering groups/edit.html.erb within layouts/application
+  Rendered groups/_form.html.erb (Duration: 123.3ms | Allocations: 6354)
+  Rendered groups/edit.html.erb within layouts/application (Duration: 167.6ms | Allocations: 6718)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 190ms (Views: 181.8ms | ActiveRecord: 0.8ms | Allocations: 19602)
+
+
+Started GET "/groups/12/edit" for ::1 at 2020-01-10 22:49:36 +0700
+Processing by GroupsController#edit as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mGroup Load (0.5ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:17:in `edit'
+  Rendering groups/edit.html.erb within layouts/application
+  Rendered groups/_form.html.erb (Duration: 24.1ms | Allocations: 5985)
+  Rendered groups/edit.html.erb within layouts/application (Duration: 24.7ms | Allocations: 6082)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 53ms (Views: 42.8ms | ActiveRecord: 0.8ms | Allocations: 18835)
+
+
+Started GET "/groups" for ::1 at 2020-01-10 22:51:27 +0700
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:10
+  Rendered groups/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 890)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 3531ms (Views: 3523.8ms | ActiveRecord: 0.9ms | Allocations: 97231)
+
+
+Started GET "/groups" for ::1 at 2020-01-10 22:51:50 +0700
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.5ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:10
+  Rendered groups/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 888)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 3727ms (Views: 3722.3ms | ActiveRecord: 0.9ms | Allocations: 97623)
+
+
+Started GET "/groups/12" for ::1 at 2020-01-10 22:51:58 +0700
+Processing by GroupsController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:9:in `show'
+  Rendering groups/show.html.erb within layouts/application
+  [1m[36mStudent Load (0.5ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."group_id" = $1[0m  [["group_id", 12]]
+  ↳ app/views/groups/show.html.erb:19
+  Rendered collection of students/_student.html.erb [3 times] (Duration: 14.0ms | Allocations: 601)
+  Rendered groups/show.html.erb within layouts/application (Duration: 28.3ms | Allocations: 1920)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 56ms (Views: 49.4ms | ActiveRecord: 1.2ms | Allocations: 14901)
+
+
+Started GET "/groups" for ::1 at 2020-01-10 22:52:02 +0700
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:10
+  Rendered groups/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 890)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 16ms (Views: 12.8ms | ActiveRecord: 0.5ms | Allocations: 13186)
+
+
+Started GET "/groups" for ::1 at 2020-01-10 22:52:32 +0700
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.8ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:10
+  Rendered groups/index.html.erb within layouts/application (Duration: 3.7ms | Allocations: 888)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 3465ms (Views: 3457.4ms | ActiveRecord: 1.4ms | Allocations: 96351)
+
+
+Started GET "/groups/12" for ::1 at 2020-01-10 22:52:42 +0700
+Processing by GroupsController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:9:in `show'
+  Rendering groups/show.html.erb within layouts/application
+  [1m[36mStudent Load (0.5ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."group_id" = $1[0m  [["group_id", 12]]
+  ↳ app/views/groups/show.html.erb:19
+  Rendered collection of students/_student.html.erb [3 times] (Duration: 8.1ms | Allocations: 370)
+  Rendered groups/show.html.erb within layouts/application (Duration: 13.8ms | Allocations: 1354)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 49ms (Views: 42.5ms | ActiveRecord: 1.1ms | Allocations: 14189)
+
+
+Started GET "/groups" for ::1 at 2020-01-10 22:52:44 +0700
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:10
+  Rendered groups/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 888)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 22ms (Views: 18.9ms | ActiveRecord: 0.5ms | Allocations: 13191)
+
+
+Started GET "/groups" for ::1 at 2020-01-10 22:54:42 +0700
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.7ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:10
+  Rendered groups/index.html.erb within layouts/application (Duration: 3.4ms | Allocations: 888)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 81ms (Views: 73.0ms | ActiveRecord: 1.9ms | Allocations: 13191)
+
+
+Started GET "/groups" for ::1 at 2020-01-10 22:54:44 +0700
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.7ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:10
+  Rendered groups/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 909)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 21ms (Views: 15.0ms | ActiveRecord: 1.6ms | Allocations: 13333)
+
+
+Started GET "/groups" for ::1 at 2020-01-10 22:54:45 +0700
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:10
+  Rendered groups/index.html.erb within layouts/application (Duration: 2.5ms | Allocations: 888)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 19ms (Views: 13.6ms | ActiveRecord: 0.9ms | Allocations: 13187)
+
+
+Started GET "/groups" for ::1 at 2020-01-10 22:55:02 +0700
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:10
+  Rendered groups/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 888)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 3687ms (Views: 3681.0ms | ActiveRecord: 0.7ms | Allocations: 99006)
+
+
+Started GET "/groups" for ::1 at 2020-01-10 22:55:06 +0700
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:10
+  Rendered groups/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 888)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 23ms (Views: 12.0ms | ActiveRecord: 2.4ms | Allocations: 13191)
+
+
+Started GET "/groups" for ::1 at 2020-01-10 22:55:08 +0700
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:10
+  Rendered groups/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 888)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 23ms (Views: 15.8ms | ActiveRecord: 0.9ms | Allocations: 13181)
+
+
+Started GET "/groups" for ::1 at 2020-01-10 22:55:13 +0700
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:10
+  Rendered groups/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 909)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 29ms (Views: 23.3ms | ActiveRecord: 1.1ms | Allocations: 13330)
+
+
+Started GET "/groups" for ::1 at 2020-01-10 22:55:18 +0700
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.7ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:10
+  Rendered groups/index.html.erb within layouts/application (Duration: 3.3ms | Allocations: 888)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 29ms (Views: 21.7ms | ActiveRecord: 2.3ms | Allocations: 13190)
+
+
+Started GET "/groups" for ::1 at 2020-01-10 22:55:19 +0700
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:10
+  Rendered groups/index.html.erb within layouts/application (Duration: 3.2ms | Allocations: 888)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 34ms (Views: 25.8ms | ActiveRecord: 1.8ms | Allocations: 13183)
+
+
+Started GET "/groups" for ::1 at 2020-01-10 22:55:20 +0700
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:10
+  Rendered groups/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 888)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 32ms (Views: 28.4ms | ActiveRecord: 0.6ms | Allocations: 13190)
+
+
+Started GET "/groups" for ::1 at 2020-01-10 22:55:40 +0700
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (1.0ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:10
+  Rendered groups/index.html.erb within layouts/application (Duration: 4.9ms | Allocations: 888)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 32ms (Views: 26.2ms | ActiveRecord: 1.3ms | Allocations: 13190)
+
+
+Started GET "/groups" for ::1 at 2020-01-10 22:56:58 +0700
+Processing by GroupsController#index as HTML
+Completed 401 Unauthorized in 190ms (ActiveRecord: 0.0ms | Allocations: 220)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-01-10 22:56:58 +0700
+Processing by Devise::SessionsController#new as HTML
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (Duration: 75.0ms | Allocations: 648)
+  Rendered users/sessions/new.html.erb within layouts/application (Duration: 435.6ms | Allocations: 10072)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 4772ms (Views: 455.2ms | ActiveRecord: 0.0ms | Allocations: 27237)
+
+
+Started POST "/users/sign_in" for ::1 at 2020-01-10 22:57:07 +0700
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"1d3CkBAqEUT2RzPE/E2EbVJUstcH40zBtwa+IpKRiCPXrKpVghs/GsRCKgrG/WrQY/Rp2NgOGswR6Biohci3Cg==", "user"=>{"email"=>"bot-io@yandex.ru", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (124.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "bot-io@yandex.ru"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/groups
+Completed 302 Found in 960ms (ActiveRecord: 124.5ms | Allocations: 5548)
+
+
+Started GET "/groups" for ::1 at 2020-01-10 22:57:08 +0700
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:10
+  Rendered groups/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 895)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 19ms (Views: 15.4ms | ActiveRecord: 0.5ms | Allocations: 13189)
+
+
+Started GET "/groups" for ::1 at 2020-01-10 22:57:19 +0700
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.6ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:10
+  Rendered groups/index.html.erb within layouts/application (Duration: 2.9ms | Allocations: 888)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 23ms (Views: 17.0ms | ActiveRecord: 1.1ms | Allocations: 13182)
+
+
+Started GET "/groups" for ::1 at 2020-01-10 22:57:20 +0700
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.5ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:10
+  Rendered groups/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 888)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 19ms (Views: 14.0ms | ActiveRecord: 0.8ms | Allocations: 13166)
+
+
+Started GET "/groups" for ::1 at 2020-01-10 22:57:20 +0700
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.6ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:10
+  Rendered groups/index.html.erb within layouts/application (Duration: 3.4ms | Allocations: 888)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 20ms (Views: 13.8ms | ActiveRecord: 1.0ms | Allocations: 13167)
+
+
+Started GET "/groups" for ::1 at 2020-01-10 22:57:24 +0700
+Processing by GroupsController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 204)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-01-10 22:57:24 +0700
+Processing by Devise::SessionsController#new as HTML
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (Duration: 0.4ms | Allocations: 136)
+  Rendered users/sessions/new.html.erb within layouts/application (Duration: 26.9ms | Allocations: 8466)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 46ms (Views: 44.3ms | ActiveRecord: 0.0ms | Allocations: 19502)
+
+
+Started POST "/users/sign_in" for ::1 at 2020-01-10 22:57:28 +0700
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"PSPwH+UDtFuBghCwNT/R6MDEe6Pe3Hbz5aFRN3zPxjWx74tC3ulivnCKXxKi4mlLqHA2ye7l8aDpws8YYJPNuw==", "user"=>{"email"=>"bot-io@yandex.ru", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (32.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "bot-io@yandex.ru"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/groups
+Completed 302 Found in 204ms (ActiveRecord: 32.0ms | Allocations: 2740)
+
+
+Started GET "/groups" for ::1 at 2020-01-10 22:57:28 +0700
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.5ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:10
+  Rendered groups/index.html.erb within layouts/application (Duration: 4.5ms | Allocations: 891)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 19ms (Views: 15.3ms | ActiveRecord: 0.7ms | Allocations: 13185)
+
+
+Started GET "/groups/12" for ::1 at 2020-01-10 22:57:31 +0700
+Processing by GroupsController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:9:in `show'
+  Rendering groups/show.html.erb within layouts/application
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."group_id" = $1[0m  [["group_id", 12]]
+  ↳ app/views/groups/show.html.erb:19
+  Rendered collection of students/_student.html.erb [3 times] (Duration: 4.2ms | Allocations: 372)
+  Rendered groups/show.html.erb within layouts/application (Duration: 11.6ms | Allocations: 1357)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 42ms (Views: 35.9ms | ActiveRecord: 1.3ms | Allocations: 14181)
+
+
+Started GET "/groups" for ::1 at 2020-01-10 22:57:32 +0700
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.5ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:10
+  Rendered groups/index.html.erb within layouts/application (Duration: 2.9ms | Allocations: 888)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 41ms (Views: 33.2ms | ActiveRecord: 1.7ms | Allocations: 13174)
+
+
+Started GET "/groups" for ::1 at 2020-01-10 22:57:34 +0700
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.8ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:10
+  Rendered groups/index.html.erb within layouts/application (Duration: 3.5ms | Allocations: 888)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 26ms (Views: 18.8ms | ActiveRecord: 1.2ms | Allocations: 13172)
+
+
+Started GET "/groups" for ::1 at 2020-01-10 22:57:34 +0700
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:10
+  Rendered groups/index.html.erb within layouts/application (Duration: 2.5ms | Allocations: 888)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 25ms (Views: 19.8ms | ActiveRecord: 0.8ms | Allocations: 13173)
+
+
+Started GET "/groups" for ::1 at 2020-01-10 22:57:35 +0700
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:10
+  Rendered groups/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 888)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 19ms (Views: 15.8ms | ActiveRecord: 0.5ms | Allocations: 13167)
+
+
+Started GET "/groups" for ::1 at 2020-01-10 22:57:35 +0700
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:10
+  Rendered groups/index.html.erb within layouts/application (Duration: 4.7ms | Allocations: 888)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 243ms (Views: 238.6ms | ActiveRecord: 0.5ms | Allocations: 13170)
+
+
+Started GET "/groups" for ::1 at 2020-01-10 22:57:54 +0700
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:10
+  Rendered groups/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 888)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 4379ms (Views: 4374.5ms | ActiveRecord: 0.5ms | Allocations: 96789)
+
+
+Started GET "/groups" for ::1 at 2020-01-10 22:58:09 +0700
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:10
+  Rendered groups/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 888)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 3588ms (Views: 3583.0ms | ActiveRecord: 0.6ms | Allocations: 97270)
+
+
+Started GET "/groups" for ::1 at 2020-01-10 22:58:23 +0700
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (1.0ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:10
+  Rendered groups/index.html.erb within layouts/application (Duration: 3.9ms | Allocations: 888)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 3494ms (Views: 3489.4ms | ActiveRecord: 1.2ms | Allocations: 96803)
+
+
+Started GET "/groups" for ::1 at 2020-01-10 22:59:01 +0700
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.9ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:10
+  Rendered groups/index.html.erb within layouts/application (Duration: 3.6ms | Allocations: 888)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 3842ms (Views: 3835.8ms | ActiveRecord: 1.3ms | Allocations: 98430)
+
+
