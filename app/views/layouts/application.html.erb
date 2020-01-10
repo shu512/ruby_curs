@@ -7,12 +7,18 @@
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag 'header' %>
   </head>
 
   <body>
+    <ul class="header-menu">
+      <li><a href="">Меню 1</a></li>
+      <li><a href="">Меню 2</a></li>
+      <li><a href="">Меню 3</a></li>
+      <li><a href="">Меню 4</a></li>
+    </ul>
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
-
     <%= yield %>
   </body>
 </html>
