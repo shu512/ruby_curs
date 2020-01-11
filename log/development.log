@@ -30585,3 +30585,49 @@ Processing by GroupsController#index as HTML
 Completed 200 OK in 46ms (Views: 40.9ms | ActiveRecord: 0.9ms | Allocations: 13171)
 
 
+Started GET "/examinations" for ::1 at 2020-01-11 20:31:33 +0700
+Processing by ExaminationsController#index as HTML
+  Rendering examinations/index.html.erb within layouts/application
+  [1m[36mExamination Load (0.6ms)[0m  [1m[34mSELECT "examinations".* FROM "examinations"[0m
+  ↳ app/views/examinations/index.html.erb:11
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/examinations/index.html.erb:14
+  [1m[36mDiscipline Load (0.3ms)[0m  [1m[34mSELECT "disciplines".* FROM "disciplines" WHERE "disciplines"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/examinations/index.html.erb:15
+  Rendered examinations/index.html.erb within layouts/application (Duration: 64.5ms | Allocations: 15697)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 100ms (Views: 83.2ms | ActiveRecord: 13.2ms | Allocations: 27917)
+
+
+Started GET "/examinations/new" for ::1 at 2020-01-11 20:31:48 +0700
+Processing by ExaminationsController#new as HTML
+  Rendering examinations/new.html.erb within layouts/application
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/examinations/_form.html.erb:17
+  [1m[36mDiscipline Load (0.4ms)[0m  [1m[34mSELECT "disciplines".* FROM "disciplines"[0m
+  ↳ app/views/examinations/_form.html.erb:18
+  Rendered examinations/_form.html.erb (Duration: 111.2ms | Allocations: 11414)
+  Rendered examinations/new.html.erb within layouts/application (Duration: 151.0ms | Allocations: 11757)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 165ms (Views: 162.8ms | ActiveRecord: 0.7ms | Allocations: 22658)
+
+
+Started GET "/disciplines" for ::1 at 2020-01-11 20:40:54 +0700
+Processing by DisciplinesController#index as HTML
+  Rendering disciplines/index.html.erb within layouts/application
+  [1m[36mDiscipline Load (0.7ms)[0m  [1m[34mSELECT "disciplines".* FROM "disciplines"[0m
+  ↳ app/views/disciplines/index.html.erb:9
+  Rendered disciplines/index.html.erb within layouts/application (Duration: 6.8ms | Allocations: 3636)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 209ms (Views: 205.4ms | ActiveRecord: 0.7ms | Allocations: 15969)
+
+
+Started GET "/disciplines/new" for ::1 at 2020-01-11 20:40:58 +0700
+Processing by DisciplinesController#new as HTML
+  Rendering disciplines/new.html.erb within layouts/application
+  Rendered disciplines/_form.html.erb (Duration: 24.8ms | Allocations: 3805)
+  Rendered disciplines/new.html.erb within layouts/application (Duration: 95.8ms | Allocations: 4146)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 110ms (Views: 108.8ms | ActiveRecord: 0.0ms | Allocations: 15048)
+
+
