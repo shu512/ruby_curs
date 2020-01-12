@@ -1,4 +1,5 @@
 class ExamlistsController < ApplicationController
+  before_action :authenticate_user!
   before_action :set_examlist, only: [:show, :edit, :update, :destroy]
 
   # GET /examlists
@@ -25,7 +26,7 @@ class ExamlistsController < ApplicationController
   # POST /examlists.json
   def create
     @examlist = Examlist.new(examlist_params)
-
+    authorize @examlist
     respond_to do |format|
       if @examlist.save
         format.html { redirect_to @examlist, notice: 'Examlist was successfully created.' }
@@ -40,6 +41,7 @@ class ExamlistsController < ApplicationController
   # PATCH/PUT /examlists/1
   # PATCH/PUT /examlists/1.json
   def update
+    authorize @examlist
     respond_to do |format|
       if @examlist.update(examlist_params)
         format.html { redirect_to @examlist, notice: 'Examlist was successfully updated.' }
@@ -54,6 +56,7 @@ class ExamlistsController < ApplicationController
   # DELETE /examlists/1
   # DELETE /examlists/1.json
   def destroy
+    authorize @examlist
     @examlist.destroy
     respond_to do |format|
       format.html { redirect_to examlists_url, notice: 'Examlist was successfully destroyed.' }

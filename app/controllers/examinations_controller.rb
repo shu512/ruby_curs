@@ -1,4 +1,6 @@
 class ExaminationsController < ApplicationController
+  before_action :authenticate_user!
+
   def index
     @examinations = Examination.all
   end
@@ -17,7 +19,7 @@ class ExaminationsController < ApplicationController
 
   def create
     @examination = Examination.new(examination_params)
-
+    authorize @examination
     if @examination.save
       redirect_to @examination
     else
@@ -27,7 +29,7 @@ class ExaminationsController < ApplicationController
 
   def update
     @examination = Examination.find(params[:id])
-
+    authorize @examination
     if @examination.update(examination_params)
       redirect_to @examination
     else
@@ -37,6 +39,7 @@ class ExaminationsController < ApplicationController
 
   def destroy
     @examination = Examination.find(params[:id])
+    authorize @examination
     @examination.destroy
 
     redirect_to examinations_path

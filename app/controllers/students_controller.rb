@@ -17,7 +17,7 @@ class StudentsController < ApplicationController
 
   def create
     @student = Student.new(student_params)
-
+    authorize @student
     if @student.save
       redirect_to @student
     else
@@ -27,7 +27,7 @@ class StudentsController < ApplicationController
 
   def update
     @student = Student.find(params[:id])
-
+    authorize @student
     if @student.update(student_params)
       redirect_to @student
     else
@@ -37,6 +37,7 @@ class StudentsController < ApplicationController
 
   def destroy
     @student = Student.find(params[:id])
+    authorize @student
     @student.destroy
 
     redirect_to students_path

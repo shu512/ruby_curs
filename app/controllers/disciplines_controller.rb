@@ -17,7 +17,7 @@ class DisciplinesController < ApplicationController
 
   def create
     @discipline = Discipline.new(discipline_params)
-
+    authorize @discipline
     if @discipline.save
       redirect_to @discipline
     else
@@ -27,7 +27,7 @@ class DisciplinesController < ApplicationController
 
   def update
     @discipline = Discipline.find(params[:id])
-
+    authorize @discipline
     if @discipline.update(discipline_params)
       redirect_to @discipline
     else
@@ -37,6 +37,7 @@ class DisciplinesController < ApplicationController
 
   def destroy
     @discipline = Discipline.find(params[:id])
+    authorize @discipline
     @discipline.destroy
 
     redirect_to disciplines_path
