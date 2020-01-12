@@ -24,10 +24,11 @@
         <% else %>
           <%=  link_to "Sign in", new_user_session_path, class: "header-sign" %>
         <% end %>
-      
       </ul>
     </nav>
-    
+    <% if user_signed_in? %>
+      <p class="header-username"> <%= current_user.email %> </p>
+    <% end %>
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
     <div class=work-page>
