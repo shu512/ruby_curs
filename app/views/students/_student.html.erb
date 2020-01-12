@@ -1,8 +1,6 @@
-<% @number_student = student.number if @number_student.nil? %>
-
 <table>
     <tr>
-      <td><%= @number_student %></td>
+      <td><%= student.number %></td>
       <td><%= student.full_name  %></td>
       <td><%= link_to 'show', student_path(student) %></td>
       <td><%= link_to 'edit', edit_student_path(student)  %></td>
