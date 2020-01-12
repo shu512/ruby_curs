@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Ubuntu+Condensed');
 .header-menu {
+  margin-top: 7px;
   list-style: none;
   text-align: center;
   background: white;
@@ -35,7 +36,7 @@
   right: 50%;
   bottom: -5px;
   left: 50%;
-  background: #feb386;
+  background: rgb(184, 183, 183);
   transition: .8s;
 }
 .header-menu a:hover:before, .header-menu .current:before {left: 0;}
@@ -47,5 +48,20 @@
   .header-menu a {
     padding: 25px 0 20px; 
     margin: 0 30px;
+  }
+}
+
+a:hover {
+  color: black;
+  background-color: white;
+}
+
+.header-sign-out {
+  float: right;
+  a:hover {
+    color: lightblue;
+  }
+  a:before, a:after {
+    background: white;
   }
 }
