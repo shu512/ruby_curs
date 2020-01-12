@@ -5,6 +5,7 @@
     <th>FIO</th>
   </tr>
 </table>
+<% counter_students = 1 %>
 <% @students.each_with_index do |student, index| %>
   <% @number_student = counter_students %>
   <%= render student %>

@@ -30631,3 +30631,1457 @@ Processing by DisciplinesController#new as HTML
 Completed 200 OK in 110ms (Views: 108.8ms | ActiveRecord: 0.0ms | Allocations: 15048)
 
 
+Started GET "/examlists" for ::1 at 2020-01-11 20:47:02 +0700
+Processing by ExamlistsController#index as HTML
+  Rendering examlists/index.html.erb within layouts/application
+  [1m[36mExamlist Load (0.7ms)[0m  [1m[34mSELECT "examlists".* FROM "examlists"[0m
+  ↳ app/views/examlists/index.html.erb:16
+  Rendered examlists/index.html.erb within layouts/application (Duration: 28.3ms | Allocations: 5445)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 45ms (Views: 36.9ms | ActiveRecord: 4.8ms | Allocations: 17732)
+
+
+Started GET "/examlists" for ::1 at 2020-01-11 20:48:56 +0700
+Processing by ExamlistsController#index as HTML
+  Rendering examlists/index.html.erb within layouts/application
+  [1m[36mExamlist Load (1.4ms)[0m  [1m[34mSELECT "examlists".* FROM "examlists"[0m
+  ↳ app/views/examlists/index.html.erb:16
+  Rendered examlists/index.html.erb within layouts/application (Duration: 7.9ms | Allocations: 929)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 26ms (Views: 23.2ms | ActiveRecord: 1.4ms | Allocations: 11771)
+
+
+Started GET "/disciplines" for ::1 at 2020-01-11 20:48:58 +0700
+Processing by DisciplinesController#index as HTML
+  Rendering disciplines/index.html.erb within layouts/application
+  [1m[36mDiscipline Load (0.6ms)[0m  [1m[34mSELECT "disciplines".* FROM "disciplines"[0m
+  ↳ app/views/disciplines/index.html.erb:9
+  Rendered disciplines/index.html.erb within layouts/application (Duration: 14.7ms | Allocations: 3272)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 39ms (Views: 35.0ms | ActiveRecord: 0.6ms | Allocations: 15214)
+
+
+Started GET "/disciplines/new" for ::1 at 2020-01-11 20:49:00 +0700
+Processing by DisciplinesController#new as HTML
+  Rendering disciplines/new.html.erb within layouts/application
+  Rendered disciplines/_form.html.erb (Duration: 9.8ms | Allocations: 3473)
+  Rendered disciplines/new.html.erb within layouts/application (Duration: 10.3ms | Allocations: 3570)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 30ms (Views: 28.9ms | ActiveRecord: 0.0ms | Allocations: 14334)
+
+
+Started POST "/disciplines" for ::1 at 2020-01-11 20:49:04 +0700
+Processing by DisciplinesController#create as HTML
+  Parameters: {"authenticity_token"=>"/rgo1h6e+qBFXtBXNc73JNdmbj5qH+ySWV2q0FPS3Q1/wlfzUrADuHU8sLkHzmZfiKPNo7XRJ6+Qa/ncYQZBuQ==", "discipline"=>{"title"=>""}, "commit"=>"Create Discipline"}
+  Rendering disciplines/new.html.erb within layouts/application
+  Rendered disciplines/_form.html.erb (Duration: 16.2ms | Allocations: 3830)
+  Rendered disciplines/new.html.erb within layouts/application (Duration: 17.0ms | Allocations: 3927)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 64ms (Views: 50.7ms | ActiveRecord: 0.0ms | Allocations: 16044)
+
+
+Started POST "/disciplines" for ::1 at 2020-01-11 20:49:17 +0700
+Processing by DisciplinesController#create as HTML
+  Parameters: {"authenticity_token"=>"3KhIH3bYQl48UqS1PDOeQAq4GzVy4pgwzaNH2QCcEErEgJEq2Fy7IJHwSW+dS1Tjgs/xtvmh936vCCi6icIYAQ==", "discipline"=>{"title"=>"123"}, "commit"=>"Create Discipline"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/disciplines_controller.rb:21:in `create'
+  [1m[36mDiscipline Create (65.6ms)[0m  [1m[32mINSERT INTO "disciplines" ("title", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["title", "123"], ["created_at", "2020-01-11 13:49:17.123886"], ["updated_at", "2020-01-11 13:49:17.123886"]]
+  ↳ app/controllers/disciplines_controller.rb:21:in `create'
+  [1m[35m (79.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/disciplines_controller.rb:21:in `create'
+Redirected to http://localhost:3000/disciplines/3
+Completed 302 Found in 158ms (ActiveRecord: 145.0ms | Allocations: 2738)
+
+
+Started GET "/disciplines/3" for ::1 at 2020-01-11 20:49:17 +0700
+Processing by DisciplinesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mDiscipline Load (0.5ms)[0m  [1m[34mSELECT "disciplines".* FROM "disciplines" WHERE "disciplines"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/disciplines_controller.rb:7:in `show'
+  Rendering disciplines/show.html.erb within layouts/application
+  [1m[36mQuestion Load (0.5ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."discipline_id" = $1[0m  [["discipline_id", 3]]
+  ↳ app/views/disciplines/show.html.erb:7
+  Rendered collection of templates [0 times] (Duration: 0.0ms | Allocations: 3)
+  Rendered questions/_form_new.html.erb (Duration: 80.2ms | Allocations: 6935)
+  Rendered disciplines/show.html.erb within layouts/application (Duration: 142.4ms | Allocations: 9775)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 163ms (Views: 150.7ms | ActiveRecord: 7.4ms | Allocations: 21343)
+
+
+Started GET "/disciplines" for ::1 at 2020-01-11 20:49:34 +0700
+Processing by DisciplinesController#index as HTML
+  Rendering disciplines/index.html.erb within layouts/application
+  [1m[36mDiscipline Load (0.6ms)[0m  [1m[34mSELECT "disciplines".* FROM "disciplines"[0m
+  ↳ app/views/disciplines/index.html.erb:9
+  Rendered disciplines/index.html.erb within layouts/application (Duration: 9.2ms | Allocations: 882)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 47ms (Views: 45.1ms | ActiveRecord: 0.6ms | Allocations: 11736)
+
+
+Started GET "/disciplines/new" for ::1 at 2020-01-11 20:49:36 +0700
+Processing by DisciplinesController#new as HTML
+  Rendering disciplines/new.html.erb within layouts/application
+  Rendered disciplines/_form.html.erb (Duration: 10.7ms | Allocations: 3286)
+  Rendered disciplines/new.html.erb within layouts/application (Duration: 11.4ms | Allocations: 3383)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 39ms (Views: 37.8ms | ActiveRecord: 0.0ms | Allocations: 14146)
+
+
+Started POST "/disciplines" for ::1 at 2020-01-11 20:49:58 +0700
+Processing by DisciplinesController#create as HTML
+  Parameters: {"authenticity_token"=>"En/kKELTZWy7FzlrwKjwSc+S0mjLuAEZaBzhQnpHMxGTBZsNDv2cdIt1WYXyqGEykFdx9RR2yiShKrJOSJOvpQ==", "discipline"=>{"title"=>"123456789123456789123456789123456789"}, "commit"=>"Create Discipline"}
+  Rendering disciplines/new.html.erb within layouts/application
+  Rendered disciplines/_form.html.erb (Duration: 10.7ms | Allocations: 3549)
+  Rendered disciplines/new.html.erb within layouts/application (Duration: 11.1ms | Allocations: 3646)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 31ms (Views: 28.6ms | ActiveRecord: 0.0ms | Allocations: 15363)
+
+
+Started GET "/disciplines" for ::1 at 2020-01-11 20:50:10 +0700
+Processing by DisciplinesController#index as HTML
+  Rendering disciplines/index.html.erb within layouts/application
+  [1m[36mDiscipline Load (0.4ms)[0m  [1m[34mSELECT "disciplines".* FROM "disciplines"[0m
+  ↳ app/views/disciplines/index.html.erb:9
+  Rendered disciplines/index.html.erb within layouts/application (Duration: 6.2ms | Allocations: 880)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 44ms (Views: 36.2ms | ActiveRecord: 0.4ms | Allocations: 11728)
+
+
+Started DELETE "/disciplines/3" for ::1 at 2020-01-11 20:50:13 +0700
+Processing by DisciplinesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"dZ1F6mMK3t892MkEMAE3FUeiRm1xAiF8HWVOz84vgrtttZzfzY4noZB6JN6Ref22z9Ws7vpBTjJ/ziGsR3GK8A==", "id"=>"3"}
+  [1m[36mDiscipline Load (1.1ms)[0m  [1m[34mSELECT "disciplines".* FROM "disciplines" WHERE "disciplines"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/disciplines_controller.rb:39:in `destroy'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/disciplines_controller.rb:40:in `destroy'
+  [1m[36mQuestion Load (0.9ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."discipline_id" = $1[0m  [["discipline_id", 3]]
+  ↳ app/controllers/disciplines_controller.rb:40:in `destroy'
+  [1m[36mDiscipline Destroy (2.1ms)[0m  [1m[31mDELETE FROM "disciplines" WHERE "disciplines"."id" = $1[0m  [["id", 3]]
+  ↳ app/controllers/disciplines_controller.rb:40:in `destroy'
+  [1m[35m (32.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/disciplines_controller.rb:40:in `destroy'
+Redirected to http://localhost:3000/disciplines
+Completed 302 Found in 50ms (ActiveRecord: 36.9ms | Allocations: 3635)
+
+
+Started GET "/disciplines" for ::1 at 2020-01-11 20:50:13 +0700
+Processing by DisciplinesController#index as HTML
+  Rendering disciplines/index.html.erb within layouts/application
+  [1m[36mDiscipline Load (0.4ms)[0m  [1m[34mSELECT "disciplines".* FROM "disciplines"[0m
+  ↳ app/views/disciplines/index.html.erb:9
+  Rendered disciplines/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 764)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 28ms (Views: 25.8ms | ActiveRecord: 0.4ms | Allocations: 11616)
+
+
+Started GET "/examlists" for ::1 at 2020-01-11 20:50:37 +0700
+Processing by ExamlistsController#index as HTML
+  Rendering examlists/index.html.erb within layouts/application
+  [1m[36mExamlist Load (0.4ms)[0m  [1m[34mSELECT "examlists".* FROM "examlists"[0m
+  ↳ app/views/examlists/index.html.erb:16
+  Rendered examlists/index.html.erb within layouts/application (Duration: 6.9ms | Allocations: 938)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 48ms (Views: 38.5ms | ActiveRecord: 0.4ms | Allocations: 11784)
+
+
+Started GET "/examlists" for ::1 at 2020-01-11 20:57:44 +0700
+Processing by ExamlistsController#index as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 694)
+
+
+  
+SyntaxError (/home/shu512/documents/git/ruby_curs/exam/app/models/examlist.rb:7: syntax error, unexpected tINTEGER, expecting =>
+...                :greater_than 0,
+...                              ^):
+  
+app/models/examlist.rb:7: syntax error, unexpected tINTEGER, expecting =>
+app/models/examlist.rb:7: syntax error, unexpected tINTEGER, expecting =>
+app/models/examlist.rb:7: syntax error, unexpected tINTEGER, expecting =>
+app/controllers/examlists_controller.rb:7:in `index'
+Started GET "/examlists" for ::1 at 2020-01-11 21:02:11 +0700
+Processing by ExamlistsController#index as HTML
+  Rendering examlists/index.html.erb within layouts/application
+  [1m[36mExamlist Load (1.0ms)[0m  [1m[34mSELECT "examlists".* FROM "examlists"[0m
+  ↳ app/views/examlists/index.html.erb:16
+  Rendered examlists/index.html.erb within layouts/application (Duration: 17.8ms | Allocations: 5217)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 154ms (Views: 142.2ms | ActiveRecord: 7.4ms | Allocations: 17240)
+
+
+Started GET "/examlists/new" for ::1 at 2020-01-11 21:02:18 +0700
+Processing by ExamlistsController#new as HTML
+  Rendering examlists/new.html.erb within layouts/application
+  [1m[36mStudent Load (0.5ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  ↳ app/views/examlists/_form.html.erb:7
+  [1m[36mExamination Load (0.5ms)[0m  [1m[34mSELECT "examinations".* FROM "examinations"[0m
+  ↳ app/views/examlists/_form.html.erb:8
+  Rendered examlists/_form.html.erb (Duration: 41.6ms | Allocations: 19279)
+  Rendered examlists/new.html.erb within layouts/application (Duration: 56.3ms | Allocations: 19637)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 69ms (Views: 60.4ms | ActiveRecord: 7.2ms | Allocations: 30540)
+
+
+Started POST "/examlists" for ::1 at 2020-01-11 21:02:25 +0700
+Processing by ExamlistsController#create as HTML
+  Parameters: {"authenticity_token"=>"b8wMUw3uuSIiDW+gMLoBk0UnEDOfWUcimGtlpCoAusxUmhdBh1Ka2pQgeaQuB3ZkBw6cMfFRErDzhNOzjPWnyQ==", "examlist"=>{"student_id"=>"", "examination_id"=>"", "mark"=>""}, "commit"=>"Create Examlist"}
+  Rendering examlists/new.html.erb within layouts/application
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  ↳ app/views/examlists/_form.html.erb:7
+  [1m[36mExamination Load (0.3ms)[0m  [1m[34mSELECT "examinations".* FROM "examinations"[0m
+  ↳ app/views/examlists/_form.html.erb:8
+  Rendered examlists/_form.html.erb (Duration: 24.8ms | Allocations: 9191)
+  Rendered examlists/new.html.erb within layouts/application (Duration: 25.6ms | Allocations: 9289)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 54ms (Views: 47.3ms | ActiveRecord: 0.6ms | Allocations: 23355)
+
+
+Started POST "/examlists" for ::1 at 2020-01-11 21:02:37 +0700
+Processing by ExamlistsController#create as HTML
+  Parameters: {"authenticity_token"=>"VPbDVkWy29DnKMSQZlEagSPAyWtEy5fXaQdLua3Idp9M3hpj6zYirkqKKUrHKdAiq7cj6M+I+JkLrCTaJJZ+1A==", "examlist"=>{"student_id"=>"6", "examination_id"=>"", "mark"=>"0"}, "commit"=>"Create Examlist"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/examlists_controller.rb:30:in `block in create'
+  [1m[36mStudent Load (41.4ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/examlists_controller.rb:30:in `block in create'
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/examlists_controller.rb:30:in `block in create'
+  Rendering examlists/new.html.erb within layouts/application
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  ↳ app/views/examlists/_form.html.erb:7
+  [1m[36mExamination Load (0.3ms)[0m  [1m[34mSELECT "examinations".* FROM "examinations"[0m
+  ↳ app/views/examlists/_form.html.erb:8
+  Rendered examlists/_form.html.erb (Duration: 25.8ms | Allocations: 8735)
+  Rendered examlists/new.html.erb within layouts/application (Duration: 26.1ms | Allocations: 8833)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 96ms (Views: 43.2ms | ActiveRecord: 44.0ms | Allocations: 23881)
+
+
+Started POST "/examlists" for ::1 at 2020-01-11 21:02:40 +0700
+Processing by ExamlistsController#create as HTML
+  Parameters: {"authenticity_token"=>"M3VaiD+RjCdF00C3+9kKwGg1UBs/BiOyTI7D/K7bnsUrXYO9kRV1WehxrW1aocBj4EK6mLRFTPwuJayfJ4WWjg==", "examlist"=>{"student_id"=>"6", "examination_id"=>"2", "mark"=>"0"}, "commit"=>"Create Examlist"}
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/examlists_controller.rb:30:in `block in create'
+  [1m[36mStudent Load (1.4ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/examlists_controller.rb:30:in `block in create'
+  [1m[36mExamination Load (0.3ms)[0m  [1m[34mSELECT "examinations".* FROM "examinations" WHERE "examinations"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/examlists_controller.rb:30:in `block in create'
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/examlists_controller.rb:30:in `block in create'
+  Rendering examlists/new.html.erb within layouts/application
+  [1m[36mStudent Load (0.8ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  ↳ app/views/examlists/_form.html.erb:7
+  [1m[36mExamination Load (0.6ms)[0m  [1m[34mSELECT "examinations".* FROM "examinations"[0m
+  ↳ app/views/examlists/_form.html.erb:8
+  Rendered examlists/_form.html.erb (Duration: 27.2ms | Allocations: 8418)
+  Rendered examlists/new.html.erb within layouts/application (Duration: 27.8ms | Allocations: 8516)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 65ms (Views: 44.5ms | ActiveRecord: 3.9ms | Allocations: 23818)
+
+
+Started POST "/examlists" for ::1 at 2020-01-11 21:02:48 +0700
+Processing by ExamlistsController#create as HTML
+  Parameters: {"authenticity_token"=>"SD5AitzblS6Aq83vGP4YbjGhS4le1/b/KYksmH4BGVRQFpm/cl9sUC0JIDW5htLNudahCtWUmbFLIkP7918RHw==", "examlist"=>{"student_id"=>"6", "examination_id"=>"", "mark"=>"0"}, "commit"=>"Create Examlist"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/examlists_controller.rb:30:in `block in create'
+  [1m[36mStudent Load (0.6ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/examlists_controller.rb:30:in `block in create'
+  [1m[35m (0.5ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/examlists_controller.rb:30:in `block in create'
+  Rendering examlists/new.html.erb within layouts/application
+  [1m[36mStudent Load (0.9ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  ↳ app/views/examlists/_form.html.erb:7
+  [1m[36mExamination Load (0.3ms)[0m  [1m[34mSELECT "examinations".* FROM "examinations"[0m
+  ↳ app/views/examlists/_form.html.erb:8
+  Rendered examlists/_form.html.erb (Duration: 29.3ms | Allocations: 8731)
+  Rendered examlists/new.html.erb within layouts/application (Duration: 29.9ms | Allocations: 8829)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 67ms (Views: 48.2ms | ActiveRecord: 2.5ms | Allocations: 23611)
+
+
+Started POST "/examlists" for ::1 at 2020-01-11 21:02:57 +0700
+Processing by ExamlistsController#create as HTML
+  Parameters: {"authenticity_token"=>"q9uMDBDMqwtFD8KjkhIs8BfCZGHEYi9g9PX5/iGJrMez81U5vkhSdeitL3kzauZTn7WO4k8hQC6WXpadqNekjA==", "examlist"=>{"student_id"=>"6", "examination_id"=>"", "mark"=>"15"}, "commit"=>"Create Examlist"}
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/examlists_controller.rb:30:in `block in create'
+  [1m[36mStudent Load (0.6ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/examlists_controller.rb:30:in `block in create'
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/examlists_controller.rb:30:in `block in create'
+  Rendering examlists/new.html.erb within layouts/application
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  ↳ app/views/examlists/_form.html.erb:7
+  [1m[36mExamination Load (0.3ms)[0m  [1m[34mSELECT "examinations".* FROM "examinations"[0m
+  ↳ app/views/examlists/_form.html.erb:8
+  Rendered examlists/_form.html.erb (Duration: 24.4ms | Allocations: 8737)
+  Rendered examlists/new.html.erb within layouts/application (Duration: 24.8ms | Allocations: 8835)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 62ms (Views: 42.0ms | ActiveRecord: 2.4ms | Allocations: 23681)
+
+
+Started POST "/examlists" for ::1 at 2020-01-11 21:03:57 +0700
+Processing by ExamlistsController#create as HTML
+  Parameters: {"authenticity_token"=>"pp87zCHfKT40R2N+zwfvikHLHaJv8GQ0r/rKojGI8ym+t+L5j1vQQJnljqRufyUpybz3IeSzC3rNUaXBuNb7Yg==", "examlist"=>{"student_id"=>"6", "examination_id"=>"", "mark"=>"15"}, "commit"=>"Create Examlist"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/examlists_controller.rb:30:in `block in create'
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/examlists_controller.rb:30:in `block in create'
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/examlists_controller.rb:30:in `block in create'
+  Rendering examlists/new.html.erb within layouts/application
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  ↳ app/views/examlists/_form.html.erb:7
+  [1m[36mExamination Load (0.5ms)[0m  [1m[34mSELECT "examinations".* FROM "examinations"[0m
+  ↳ app/views/examlists/_form.html.erb:8
+  Rendered examlists/_form.html.erb (Duration: 45.5ms | Allocations: 12984)
+  Rendered examlists/new.html.erb within layouts/application (Duration: 46.2ms | Allocations: 13082)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 141ms (Views: 85.3ms | ActiveRecord: 15.3ms | Allocations: 39867)
+
+
+Started GET "/groups" for ::1 at 2020-01-11 21:04:39 +0700
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.6ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:10
+  Rendered groups/index.html.erb within layouts/application (Duration: 30.4ms | Allocations: 4225)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 136ms (Views: 44.1ms | ActiveRecord: 10.1ms | Allocations: 24178)
+
+
+Started GET "/students" for ::1 at 2020-01-11 21:04:42 +0700
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (1.6ms)[0m  [1m[34mSELECT "students".* FROM "students" ORDER BY id[0m
+  ↳ app/views/students/index.html.erb:8:in `each_with_index'
+  Rendered students/index.html.erb within layouts/application (Duration: 684.2ms | Allocations: 202784)
+Completed 500 Internal Server Error in 687ms (ActiveRecord: 1.6ms | Allocations: 204015)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `counter_students' for #<#<Class:0x00007fdb7c2276d0>:0x00007fdb7c2251f0>):
+     6:   </tr>
+     7: </table>
+     8: <% @students.each_with_index do |student, index| %>
+     9:   <% @number_student = counter_students %>
+    10:   <%= render student %>
+    11:   <% counter_students += 1 %>
+    12: <% end %>
+  
+app/views/students/index.html.erb:9
+app/views/students/index.html.erb:8:in `each_with_index'
+app/views/students/index.html.erb:8
+Started GET "/disciplines" for ::1 at 2020-01-11 21:04:43 +0700
+Processing by DisciplinesController#index as HTML
+  Rendering disciplines/index.html.erb within layouts/application
+  [1m[36mDiscipline Load (0.6ms)[0m  [1m[34mSELECT "disciplines".* FROM "disciplines"[0m
+  ↳ app/views/disciplines/index.html.erb:9
+  Rendered disciplines/index.html.erb within layouts/application (Duration: 15.0ms | Allocations: 3606)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 31ms (Views: 19.0ms | ActiveRecord: 9.7ms | Allocations: 16185)
+
+
+Started GET "/examinations" for ::1 at 2020-01-11 21:04:47 +0700
+Processing by ExaminationsController#index as HTML
+  Rendering examinations/index.html.erb within layouts/application
+  [1m[36mExamination Load (0.8ms)[0m  [1m[34mSELECT "examinations".* FROM "examinations"[0m
+  ↳ app/views/examinations/index.html.erb:11
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/examinations/index.html.erb:14
+  [1m[36mDiscipline Load (0.3ms)[0m  [1m[34mSELECT "disciplines".* FROM "disciplines" WHERE "disciplines"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/examinations/index.html.erb:15
+  Rendered examinations/index.html.erb within layouts/application (Duration: 15.0ms | Allocations: 3623)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 51ms (Views: 48.8ms | ActiveRecord: 1.4ms | Allocations: 14556)
+
+
+Started GET "/examinations/2" for ::1 at 2020-01-11 21:04:51 +0700
+Processing by ExaminationsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mExamination Load (0.3ms)[0m  [1m[34mSELECT "examinations".* FROM "examinations" WHERE "examinations"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/examinations_controller.rb:7:in `show'
+  Rendering examinations/show.html.erb within layouts/application
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/examinations/show.html.erb:8
+  [1m[36mDiscipline Load (0.3ms)[0m  [1m[34mSELECT "disciplines".* FROM "disciplines" WHERE "disciplines"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/examinations/show.html.erb:13
+  Rendered examinations/show.html.erb within layouts/application (Duration: 14.4ms | Allocations: 1751)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 32ms (Views: 28.9ms | ActiveRecord: 0.9ms | Allocations: 13391)
+
+
+Started GET "/examlists" for ::1 at 2020-01-11 21:04:59 +0700
+Processing by ExamlistsController#index as HTML
+  Rendering examlists/index.html.erb within layouts/application
+  [1m[36mExamlist Load (0.4ms)[0m  [1m[34mSELECT "examlists".* FROM "examlists"[0m
+  ↳ app/views/examlists/index.html.erb:16
+  Rendered examlists/index.html.erb within layouts/application (Duration: 6.6ms | Allocations: 953)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 36ms (Views: 34.4ms | ActiveRecord: 0.4ms | Allocations: 11832)
+
+
+Started GET "/examlists/1" for ::1 at 2020-01-11 21:05:01 +0700
+Processing by ExamlistsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mExamlist Load (0.5ms)[0m  [1m[34mSELECT "examlists".* FROM "examlists" WHERE "examlists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/examlists_controller.rb:67:in `set_examlist'
+  Rendering examlists/show.html.erb within layouts/application
+  Rendered examlists/show.html.erb within layouts/application (Duration: 18.0ms | Allocations: 300)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 45ms (Views: 37.1ms | ActiveRecord: 0.5ms | Allocations: 11948)
+
+
+Started GET "/disciplines" for ::1 at 2020-01-11 21:05:12 +0700
+Processing by DisciplinesController#index as HTML
+  Rendering disciplines/index.html.erb within layouts/application
+  [1m[36mDiscipline Load (0.4ms)[0m  [1m[34mSELECT "disciplines".* FROM "disciplines"[0m
+  ↳ app/views/disciplines/index.html.erb:9
+  Rendered disciplines/index.html.erb within layouts/application (Duration: 2.5ms | Allocations: 771)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 56ms (Views: 54.1ms | ActiveRecord: 0.4ms | Allocations: 11633)
+
+
+Started GET "/disciplines/2" for ::1 at 2020-01-11 21:05:16 +0700
+Processing by DisciplinesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mDiscipline Load (0.3ms)[0m  [1m[34mSELECT "disciplines".* FROM "disciplines" WHERE "disciplines"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/disciplines_controller.rb:7:in `show'
+  Rendering disciplines/show.html.erb within layouts/application
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."discipline_id" = $1[0m  [["discipline_id", 2]]
+  ↳ app/views/disciplines/show.html.erb:7
+  Rendered collection of questions/_question.html.erb [6 times] (Duration: 39.6ms | Allocations: 1315)
+  Rendered questions/_form_new.html.erb (Duration: 10.9ms | Allocations: 3157)
+  Rendered disciplines/show.html.erb within layouts/application (Duration: 80.7ms | Allocations: 15954)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 94ms (Views: 88.5ms | ActiveRecord: 3.1ms | Allocations: 27365)
+
+
+Started GET "/disciplines/18/questions/2/edit" for ::1 at 2020-01-11 21:05:45 +0700
+Processing by QuestionsController#edit as HTML
+  Parameters: {"discipline_id"=>"18", "id"=>"2"}
+  [1m[36mDiscipline Load (0.3ms)[0m  [1m[34mSELECT "disciplines".* FROM "disciplines" WHERE "disciplines"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/questions_controller.rb:3:in `edit'
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."discipline_id" = $1 AND "questions"."id" = $2 LIMIT $3[0m  [["discipline_id", 2], ["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/questions_controller.rb:4:in `edit'
+  Rendering questions/edit.html.erb within layouts/application
+  [1m[36mQuestion Load (0.4ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/views/questions/_form_edit.html.erb:1
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/views/questions/_form_edit.html.erb:1
+  [1m[36mDiscipline Load (1.1ms)[0m  [1m[34mSELECT "disciplines".* FROM "disciplines" WHERE "disciplines"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/questions/_form_edit.html.erb:1
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/views/questions/_form_edit.html.erb:1
+  Rendered questions/_form_edit.html.erb (Duration: 57.1ms | Allocations: 7063)
+  Rendered questions/edit.html.erb within layouts/application (Duration: 70.1ms | Allocations: 7428)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 87ms (Views: 79.7ms | ActiveRecord: 2.4ms | Allocations: 20272)
+
+
+Started PATCH "/disciplines/2/questions/18" for ::1 at 2020-01-11 21:07:34 +0700
+Processing by QuestionsController#update as HTML
+  Parameters: {"authenticity_token"=>"mGXzAxwW423aEdReQIzVAQg1TBZ7QEPzsO1DBrnVgAxzT79sneISEpErWXGHSXzUxcQojj5CTw+drbUUcrqsbA==", "question"=>{"content"=>""}, "commit"=>"Update Question", "discipline_id"=>"2", "id"=>"18"}
+  [1m[36mDiscipline Load (0.3ms)[0m  [1m[34mSELECT "disciplines".* FROM "disciplines" WHERE "disciplines"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/questions_controller.rb:14:in `update'
+  [1m[36mQuestion Load (0.4ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."discipline_id" = $1 AND "questions"."id" = $2 LIMIT $3[0m  [["discipline_id", 2], ["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/questions_controller.rb:15:in `update'
+  Rendering questions/edit.html.erb within layouts/application
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/questions/_form_edit.html.erb:1
+  Rendered questions/_form_edit.html.erb (Duration: 2.8ms | Allocations: 1692)
+  Rendered questions/edit.html.erb within layouts/application (Duration: 3.1ms | Allocations: 1770)
+Completed 500 Internal Server Error in 44ms (ActiveRecord: 7.5ms | Allocations: 14035)
+
+
+  
+ActionView::Template::Error (Couldn't find Question with 'id'=2):
+    1: <%= simple_form_for [ @discipline, @discipline.questions.update(params[:discipline_id], { content: @question.content }) ] do |f| %>
+    2:   <p><%= f.input :content %></p>
+    3:   <p><%= f.button :submit %></p>
+    4: <% end %>
+  
+app/views/questions/_form_edit.html.erb:1
+app/views/questions/edit.html.erb:3
+app/controllers/questions_controller.rb:20:in `update'
+Started GET "/disciplines/18/questions/2/edit" for ::1 at 2020-01-11 21:07:43 +0700
+Processing by QuestionsController#edit as HTML
+  Parameters: {"discipline_id"=>"18", "id"=>"2"}
+  [1m[36mDiscipline Load (0.4ms)[0m  [1m[34mSELECT "disciplines".* FROM "disciplines" WHERE "disciplines"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/questions_controller.rb:3:in `edit'
+  [1m[36mQuestion Load (0.5ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."discipline_id" = $1 AND "questions"."id" = $2 LIMIT $3[0m  [["discipline_id", 2], ["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/questions_controller.rb:4:in `edit'
+  Rendering questions/edit.html.erb within layouts/application
+  [1m[36mQuestion Load (0.4ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/views/questions/_form_edit.html.erb:1
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/views/questions/_form_edit.html.erb:1
+  [1m[36mDiscipline Load (0.5ms)[0m  [1m[34mSELECT "disciplines".* FROM "disciplines" WHERE "disciplines"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/questions/_form_edit.html.erb:1
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/views/questions/_form_edit.html.erb:1
+  Rendered questions/_form_edit.html.erb (Duration: 13.0ms | Allocations: 6918)
+  Rendered questions/edit.html.erb within layouts/application (Duration: 13.6ms | Allocations: 7021)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 32ms (Views: 24.7ms | ActiveRecord: 2.1ms | Allocations: 19183)
+
+
+Started PATCH "/disciplines/2/questions/18" for ::1 at 2020-01-11 21:07:47 +0700
+Processing by QuestionsController#update as HTML
+  Parameters: {"authenticity_token"=>"vubgrcnWSInqP2Sxgz2p5t2vrZMkwear3M4tWuK2jxymzjmYZ1Kx90ediWsiRWNFVdhHEK+CieW+ZUI5a+iHVw==", "question"=>{"content"=>""}, "commit"=>"Update Question", "discipline_id"=>"2", "id"=>"18"}
+  [1m[36mDiscipline Load (0.3ms)[0m  [1m[34mSELECT "disciplines".* FROM "disciplines" WHERE "disciplines"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/questions_controller.rb:14:in `update'
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."discipline_id" = $1 AND "questions"."id" = $2 LIMIT $3[0m  [["discipline_id", 2], ["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/questions_controller.rb:15:in `update'
+  Rendering questions/edit.html.erb within layouts/application
+  [1m[36mQuestion Load (0.6ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/questions/_form_edit.html.erb:1
+  Rendered questions/_form_edit.html.erb (Duration: 3.8ms | Allocations: 1581)
+  Rendered questions/edit.html.erb within layouts/application (Duration: 4.4ms | Allocations: 1659)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 1.1ms | Allocations: 5018)
+
+
+  
+ActionView::Template::Error (Couldn't find Question with 'id'=2):
+    1: <%= simple_form_for [ @discipline, @discipline.questions.update(params[:discipline_id], { content: @question.content }) ] do |f| %>
+    2:   <p><%= f.input :content %></p>
+    3:   <p><%= f.button :submit %></p>
+    4: <% end %>
+  
+app/views/questions/_form_edit.html.erb:1
+app/views/questions/edit.html.erb:3
+app/controllers/questions_controller.rb:20:in `update'
+Started PATCH "/disciplines/2/questions/18" for ::1 at 2020-01-11 21:09:42 +0700
+Processing by QuestionsController#update as HTML
+  Parameters: {"authenticity_token"=>"vubgrcnWSInqP2Sxgz2p5t2vrZMkwear3M4tWuK2jxymzjmYZ1Kx90ediWsiRWNFVdhHEK+CieW+ZUI5a+iHVw==", "question"=>{"content"=>""}, "commit"=>"Update Question", "discipline_id"=>"2", "id"=>"18"}
+  [1m[36mDiscipline Load (0.9ms)[0m  [1m[34mSELECT "disciplines".* FROM "disciplines" WHERE "disciplines"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/questions_controller.rb:14:in `update'
+  [1m[36mQuestion Load (1.5ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."discipline_id" = $1 AND "questions"."id" = $2 LIMIT $3[0m  [["discipline_id", 2], ["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/questions_controller.rb:15:in `update'
+  Rendering questions/edit.html.erb within layouts/application
+  [1m[36mQuestion Load (0.9ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/questions/_form_edit.html.erb:1
+  Rendered questions/_form_edit.html.erb (Duration: 10.7ms | Allocations: 1689)
+  Rendered questions/edit.html.erb within layouts/application (Duration: 11.5ms | Allocations: 1767)
+Completed 500 Internal Server Error in 54ms (ActiveRecord: 15.5ms | Allocations: 13864)
+
+
+  
+ActionView::Template::Error (Couldn't find Question with 'id'=2):
+    1: <%= simple_form_for [ @discipline, @discipline.questions.update(params[:discipline_id], { content: @question.content }) ] do |f| %>
+    2:   <p><%= f.input :content %></p>
+    3:   <p><%= f.button :submit %></p>
+    4: <% end %>
+  
+app/views/questions/_form_edit.html.erb:1
+app/views/questions/edit.html.erb:3
+app/controllers/questions_controller.rb:20:in `update'
+Started GET "/disciplines/2" for ::1 at 2020-01-11 21:09:49 +0700
+Processing by DisciplinesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mDiscipline Load (1.1ms)[0m  [1m[34mSELECT "disciplines".* FROM "disciplines" WHERE "disciplines"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/disciplines_controller.rb:7:in `show'
+  Rendering disciplines/show.html.erb within layouts/application
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."discipline_id" = $1[0m  [["discipline_id", 2]]
+  ↳ app/views/disciplines/show.html.erb:7
+  Rendered collection of questions/_question.html.erb [6 times] (Duration: 5.0ms | Allocations: 1103)
+  Rendered questions/_form_new.html.erb (Duration: 8.9ms | Allocations: 3272)
+  Rendered disciplines/show.html.erb within layouts/application (Duration: 18.3ms | Allocations: 5654)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 33ms (Views: 28.9ms | ActiveRecord: 1.3ms | Allocations: 17110)
+
+
+Started POST "/disciplines/2/questions" for ::1 at 2020-01-11 21:09:52 +0700
+Processing by QuestionsController#create as HTML
+  Parameters: {"authenticity_token"=>"wAPq6Oc0msOViACALFB6z4Baggd8BG71D6NI+Jaw27gS2RsjqESHps0PY4iw92EX9KFp1+U6opiWM5x5h6MGRA==", "question"=>{"content"=>""}, "commit"=>"Create Question", "discipline_id"=>"2"}
+  [1m[36mDiscipline Load (0.3ms)[0m  [1m[34mSELECT "disciplines".* FROM "disciplines" WHERE "disciplines"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/questions_controller.rb:8:in `create'
+Redirected to http://localhost:3000/disciplines/2
+Completed 302 Found in 6ms (ActiveRecord: 0.3ms | Allocations: 2635)
+
+
+Started GET "/disciplines/2" for ::1 at 2020-01-11 21:09:52 +0700
+Processing by DisciplinesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mDiscipline Load (0.7ms)[0m  [1m[34mSELECT "disciplines".* FROM "disciplines" WHERE "disciplines"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/disciplines_controller.rb:7:in `show'
+  Rendering disciplines/show.html.erb within layouts/application
+  [1m[36mQuestion Load (3.1ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."discipline_id" = $1[0m  [["discipline_id", 2]]
+  ↳ app/views/disciplines/show.html.erb:7
+  Rendered collection of questions/_question.html.erb [6 times] (Duration: 2.4ms | Allocations: 1043)
+  Rendered questions/_form_new.html.erb (Duration: 9.9ms | Allocations: 3259)
+  Rendered disciplines/show.html.erb within layouts/application (Duration: 19.1ms | Allocations: 5408)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 42ms (Views: 33.9ms | ActiveRecord: 3.8ms | Allocations: 16701)
+
+
+Started POST "/disciplines/2/questions" for ::1 at 2020-01-11 21:09:59 +0700
+Processing by QuestionsController#create as HTML
+  Parameters: {"authenticity_token"=>"iVFWZ9aynR+pfbE/RGShxXfvxugqtX+35ehT0dyA6/OReY9SeDZkYQTfXOXlHGtm/5gsa6H2EPmHQzyyVd7juA==", "question"=>{"content"=>"1"}, "commit"=>"Create Question", "discipline_id"=>"2"}
+  [1m[36mDiscipline Load (0.4ms)[0m  [1m[34mSELECT "disciplines".* FROM "disciplines" WHERE "disciplines"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/questions_controller.rb:8:in `create'
+Redirected to http://localhost:3000/disciplines/2
+Completed 302 Found in 8ms (ActiveRecord: 0.4ms | Allocations: 2287)
+
+
+Started GET "/disciplines/2" for ::1 at 2020-01-11 21:09:59 +0700
+Processing by DisciplinesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mDiscipline Load (0.3ms)[0m  [1m[34mSELECT "disciplines".* FROM "disciplines" WHERE "disciplines"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/disciplines_controller.rb:7:in `show'
+  Rendering disciplines/show.html.erb within layouts/application
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."discipline_id" = $1[0m  [["discipline_id", 2]]
+  ↳ app/views/disciplines/show.html.erb:7
+  Rendered collection of questions/_question.html.erb [6 times] (Duration: 2.6ms | Allocations: 1043)
+  Rendered questions/_form_new.html.erb (Duration: 6.9ms | Allocations: 3259)
+  Rendered disciplines/show.html.erb within layouts/application (Duration: 14.5ms | Allocations: 5408)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 35ms (Views: 32.6ms | ActiveRecord: 0.5ms | Allocations: 16698)
+
+
+Started GET "/groups" for ::1 at 2020-01-11 21:10:21 +0700
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.6ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:10
+  Rendered groups/index.html.erb within layouts/application (Duration: 19.1ms | Allocations: 4244)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 89ms (Views: 43.1ms | ActiveRecord: 18.3ms | Allocations: 24278)
+
+
+Started GET "/groups/12/edit" for ::1 at 2020-01-11 21:10:23 +0700
+Processing by GroupsController#edit as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mGroup Load (2.5ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:17:in `edit'
+  Rendering groups/edit.html.erb within layouts/application
+  Rendered groups/_form.html.erb (Duration: 17.6ms | Allocations: 6192)
+  Rendered groups/edit.html.erb within layouts/application (Duration: 17.9ms | Allocations: 6290)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 45ms (Views: 33.2ms | ActiveRecord: 3.8ms | Allocations: 19137)
+
+
+Started PATCH "/groups/12" for ::1 at 2020-01-11 21:10:30 +0700
+Processing by GroupsController#update as HTML
+  Parameters: {"authenticity_token"=>"3Ltk+y/pMntAbR5PL4p4v1SSnr8WD2v6LmdO/OgLBJri4UVp0++htcppwZ1eDYTezhS3MrK9IhvD+24hs6ZJVA==", "group"=>{"name"=>"ИС-641", "size"=>"0"}, "commit"=>"Update Group", "id"=>"12"}
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mGroup Load (1.1ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:31:in `update'
+  Rendering groups/edit.html.erb within layouts/application
+  Rendered groups/_form.html.erb (Duration: 18.0ms | Allocations: 6264)
+  Rendered groups/edit.html.erb within layouts/application (Duration: 18.3ms | Allocations: 6361)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 96ms (Views: 36.0ms | ActiveRecord: 2.8ms | Allocations: 20637)
+
+
+Started GET "/disciplines" for ::1 at 2020-01-11 21:10:35 +0700
+Processing by DisciplinesController#index as HTML
+  Rendering disciplines/index.html.erb within layouts/application
+  [1m[36mDiscipline Load (0.5ms)[0m  [1m[34mSELECT "disciplines".* FROM "disciplines"[0m
+  ↳ app/views/disciplines/index.html.erb:9
+  Rendered disciplines/index.html.erb within layouts/application (Duration: 4.6ms | Allocations: 767)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 40ms (Views: 37.9ms | ActiveRecord: 0.5ms | Allocations: 11622)
+
+
+Started GET "/disciplines/2" for ::1 at 2020-01-11 21:10:39 +0700
+Processing by DisciplinesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mDiscipline Load (1.2ms)[0m  [1m[34mSELECT "disciplines".* FROM "disciplines" WHERE "disciplines"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/disciplines_controller.rb:7:in `show'
+  Rendering disciplines/show.html.erb within layouts/application
+  [1m[36mQuestion Load (0.4ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."discipline_id" = $1[0m  [["discipline_id", 2]]
+  ↳ app/views/disciplines/show.html.erb:7
+  Rendered collection of questions/_question.html.erb [6 times] (Duration: 4.7ms | Allocations: 1044)
+  Rendered questions/_form_new.html.erb (Duration: 11.1ms | Allocations: 3260)
+  Rendered disciplines/show.html.erb within layouts/application (Duration: 22.9ms | Allocations: 5410)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 43ms (Views: 38.2ms | ActiveRecord: 1.6ms | Allocations: 16700)
+
+
+Started GET "/disciplines/21/questions/2/edit" for ::1 at 2020-01-11 21:10:46 +0700
+Processing by QuestionsController#edit as HTML
+  Parameters: {"discipline_id"=>"21", "id"=>"2"}
+  [1m[36mDiscipline Load (0.8ms)[0m  [1m[34mSELECT "disciplines".* FROM "disciplines" WHERE "disciplines"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/questions_controller.rb:3:in `edit'
+  [1m[36mQuestion Load (0.8ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."discipline_id" = $1 AND "questions"."id" = $2 LIMIT $3[0m  [["discipline_id", 2], ["id", 21], ["LIMIT", 1]]
+  ↳ app/controllers/questions_controller.rb:4:in `edit'
+  Rendering questions/edit.html.erb within layouts/application
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/views/questions/_form_edit.html.erb:1
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/views/questions/_form_edit.html.erb:1
+  [1m[36mDiscipline Load (0.3ms)[0m  [1m[34mSELECT "disciplines".* FROM "disciplines" WHERE "disciplines"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/questions/_form_edit.html.erb:1
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/views/questions/_form_edit.html.erb:1
+  Rendered questions/_form_edit.html.erb (Duration: 14.9ms | Allocations: 6814)
+  Rendered questions/edit.html.erb within layouts/application (Duration: 15.4ms | Allocations: 6916)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 41ms (Views: 29.9ms | ActiveRecord: 2.5ms | Allocations: 19079)
+
+
+Started PATCH "/disciplines/2/questions/21" for ::1 at 2020-01-11 21:10:49 +0700
+Processing by QuestionsController#update as HTML
+  Parameters: {"authenticity_token"=>"fGr1GDkTx9R8EtD1M/CNcksqZyCuarjwrpSbE1xCLCoUQKSZ+6DHgvNSvFoP831d9AI09xgBY6EvlAlqeCvKPg==", "question"=>{"content"=>""}, "commit"=>"Update Question", "discipline_id"=>"2", "id"=>"21"}
+  [1m[36mDiscipline Load (2.4ms)[0m  [1m[34mSELECT "disciplines".* FROM "disciplines" WHERE "disciplines"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/questions_controller.rb:14:in `update'
+  [1m[36mQuestion Load (0.7ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."discipline_id" = $1 AND "questions"."id" = $2 LIMIT $3[0m  [["discipline_id", 2], ["id", 21], ["LIMIT", 1]]
+  ↳ app/controllers/questions_controller.rb:15:in `update'
+  Rendering questions/edit.html.erb within layouts/application
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/questions/_form_edit.html.erb:1
+  Rendered questions/_form_edit.html.erb (Duration: 3.4ms | Allocations: 1581)
+  Rendered questions/edit.html.erb within layouts/application (Duration: 4.0ms | Allocations: 1659)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 3.5ms | Allocations: 5046)
+
+
+  
+ActionView::Template::Error (Couldn't find Question with 'id'=2):
+    1: <%= simple_form_for [ @discipline, @discipline.questions.update(params[:discipline_id], { content: @question.content }) ] do |f| %>
+    2:   <p><%= f.input :content %></p>
+    3:   <p><%= f.button :submit %></p>
+    4: <% end %>
+  
+app/views/questions/_form_edit.html.erb:1
+app/views/questions/edit.html.erb:3
+app/controllers/questions_controller.rb:20:in `update'
+Started PATCH "/disciplines/2/questions/21" for ::1 at 2020-01-11 21:11:05 +0700
+Processing by QuestionsController#update as HTML
+  Parameters: {"authenticity_token"=>"zujxwd+2w5D00fS+YWlQkJxj50HdwRqX6Cs8yHlipFTWwCj0cTI67llzGWTAEZozFBQNwlaCddmKgFOr8DysHw==", "question"=>{"content"=>"awerrw"}, "commit"=>"Update Question", "discipline_id"=>"2", "id"=>"21"}
+  [1m[36mDiscipline Load (1.3ms)[0m  [1m[34mSELECT "disciplines".* FROM "disciplines" WHERE "disciplines"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/questions_controller.rb:14:in `update'
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."discipline_id" = $1 AND "questions"."id" = $2 LIMIT $3[0m  [["discipline_id", 2], ["id", 21], ["LIMIT", 1]]
+  ↳ app/controllers/questions_controller.rb:15:in `update'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/questions_controller.rb:17:in `update'
+  [1m[36mQuestion Update (0.4ms)[0m  [1m[33mUPDATE "questions" SET "content" = $1, "updated_at" = $2 WHERE "questions"."id" = $3[0m  [["content", "awerrw"], ["updated_at", "2020-01-11 14:11:05.677406"], ["id", 21]]
+  ↳ app/controllers/questions_controller.rb:17:in `update'
+  [1m[35m (21.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/questions_controller.rb:17:in `update'
+Redirected to http://localhost:3000/disciplines/2
+Completed 302 Found in 37ms (ActiveRecord: 23.9ms | Allocations: 4116)
+
+
+Started GET "/disciplines/2" for ::1 at 2020-01-11 21:11:05 +0700
+Processing by DisciplinesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mDiscipline Load (0.6ms)[0m  [1m[34mSELECT "disciplines".* FROM "disciplines" WHERE "disciplines"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/disciplines_controller.rb:7:in `show'
+  Rendering disciplines/show.html.erb within layouts/application
+  [1m[36mQuestion Load (0.4ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."discipline_id" = $1[0m  [["discipline_id", 2]]
+  ↳ app/views/disciplines/show.html.erb:7
+  Rendered collection of questions/_question.html.erb [6 times] (Duration: 1.4ms | Allocations: 1043)
+  Rendered questions/_form_new.html.erb (Duration: 12.2ms | Allocations: 3267)
+  Rendered disciplines/show.html.erb within layouts/application (Duration: 16.6ms | Allocations: 5416)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 42ms (Views: 32.4ms | ActiveRecord: 1.0ms | Allocations: 16719)
+
+
+Started GET "/disciplines/21/questions/2/edit" for ::1 at 2020-01-11 21:11:11 +0700
+Processing by QuestionsController#edit as HTML
+  Parameters: {"discipline_id"=>"21", "id"=>"2"}
+  [1m[36mDiscipline Load (0.3ms)[0m  [1m[34mSELECT "disciplines".* FROM "disciplines" WHERE "disciplines"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/questions_controller.rb:3:in `edit'
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."discipline_id" = $1 AND "questions"."id" = $2 LIMIT $3[0m  [["discipline_id", 2], ["id", 21], ["LIMIT", 1]]
+  ↳ app/controllers/questions_controller.rb:4:in `edit'
+  Rendering questions/edit.html.erb within layouts/application
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/views/questions/_form_edit.html.erb:1
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/views/questions/_form_edit.html.erb:1
+  [1m[36mDiscipline Load (0.6ms)[0m  [1m[34mSELECT "disciplines".* FROM "disciplines" WHERE "disciplines"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/questions/_form_edit.html.erb:1
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/views/questions/_form_edit.html.erb:1
+  Rendered questions/_form_edit.html.erb (Duration: 22.8ms | Allocations: 6625)
+  Rendered questions/edit.html.erb within layouts/application (Duration: 23.3ms | Allocations: 6726)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 48ms (Views: 40.0ms | ActiveRecord: 2.0ms | Allocations: 18879)
+
+
+Started PATCH "/disciplines/2/questions/21" for ::1 at 2020-01-11 21:11:16 +0700
+Processing by QuestionsController#update as HTML
+  Parameters: {"authenticity_token"=>"PMLYnPZ9i3WkmYXt1f4JaWv3jXev9ZX0cPIMh8IEU/FU6IkdNM6LIyvZ6ULp/flG1N/eoBmeTqXx8p7+5m215Q==", "question"=>{"content"=>"1"}, "commit"=>"Update Question", "discipline_id"=>"2", "id"=>"21"}
+  [1m[36mDiscipline Load (0.7ms)[0m  [1m[34mSELECT "disciplines".* FROM "disciplines" WHERE "disciplines"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/questions_controller.rb:14:in `update'
+  [1m[36mQuestion Load (0.4ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."discipline_id" = $1 AND "questions"."id" = $2 LIMIT $3[0m  [["discipline_id", 2], ["id", 21], ["LIMIT", 1]]
+  ↳ app/controllers/questions_controller.rb:15:in `update'
+  Rendering questions/edit.html.erb within layouts/application
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/questions/_form_edit.html.erb:1
+  Rendered questions/_form_edit.html.erb (Duration: 2.1ms | Allocations: 1581)
+  Rendered questions/edit.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1659)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 1.3ms | Allocations: 4725)
+
+
+  
+ActionView::Template::Error (Couldn't find Question with 'id'=2):
+    1: <%= simple_form_for [ @discipline, @discipline.questions.update(params[:discipline_id], { content: @question.content }) ] do |f| %>
+    2:   <p><%= f.input :content %></p>
+    3:   <p><%= f.button :submit %></p>
+    4: <% end %>
+  
+app/views/questions/_form_edit.html.erb:1
+app/views/questions/edit.html.erb:3
+app/controllers/questions_controller.rb:20:in `update'
+Started GET "/disciplines" for ::1 at 2020-01-11 21:13:17 +0700
+Processing by DisciplinesController#index as HTML
+  Rendering disciplines/index.html.erb within layouts/application
+  [1m[36mDiscipline Load (1.1ms)[0m  [1m[34mSELECT "disciplines".* FROM "disciplines"[0m
+  ↳ app/views/disciplines/index.html.erb:9
+  Rendered disciplines/index.html.erb within layouts/application (Duration: 6.6ms | Allocations: 763)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 47ms (Views: 44.2ms | ActiveRecord: 1.1ms | Allocations: 11612)
+
+
+Started GET "/disciplines/2" for ::1 at 2020-01-11 21:13:20 +0700
+Processing by DisciplinesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mDiscipline Load (0.8ms)[0m  [1m[34mSELECT "disciplines".* FROM "disciplines" WHERE "disciplines"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/disciplines_controller.rb:7:in `show'
+  Rendering disciplines/show.html.erb within layouts/application
+  [1m[36mQuestion Load (3.4ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."discipline_id" = $1[0m  [["discipline_id", 2]]
+  ↳ app/views/disciplines/show.html.erb:7
+  Rendered collection of questions/_question.html.erb [6 times] (Duration: 6.8ms | Allocations: 1043)
+  Rendered questions/_form_new.html.erb (Duration: 6.1ms | Allocations: 3265)
+  Rendered disciplines/show.html.erb within layouts/application (Duration: 23.6ms | Allocations: 5414)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 45ms (Views: 38.4ms | ActiveRecord: 4.2ms | Allocations: 16701)
+
+
+Started GET "/lists/1" for ::1 at 2020-01-11 21:19:28 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/lists/1"):
+  
+actionpack (6.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.2.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.0) lib/puma/configuration.rb:228:in `call'
+puma (4.3.0) lib/puma/server.rb:667:in `handle_request'
+puma (4.3.0) lib/puma/server.rb:470:in `process_client'
+puma (4.3.0) lib/puma/server.rb:328:in `block in run'
+puma (4.3.0) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/lists/" for ::1 at 2020-01-11 21:19:31 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/lists"):
+  
+actionpack (6.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.2.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.0) lib/puma/configuration.rb:228:in `call'
+puma (4.3.0) lib/puma/server.rb:667:in `handle_request'
+puma (4.3.0) lib/puma/server.rb:470:in `process_client'
+puma (4.3.0) lib/puma/server.rb:328:in `block in run'
+puma (4.3.0) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/list" for ::1 at 2020-01-11 21:19:34 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/list"):
+  
+actionpack (6.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.2.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.0) lib/puma/configuration.rb:228:in `call'
+puma (4.3.0) lib/puma/server.rb:667:in `handle_request'
+puma (4.3.0) lib/puma/server.rb:470:in `process_client'
+puma (4.3.0) lib/puma/server.rb:328:in `block in run'
+puma (4.3.0) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/" for ::1 at 2020-01-12 13:36:46 +0700
+  [1m[35m (18.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by GroupsController#index as HTML
+Completed 401 Unauthorized in 26ms (ActiveRecord: 0.0ms | Allocations: 1524)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-01-12 13:36:47 +0700
+Processing by Devise::SessionsController#new as HTML
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (Duration: 1.2ms | Allocations: 651)
+  Rendered users/sessions/new.html.erb within layouts/application (Duration: 130.7ms | Allocations: 21997)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 1929ms (Views: 1863.7ms | ActiveRecord: 54.6ms | Allocations: 77498)
+
+
+Started GET "/users/password/new" for ::1 at 2020-01-12 13:37:08 +0700
+Processing by Devise::PasswordsController#new as HTML
+  Rendering users/passwords/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (Duration: 1.3ms | Allocations: 173)
+  Rendered users/passwords/new.html.erb within layouts/application (Duration: 20.2ms | Allocations: 4005)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 47ms (Views: 42.3ms | ActiveRecord: 0.0ms | Allocations: 15660)
+
+
+Started POST "/users/sign_in" for ::1 at 2020-01-12 13:37:40 +0700
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"wx81iMe7YaDUyyNoy3W+iNxCWR7lS9posJujxACiNwRAtCT7jJDDbVOlORBMWKrrzo6HNALRgMYYj6z85+8D3A==", "user"=>{"email"=>"bot-io@yandex.ru", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (307.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "bot-io@yandex.ru"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 842ms (ActiveRecord: 307.6ms | Allocations: 7093)
+
+
+Started GET "/" for ::1 at 2020-01-12 13:37:41 +0700
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (78.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:10
+  Rendered groups/index.html.erb within layouts/application (Duration: 127.4ms | Allocations: 4571)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 231ms (Views: 65.5ms | ActiveRecord: 82.7ms | Allocations: 19146)
+
+
+Started GET "/students" for ::1 at 2020-01-12 13:38:08 +0700
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (33.3ms)[0m  [1m[34mSELECT "students".* FROM "students" ORDER BY id[0m
+  ↳ app/views/students/index.html.erb:8:in `each_with_index'
+  Rendered students/index.html.erb within layouts/application (Duration: 849.2ms | Allocations: 206815)
+Completed 500 Internal Server Error in 898ms (ActiveRecord: 39.2ms | Allocations: 209262)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `counter_students' for #<#<Class:0x0000563ed3a15938>:0x0000563ed39cfcf8>):
+     6:   </tr>
+     7: </table>
+     8: <% @students.each_with_index do |student, index| %>
+     9:   <% @number_student = counter_students %>
+    10:   <%= render student %>
+    11:   <% counter_students += 1 %>
+    12: <% end %>
+  
+app/views/students/index.html.erb:9
+app/views/students/index.html.erb:8:in `each_with_index'
+app/views/students/index.html.erb:8
+Started GET "/students" for ::1 at 2020-01-12 13:38:58 +0700
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (1.7ms)[0m  [1m[34mSELECT "students".* FROM "students" ORDER BY id[0m
+  ↳ app/views/students/index.html.erb:8:in `each_with_index'
+  Rendered students/index.html.erb within layouts/application (Duration: 516.8ms | Allocations: 202724)
+Completed 500 Internal Server Error in 524ms (ActiveRecord: 1.7ms | Allocations: 204126)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `counter_students' for #<#<Class:0x00007f4c74b39530>:0x00007f4c74b339a0>):
+     6:   </tr>
+     7: </table>
+     8: <% @students.each_with_index do |student, index| %>
+     9:   <!--<% @number_student = counter_students %>
+    10:   <%= render student %>
+    11:   <% counter_students += 1 %> -->
+    12:   <%= render student %>
+  
+app/views/students/index.html.erb:9
+app/views/students/index.html.erb:8:in `each_with_index'
+app/views/students/index.html.erb:8
+Started GET "/students" for ::1 at 2020-01-12 13:39:01 +0700
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.6ms)[0m  [1m[34mSELECT "students".* FROM "students" ORDER BY id[0m
+  ↳ app/views/students/index.html.erb:8:in `each_with_index'
+  Rendered students/index.html.erb within layouts/application (Duration: 399.8ms | Allocations: 202482)
+Completed 500 Internal Server Error in 402ms (ActiveRecord: 0.6ms | Allocations: 202988)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `counter_students' for #<#<Class:0x00007f4c74b39530>:0x00007f4c74b57a30>):
+     6:   </tr>
+     7: </table>
+     8: <% @students.each_with_index do |student, index| %>
+     9:   <!--<% @number_student = counter_students %>
+    10:   <%= render student %>
+    11:   <% counter_students += 1 %> -->
+    12:   <%= render student %>
+  
+app/views/students/index.html.erb:9
+app/views/students/index.html.erb:8:in `each_with_index'
+app/views/students/index.html.erb:8
+Started GET "/students" for ::1 at 2020-01-12 13:39:13 +0700
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.6ms)[0m  [1m[34mSELECT "students".* FROM "students" ORDER BY id[0m
+  ↳ app/views/students/index.html.erb:8:in `each_with_index'
+  Rendered students/_student.html.erb (Duration: 37.7ms | Allocations: 371)
+  Rendered students/_student.html.erb (Duration: 0.5ms | Allocations: 114)
+  Rendered students/_student.html.erb (Duration: 0.5ms | Allocations: 114)
+  Rendered students/_student.html.erb (Duration: 0.7ms | Allocations: 114)
+  Rendered students/_student.html.erb (Duration: 0.7ms | Allocations: 114)
+  Rendered students/index.html.erb within layouts/application (Duration: 47.3ms | Allocations: 2262)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 67ms (Views: 62.5ms | ActiveRecord: 0.6ms | Allocations: 14286)
+
+
+Started GET "/students" for ::1 at 2020-01-12 13:39:52 +0700
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (1.1ms)[0m  [1m[34mSELECT "students".* FROM "students" ORDER BY id[0m
+  ↳ app/views/students/index.html.erb:9:in `each_with_index'
+  Rendered students/_student.html.erb (Duration: 1.0ms | Allocations: 358)
+  Rendered students/_student.html.erb (Duration: 0.2ms | Allocations: 113)
+  Rendered students/_student.html.erb (Duration: 0.2ms | Allocations: 113)
+  Rendered students/_student.html.erb (Duration: 0.2ms | Allocations: 113)
+  Rendered students/_student.html.erb (Duration: 0.2ms | Allocations: 113)
+  Rendered students/index.html.erb within layouts/application (Duration: 7.2ms | Allocations: 2260)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 23ms (Views: 21.2ms | ActiveRecord: 1.1ms | Allocations: 14263)
+
+
+Started GET "/students" for ::1 at 2020-01-12 13:39:58 +0700
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.6ms)[0m  [1m[34mSELECT "students".* FROM "students" ORDER BY id[0m
+  ↳ app/views/students/index.html.erb:9:in `each_with_index'
+  Rendered students/_student.html.erb (Duration: 0.8ms | Allocations: 357)
+  Rendered students/_student.html.erb (Duration: 0.3ms | Allocations: 113)
+  Rendered students/_student.html.erb (Duration: 0.3ms | Allocations: 113)
+  Rendered students/_student.html.erb (Duration: 0.3ms | Allocations: 113)
+  Rendered students/_student.html.erb (Duration: 0.3ms | Allocations: 113)
+  Rendered students/index.html.erb within layouts/application (Duration: 6.5ms | Allocations: 2250)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 25ms (Views: 21.9ms | ActiveRecord: 0.6ms | Allocations: 14242)
+
+
+Started GET "/students" for ::1 at 2020-01-12 13:41:25 +0700
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students" ORDER BY id[0m
+  ↳ app/views/students/index.html.erb:9:in `each_with_index'
+  Rendered students/_student.html.erb (Duration: 0.8ms | Allocations: 334)
+  Rendered students/_student.html.erb (Duration: 0.2ms | Allocations: 113)
+  Rendered students/_student.html.erb (Duration: 0.1ms | Allocations: 113)
+  Rendered students/_student.html.erb (Duration: 0.1ms | Allocations: 113)
+  Rendered students/_student.html.erb (Duration: 0.3ms | Allocations: 113)
+  Rendered students/index.html.erb within layouts/application (Duration: 4.6ms | Allocations: 2235)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 25ms (Views: 23.5ms | ActiveRecord: 0.3ms | Allocations: 14248)
+
+
+Started GET "/students" for ::1 at 2020-01-12 13:41:26 +0700
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT "students".* FROM "students" ORDER BY id[0m
+  ↳ app/views/students/index.html.erb:9:in `each_with_index'
+  Rendered students/_student.html.erb (Duration: 0.5ms | Allocations: 143)
+  Rendered students/_student.html.erb (Duration: 0.2ms | Allocations: 113)
+  Rendered students/_student.html.erb (Duration: 0.4ms | Allocations: 113)
+  Rendered students/_student.html.erb (Duration: 0.5ms | Allocations: 113)
+  Rendered students/_student.html.erb (Duration: 0.5ms | Allocations: 113)
+  Rendered students/index.html.erb within layouts/application (Duration: 8.6ms | Allocations: 1702)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 23ms (Views: 21.6ms | ActiveRecord: 0.4ms | Allocations: 12583)
+
+
+Started GET "/groups" for ::1 at 2020-01-12 13:41:28 +0700
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (2.2ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:10
+  Rendered groups/index.html.erb within layouts/application (Duration: 8.5ms | Allocations: 1137)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 36ms (Views: 28.4ms | ActiveRecord: 2.6ms | Allocations: 14115)
+
+
+Started GET "/students" for ::1 at 2020-01-12 13:41:28 +0700
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.9ms)[0m  [1m[34mSELECT "students".* FROM "students" ORDER BY id[0m
+  ↳ app/views/students/index.html.erb:9:in `each_with_index'
+  Rendered students/_student.html.erb (Duration: 0.7ms | Allocations: 143)
+  Rendered students/_student.html.erb (Duration: 0.4ms | Allocations: 113)
+  Rendered students/_student.html.erb (Duration: 0.4ms | Allocations: 113)
+  Rendered students/_student.html.erb (Duration: 0.3ms | Allocations: 113)
+  Rendered students/_student.html.erb (Duration: 0.3ms | Allocations: 113)
+  Rendered students/index.html.erb within layouts/application (Duration: 10.6ms | Allocations: 1702)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 54ms (Views: 51.2ms | ActiveRecord: 0.9ms | Allocations: 12575)
+
+
+Started GET "/students/5" for ::1 at 2020-01-12 13:41:30 +0700
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:7:in `show'
+  Rendering students/show.html.erb within layouts/application
+  Rendered students/show.html.erb within layouts/application (Duration: 101.2ms | Allocations: 248)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 118ms (Views: 113.4ms | ActiveRecord: 0.3ms | Allocations: 11897)
+
+
+Started GET "/students" for ::1 at 2020-01-12 13:41:31 +0700
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.9ms)[0m  [1m[34mSELECT "students".* FROM "students" ORDER BY id[0m
+  ↳ app/views/students/index.html.erb:9:in `each_with_index'
+  Rendered students/_student.html.erb (Duration: 0.5ms | Allocations: 138)
+  Rendered students/_student.html.erb (Duration: 0.3ms | Allocations: 113)
+  Rendered students/_student.html.erb (Duration: 0.3ms | Allocations: 113)
+  Rendered students/_student.html.erb (Duration: 0.3ms | Allocations: 113)
+  Rendered students/_student.html.erb (Duration: 0.4ms | Allocations: 113)
+  Rendered students/index.html.erb within layouts/application (Duration: 5.7ms | Allocations: 1697)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 29ms (Views: 27.2ms | ActiveRecord: 0.9ms | Allocations: 12565)
+
+
+Started GET "/students/8" for ::1 at 2020-01-12 13:41:32 +0700
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:7:in `show'
+  Rendering students/show.html.erb within layouts/application
+  Rendered students/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 82)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 32ms (Views: 25.2ms | ActiveRecord: 0.4ms | Allocations: 11476)
+
+
+Started GET "/students" for ::1 at 2020-01-12 13:41:33 +0700
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (1.8ms)[0m  [1m[34mSELECT "students".* FROM "students" ORDER BY id[0m
+  ↳ app/views/students/index.html.erb:9:in `each_with_index'
+  Rendered students/_student.html.erb (Duration: 0.4ms | Allocations: 137)
+  Rendered students/_student.html.erb (Duration: 0.4ms | Allocations: 113)
+  Rendered students/_student.html.erb (Duration: 0.3ms | Allocations: 113)
+  Rendered students/_student.html.erb (Duration: 0.3ms | Allocations: 113)
+  Rendered students/_student.html.erb (Duration: 0.4ms | Allocations: 113)
+  Rendered students/index.html.erb within layouts/application (Duration: 7.5ms | Allocations: 1695)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 34ms (Views: 31.3ms | ActiveRecord: 1.8ms | Allocations: 12556)
+
+
+Started GET "/students/7" for ::1 at 2020-01-12 13:41:34 +0700
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mStudent Load (1.0ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:7:in `show'
+  Rendering students/show.html.erb within layouts/application
+  Rendered students/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 82)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 28ms (Views: 23.9ms | ActiveRecord: 1.0ms | Allocations: 11469)
+
+
+Started GET "/students" for ::1 at 2020-01-12 13:41:36 +0700
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.9ms)[0m  [1m[34mSELECT "students".* FROM "students" ORDER BY id[0m
+  ↳ app/views/students/index.html.erb:9:in `each_with_index'
+  Rendered students/_student.html.erb (Duration: 0.8ms | Allocations: 137)
+  Rendered students/_student.html.erb (Duration: 3.0ms | Allocations: 113)
+  Rendered students/_student.html.erb (Duration: 1.2ms | Allocations: 113)
+  Rendered students/_student.html.erb (Duration: 0.4ms | Allocations: 113)
+  Rendered students/_student.html.erb (Duration: 1.5ms | Allocations: 113)
+  Rendered students/index.html.erb within layouts/application (Duration: 20.8ms | Allocations: 1695)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 51ms (Views: 49.1ms | ActiveRecord: 0.9ms | Allocations: 12565)
+
+
+Started GET "/disciplines" for ::1 at 2020-01-12 13:41:36 +0700
+Processing by DisciplinesController#index as HTML
+  Rendering disciplines/index.html.erb within layouts/application
+  [1m[36mDiscipline Load (143.4ms)[0m  [1m[34mSELECT "disciplines".* FROM "disciplines"[0m
+  ↳ app/views/disciplines/index.html.erb:9
+  Rendered disciplines/index.html.erb within layouts/application (Duration: 202.6ms | Allocations: 3746)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 277ms (Views: 84.5ms | ActiveRecord: 147.5ms | Allocations: 16271)
+
+
+Started GET "/examinations" for ::1 at 2020-01-12 13:41:38 +0700
+Processing by ExaminationsController#index as HTML
+  Rendering examinations/index.html.erb within layouts/application
+  [1m[36mExamination Load (36.4ms)[0m  [1m[34mSELECT "examinations".* FROM "examinations"[0m
+  ↳ app/views/examinations/index.html.erb:11
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/examinations/index.html.erb:14
+  [1m[36mDiscipline Load (0.4ms)[0m  [1m[34mSELECT "disciplines".* FROM "disciplines" WHERE "disciplines"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/examinations/index.html.erb:15
+  Rendered examinations/index.html.erb within layouts/application (Duration: 129.6ms | Allocations: 10387)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 184ms (Views: 109.6ms | ActiveRecord: 41.7ms | Allocations: 22773)
+
+
+Started GET "/examlists" for ::1 at 2020-01-12 13:41:38 +0700
+Processing by ExamlistsController#index as HTML
+  Rendering examlists/index.html.erb within layouts/application
+  [1m[36mExamlist Load (53.8ms)[0m  [1m[34mSELECT "examlists".* FROM "examlists"[0m
+  ↳ app/views/examlists/index.html.erb:16
+  Rendered examlists/index.html.erb within layouts/application (Duration: 89.6ms | Allocations: 5386)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 130ms (Views: 51.0ms | ActiveRecord: 58.7ms | Allocations: 17988)
+
+
+Started GET "/students" for ::1 at 2020-01-12 13:41:39 +0700
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (1.2ms)[0m  [1m[34mSELECT "students".* FROM "students" ORDER BY id[0m
+  ↳ app/views/students/index.html.erb:9:in `each_with_index'
+  Rendered students/_student.html.erb (Duration: 0.5ms | Allocations: 143)
+  Rendered students/_student.html.erb (Duration: 0.3ms | Allocations: 113)
+  Rendered students/_student.html.erb (Duration: 0.3ms | Allocations: 113)
+  Rendered students/_student.html.erb (Duration: 0.4ms | Allocations: 113)
+  Rendered students/_student.html.erb (Duration: 0.3ms | Allocations: 113)
+  Rendered students/index.html.erb within layouts/application (Duration: 8.4ms | Allocations: 1702)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 38ms (Views: 35.8ms | ActiveRecord: 1.2ms | Allocations: 12587)
+
+
+Started GET "/students/12/edit" for ::1 at 2020-01-12 13:41:44 +0700
+Processing by StudentsController#edit as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mStudent Load (0.5ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:15:in `edit'
+  Rendering students/edit.html.erb within layouts/application
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/students/_form.html.erb:18
+  Rendered students/_form.html.erb (Duration: 55.5ms | Allocations: 10945)
+  Rendered students/edit.html.erb within layouts/application (Duration: 169.7ms | Allocations: 11303)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 190ms (Views: 186.0ms | ActiveRecord: 0.8ms | Allocations: 22747)
+
+
+Started GET "/students" for ::1 at 2020-01-12 13:41:46 +0700
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.5ms)[0m  [1m[34mSELECT "students".* FROM "students" ORDER BY id[0m
+  ↳ app/views/students/index.html.erb:9:in `each_with_index'
+  Rendered students/_student.html.erb (Duration: 0.4ms | Allocations: 138)
+  Rendered students/_student.html.erb (Duration: 0.3ms | Allocations: 113)
+  Rendered students/_student.html.erb (Duration: 0.4ms | Allocations: 113)
+  Rendered students/_student.html.erb (Duration: 1.1ms | Allocations: 113)
+  Rendered students/_student.html.erb (Duration: 0.3ms | Allocations: 113)
+  Rendered students/index.html.erb within layouts/application (Duration: 21.0ms | Allocations: 1697)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 63ms (Views: 60.8ms | ActiveRecord: 0.5ms | Allocations: 12573)
+
+
+Started GET "/students/6" for ::1 at 2020-01-12 13:41:48 +0700
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:7:in `show'
+  Rendering students/show.html.erb within layouts/application
+  Rendered students/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 82)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 31ms (Views: 26.4ms | ActiveRecord: 0.4ms | Allocations: 11472)
+
+
+Started GET "/students" for ::1 at 2020-01-12 13:41:49 +0700
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.8ms)[0m  [1m[34mSELECT "students".* FROM "students" ORDER BY id[0m
+  ↳ app/views/students/index.html.erb:9:in `each_with_index'
+  Rendered students/_student.html.erb (Duration: 2.6ms | Allocations: 137)
+  Rendered students/_student.html.erb (Duration: 0.4ms | Allocations: 113)
+  Rendered students/_student.html.erb (Duration: 0.3ms | Allocations: 113)
+  Rendered students/_student.html.erb (Duration: 0.3ms | Allocations: 113)
+  Rendered students/_student.html.erb (Duration: 0.3ms | Allocations: 113)
+  Rendered students/index.html.erb within layouts/application (Duration: 11.0ms | Allocations: 1695)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 51ms (Views: 49.1ms | ActiveRecord: 0.8ms | Allocations: 12564)
+
+
+Started GET "/students/8" for ::1 at 2020-01-12 13:41:50 +0700
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:7:in `show'
+  Rendering students/show.html.erb within layouts/application
+  Rendered students/show.html.erb within layouts/application (Duration: 0.8ms | Allocations: 82)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 39ms (Views: 35.1ms | ActiveRecord: 0.4ms | Allocations: 11476)
+
+
+Started GET "/students" for ::1 at 2020-01-12 13:41:50 +0700
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.5ms)[0m  [1m[34mSELECT "students".* FROM "students" ORDER BY id[0m
+  ↳ app/views/students/index.html.erb:9:in `each_with_index'
+  Rendered students/_student.html.erb (Duration: 0.6ms | Allocations: 137)
+  Rendered students/_student.html.erb (Duration: 0.5ms | Allocations: 113)
+  Rendered students/_student.html.erb (Duration: 0.4ms | Allocations: 113)
+  Rendered students/_student.html.erb (Duration: 0.5ms | Allocations: 113)
+  Rendered students/_student.html.erb (Duration: 0.3ms | Allocations: 113)
+  Rendered students/index.html.erb within layouts/application (Duration: 7.0ms | Allocations: 1695)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 41ms (Views: 38.9ms | ActiveRecord: 0.5ms | Allocations: 12570)
+
+
+Started GET "/students/8/edit" for ::1 at 2020-01-12 13:41:51 +0700
+Processing by StudentsController#edit as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mStudent Load (2.3ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:15:in `edit'
+  Rendering students/edit.html.erb within layouts/application
+  [1m[36mGroup Load (1.0ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/students/_form.html.erb:18
+  Rendered students/_form.html.erb (Duration: 31.4ms | Allocations: 9445)
+  Rendered students/edit.html.erb within layouts/application (Duration: 31.8ms | Allocations: 9542)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 53ms (Views: 47.2ms | ActiveRecord: 3.3ms | Allocations: 20843)
+
+
+Started GET "/students" for ::1 at 2020-01-12 13:41:52 +0700
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.6ms)[0m  [1m[34mSELECT "students".* FROM "students" ORDER BY id[0m
+  ↳ app/views/students/index.html.erb:9:in `each_with_index'
+  Rendered students/_student.html.erb (Duration: 0.7ms | Allocations: 137)
+  Rendered students/_student.html.erb (Duration: 0.4ms | Allocations: 113)
+  Rendered students/_student.html.erb (Duration: 0.3ms | Allocations: 113)
+  Rendered students/_student.html.erb (Duration: 1.6ms | Allocations: 113)
+  Rendered students/_student.html.erb (Duration: 0.7ms | Allocations: 113)
+  Rendered students/index.html.erb within layouts/application (Duration: 11.1ms | Allocations: 1695)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 40ms (Views: 38.4ms | ActiveRecord: 0.6ms | Allocations: 12566)
+
+
+Started GET "/students" for ::1 at 2020-01-12 13:42:12 +0700
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students" ORDER BY id[0m
+  ↳ app/views/students/index.html.erb:9:in `each_with_index'
+  Rendered students/_student.html.erb (Duration: 0.9ms | Allocations: 327)
+  Rendered students/_student.html.erb (Duration: 0.2ms | Allocations: 113)
+  Rendered students/_student.html.erb (Duration: 0.1ms | Allocations: 113)
+  Rendered students/_student.html.erb (Duration: 0.2ms | Allocations: 113)
+  Rendered students/_student.html.erb (Duration: 0.1ms | Allocations: 113)
+  Rendered students/index.html.erb within layouts/application (Duration: 4.3ms | Allocations: 2226)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 20ms (Views: 18.8ms | ActiveRecord: 0.3ms | Allocations: 14225)
+
+
+Started GET "/students" for ::1 at 2020-01-12 13:42:13 +0700
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT "students".* FROM "students" ORDER BY id[0m
+  ↳ app/views/students/index.html.erb:9:in `each_with_index'
+  Rendered students/_student.html.erb (Duration: 0.4ms | Allocations: 143)
+  Rendered students/_student.html.erb (Duration: 0.3ms | Allocations: 113)
+  Rendered students/_student.html.erb (Duration: 0.2ms | Allocations: 113)
+  Rendered students/_student.html.erb (Duration: 0.2ms | Allocations: 113)
+  Rendered students/_student.html.erb (Duration: 0.1ms | Allocations: 113)
+  Rendered students/index.html.erb within layouts/application (Duration: 4.4ms | Allocations: 1702)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 25ms (Views: 23.2ms | ActiveRecord: 0.4ms | Allocations: 12580)
+
+
+Started GET "/students" for ::1 at 2020-01-12 13:42:36 +0700
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students" ORDER BY id[0m
+  ↳ app/views/students/index.html.erb:9:in `each_with_index'
+  Rendered students/_student.html.erb (Duration: 0.8ms | Allocations: 329)
+  Rendered students/_student.html.erb (Duration: 0.3ms | Allocations: 114)
+  Rendered students/_student.html.erb (Duration: 0.3ms | Allocations: 114)
+  Rendered students/_student.html.erb (Duration: 0.2ms | Allocations: 114)
+  Rendered students/_student.html.erb (Duration: 0.2ms | Allocations: 114)
+  Rendered students/index.html.erb within layouts/application (Duration: 4.9ms | Allocations: 2226)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 26ms (Views: 22.3ms | ActiveRecord: 0.3ms | Allocations: 14226)
+
+
+Started GET "/students" for ::1 at 2020-01-12 13:42:37 +0700
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students" ORDER BY id[0m
+  ↳ app/views/students/index.html.erb:9:in `each_with_index'
+  Rendered students/_student.html.erb (Duration: 0.3ms | Allocations: 144)
+  Rendered students/_student.html.erb (Duration: 0.2ms | Allocations: 114)
+  Rendered students/_student.html.erb (Duration: 0.1ms | Allocations: 114)
+  Rendered students/_student.html.erb (Duration: 0.2ms | Allocations: 114)
+  Rendered students/_student.html.erb (Duration: 0.2ms | Allocations: 114)
+  Rendered students/index.html.erb within layouts/application (Duration: 3.2ms | Allocations: 1707)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 20ms (Views: 19.3ms | ActiveRecord: 0.3ms | Allocations: 12572)
+
+
+Started GET "/students" for ::1 at 2020-01-12 13:42:42 +0700
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students" ORDER BY id[0m
+  ↳ app/views/students/index.html.erb:9:in `each_with_index'
+  Rendered students/_student.html.erb (Duration: 0.8ms | Allocations: 327)
+  Rendered students/_student.html.erb (Duration: 0.2ms | Allocations: 113)
+  Rendered students/_student.html.erb (Duration: 0.2ms | Allocations: 113)
+  Rendered students/_student.html.erb (Duration: 0.2ms | Allocations: 113)
+  Rendered students/_student.html.erb (Duration: 0.2ms | Allocations: 113)
+  Rendered students/index.html.erb within layouts/application (Duration: 4.3ms | Allocations: 2220)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 22ms (Views: 20.4ms | ActiveRecord: 0.3ms | Allocations: 14217)
+
+
+Started GET "/groups" for ::1 at 2020-01-12 13:42:58 +0700
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:10
+  Rendered groups/index.html.erb within layouts/application (Duration: 4.6ms | Allocations: 1137)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 44ms (Views: 34.4ms | ActiveRecord: 0.9ms | Allocations: 14102)
+
+
