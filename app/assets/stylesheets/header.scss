@@ -12,7 +12,7 @@
   display: inline-block;
   vertical-align:top;
 }
-.header-menu li:last-child:after {content: none;}
+.header-menu li:nth-last-child(2):after {content: none;}
 .header-menu a {
   text-decoration: none;
   font-family: 'Ubuntu Condensed', sans-serif;
@@ -52,16 +52,17 @@
 }
 
 a:hover {
-  color: black;
   background-color: white;
 }
 
-.header-sign-out {
+.header-sign {
   float: right;
-  a:hover {
-    color: lightblue;
-  }
-  a:before, a:after {
-    background: white;
-  }
+}
+
+.alert {
+  color: red;
+}
+
+.notice {
+  color: green;
 }
