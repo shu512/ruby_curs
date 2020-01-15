@@ -7,14 +7,14 @@ class DisciplinePolicy
   end
 
   def create?
-    user.admin?
+    user.admin? unless user.nil?
   end
 
   def update?
-    user.admin?
+    user.admin? unless user.nil?
   end
 
   def destroy?
-    user.admin?
+    user.admin? unless user.nil?
   end
 end
