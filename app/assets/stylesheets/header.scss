@@ -3,7 +3,6 @@
   margin-top: 7px;
   list-style: none;
   text-align: center;
-  background: white;
 }
 .header-menu li {display: inline-block;}
 .header-menu li:after {
@@ -52,7 +51,7 @@
 }
 
 a:hover {
-  background-color: white;
+  background-color: transparent;
 }
 
 .header-sign {
