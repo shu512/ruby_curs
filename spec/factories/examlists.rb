@@ -3,5 +3,6 @@ FactoryBot.define do
     student_id { 1 }
     examination_id { 1 }
     mark { 1 }
+    id { 1 }
   end
 end

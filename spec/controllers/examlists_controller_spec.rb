@@ -1,10 +1,6 @@
 require 'rails_helper'
 
 RSpec.describe ExamlistsController, type: :controller do
-  group = FactoryBot.create(:group)
-  discipline = FactoryBot.create(:discipline)
-  student = FactoryBot.create(:student)
-  test_examination = FactoryBot.create(:examination)
   describe '#index' do
     subject { get :index }
     context 'no login' do
@@ -23,7 +19,14 @@ RSpec.describe ExamlistsController, type: :controller do
   end
 
   describe '#create' do
-    subject { get :create, params: { examlist: FactoryBot.build(:examlist).attributes } }
+    subject do
+      group = FactoryBot.create(:group)
+      student = FactoryBot.create(:student)
+      discipline = FactoryBot.create(:discipline)
+      examination = FactoryBot.create(:examination)
+      examlist = FactoryBot.build(:examlist)
+      get :create, params: { examlist: examlist.attributes }
+    end
 
     context 'no login' do
       it { is_expected.to redirect_to '/users/sign_in' }
@@ -41,12 +44,14 @@ RSpec.describe ExamlistsController, type: :controller do
   end
 
   describe '#update' do
-    examlist = FactoryBot.create(:examlist)
-    test_examlist = { examlist: { student_id: 1,
-                                  examination_id: 1,
-                                  mark: 1 },
-                      id: examlist.id }
-    subject { get :update, params: test_examlist }
+    subject do
+      group = FactoryBot.create(:group)
+      discipline = FactoryBot.create(:discipline)
+      student = FactoryBot.create(:student)
+      examination = FactoryBot.create(:examination)
+      examlist = FactoryBot.create(:examlist)
+      get :update, params: { examlist: examlist.attributes, id: examlist.id }
+    end
 
     context 'no login' do
       it { is_expected.to redirect_to '/users/sign_in' }
@@ -60,6 +65,31 @@ RSpec.describe ExamlistsController, type: :controller do
     context 'login as admin' do
       login_admin
       it { is_expected.to redirect_to action: :show, id: assigns(:examlist).id }
+    end
+  end
+
+  describe '#destroy' do
+    subject do
+      group = FactoryBot.create(:group)
+      student = FactoryBot.create(:student)
+      discipline = FactoryBot.create(:discipline)
+      examination = FactoryBot.create(:examination)
+      examlist = FactoryBot.create(:examlist)
+      get :destroy, params: { id: examlist.id }
+    end
+
+    context 'no login' do
+      it { is_expected.to redirect_to '/users/sign_in' }
+    end
+
+    context 'login as user' do
+      login_user
+      it { is_expected.to redirect_to '/' }
+    end
+
+    context 'login as admin' do
+      login_admin
+      it { is_expected.to redirect_to action: :index }
     end
   end
 end

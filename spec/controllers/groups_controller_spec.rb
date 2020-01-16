@@ -1,13 +1,6 @@
 require 'rails_helper'
 
 RSpec.describe GroupsController, type: :controller do
-  before :each do
-    @client = Client.new
-  end
-
-  after :each do
-    @client = Client.new
-  end
   describe '#index' do
     subject { get :index }
     context 'no login' do
@@ -44,9 +37,10 @@ RSpec.describe GroupsController, type: :controller do
   end
 
   describe '#update' do
-    group = FactoryBot.create(:group)
-    test_group = { group: { name: 'qwe', size: 20 }, id: group.id }
-    subject { get :update, params: test_group }
+    subject do
+      group = FactoryBot.create(:group)
+      get :update, params: { group: group.attributes, id: group.id }
+    end
 
     context 'no login' do
       it { is_expected.to redirect_to '/' }
@@ -64,9 +58,10 @@ RSpec.describe GroupsController, type: :controller do
   end
 
   describe '#destroy' do
-    group = FactoryBot.create(:group)
-    test_group = { id: group.id }
-    subject { get :destroy, params: test_group }
+    subject do
+      group = FactoryBot.create(:group)
+      get :destroy, params: { id: group.id }
+    end
 
     context 'no login' do
       it { is_expected.to redirect_to '/' }

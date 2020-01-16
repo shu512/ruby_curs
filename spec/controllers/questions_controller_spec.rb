@@ -1,13 +1,14 @@
 require 'rails_helper'
 
 RSpec.describe QuestionsController, type: :controller do
-  merge_with_question = { discipline_id: 3 }
-  test_discipline = FactoryBot.create(:discipline)
-  test_question = { question: FactoryBot.build(:question).attributes }
-                  .merge(merge_with_question)
-
   describe '#create' do
-    subject { get :create, params: test_question }
+    subject do
+      discipline = FactoryBot.create(:discipline)
+      discipline_id = { discipline_id: discipline.id }
+      question = { question: FactoryBot.build(:question).attributes }
+                 .merge(discipline_id)
+      get :create, params: question
+    end
 
     context 'no login' do
       it { is_expected.to redirect_to '/' }
@@ -25,16 +26,35 @@ RSpec.describe QuestionsController, type: :controller do
   end
 
   describe '#update' do
-    merge_with_question = { discipline_id: 3 }
-    test_discipline = FactoryBot.create(:discipline)
+    subject do
+      discipline = FactoryBot.create(:discipline)
+      question = FactoryBot.create(:question)
+      get :update, params: { question: question.attributes,
+                             id: question.id,
+                             discipline_id: discipline.id }
+    end
 
-    question = FactoryBot.create(:question)
-    id = Question.all.last.id
-    discipline_id = Question.all.last.discipline_id
+    context 'no login' do
+      it { is_expected.to redirect_to '/' }
+    end
 
-    test_question = { question: { content: 'qwe' }, id: id, discipline_id: discipline_id }
+    context 'login as user' do
+      login_user
+      it { is_expected.to redirect_to '/' }
+    end
 
-    subject { get :update, params: test_question }
+    context 'login as admin' do
+      login_admin
+      it { is_expected.to redirect_to '/disciplines/1' }
+    end
+  end
+
+  describe '#destroy' do
+    subject do
+      discipline = FactoryBot.create(:discipline)
+      question = FactoryBot.create(:question)
+      get :destroy, params: { id: question.id, discipline_id: discipline.id }
+    end
 
     context 'no login' do
       it { is_expected.to redirect_to '/' }

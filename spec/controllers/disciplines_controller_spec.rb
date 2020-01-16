@@ -19,7 +19,30 @@ RSpec.describe DisciplinesController, type: :controller do
   end
 
   describe '#create' do
-    subject { get :create, params: { discipline: FactoryBot.build(:discipline).attributes } }
+    subject do
+      get :create, params: { discipline: FactoryBot.build(:discipline).attributes }
+    end
+
+    context 'no login' do
+      it { is_expected.to redirect_to '/' }
+    end
+
+    context 'login as user' do
+      login_user
+      it { is_expected.to redirect_to '/' }
+    end
+
+    context 'login as admin' do
+      login_admin
+      it { is_expected.to redirect_to action: :show, id: assigns(:discipline).id }
+    end
+  end
+
+  describe '#update' do
+    subject do
+      discipline = FactoryBot.create(:discipline)
+      get :update, params: { discipline: discipline.attributes, id: discipline.id }
+    end
 
     context 'no login' do
       it { is_expected.to redirect_to '/' }
@@ -37,10 +60,10 @@ RSpec.describe DisciplinesController, type: :controller do
   end
 
   describe '#destroy' do
-    discipline = FactoryBot.create(:discipline)
-    test_discipline = { id: discipline.id }
-    subject { get :destroy, params: test_discipline }
-
+    subject do
+      discipline = FactoryBot.create(:discipline)
+      get :destroy, params: { id: discipline.id }
+    end
     context 'no login' do
       it { is_expected.to redirect_to '/' }
     end

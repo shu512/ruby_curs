@@ -19,7 +19,10 @@ RSpec.describe StudentsController, type: :controller do
   end
 
   describe '#create' do
-    subject { get :create, params: { student: FactoryBot.build(:student).attributes } }
+    subject do
+      group = FactoryBot.create(:group)
+      get :create, params: { student: FactoryBot.build(:student).attributes }
+    end
 
     context 'no login' do
       it { is_expected.to redirect_to '/' }
@@ -37,10 +40,11 @@ RSpec.describe StudentsController, type: :controller do
   end
 
   describe '#update' do
-    group = FactoryBot.create(:group)
-    student = FactoryBot.create(:student)
-    test_student = { student: { number: 1, full_name: 'test' }, id: student.id }
-    subject { get :update, params: test_student }
+    subject do
+      group = FactoryBot.create(:group)
+      student = FactoryBot.create(:student)
+      get :update, params: { student: student.attributes, id: student.id }
+    end
 
     context 'no login' do
       it { is_expected.to redirect_to '/' }
@@ -53,14 +57,16 @@ RSpec.describe StudentsController, type: :controller do
 
     context 'login as admin' do
       login_admin
-      it { is_expected.to have_http_status :ok }
+      it { is_expected.to redirect_to action: :show, id: assigns(:student).id }
     end
   end
 
   describe '#destroy' do
-    student = FactoryBot.create(:student)
-    test_student = { id: student.id }
-    subject { get :destroy, params: test_student }
+    subject do
+      group = FactoryBot.create(:group)
+      student = FactoryBot.create(:student)
+      get :destroy, params: { id: student.id }
+    end
 
     context 'no login' do
       it { is_expected.to redirect_to '/' }
