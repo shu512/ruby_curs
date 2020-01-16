@@ -1,4 +1,5 @@
-<%= simple_form_for [ @discipline, @discipline.questions.update(params[:discipline_id], { content: @question.content }) ] do |f| %>
+<%= simple_form_for [ @discipline, @discipline.questions.update(params[:discipline_id],
+ { content: @question.content }) ] do |f| %>
   <p><%= f.input :content %></p>
   <p><%= f.button :submit %></p>
 <% end %>
