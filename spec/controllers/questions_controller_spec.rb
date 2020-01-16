@@ -5,7 +5,7 @@ RSpec.describe QuestionsController, type: :controller do
     subject do
       discipline = FactoryBot.create(:discipline)
       discipline_id = { discipline_id: discipline.id }
-      question = { question: FactoryBot.build(:question).attributes }
+      question = { question: FactoryBot.attributes_for(:question) }
                  .merge(discipline_id)
       get :create, params: question
     end

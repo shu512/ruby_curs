@@ -20,7 +20,7 @@ RSpec.describe DisciplinesController, type: :controller do
 
   describe '#create' do
     subject do
-      get :create, params: { discipline: FactoryBot.build(:discipline).attributes }
+      get :create, params: { discipline: FactoryBot.attributes_for(:discipline) }
     end
 
     context 'no login' do

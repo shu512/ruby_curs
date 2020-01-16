@@ -21,7 +21,7 @@ RSpec.describe StudentsController, type: :controller do
   describe '#create' do
     subject do
       group = FactoryBot.create(:group)
-      get :create, params: { student: FactoryBot.build(:student).attributes }
+      get :create, params: { student: FactoryBot.attributes_for(:student) }
     end
 
     context 'no login' do

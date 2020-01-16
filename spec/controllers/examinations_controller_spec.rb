@@ -23,7 +23,7 @@ RSpec.describe ExaminationsController, type: :controller do
       group = FactoryBot.create(:group)
       discipline = FactoryBot.create(:discipline)
       examination = FactoryBot.build(:examination)
-      get :create, params: { examination: examination.attributes }
+      get :create, params: { examination: FactoryBot.attributes_for(:examination) }
     end
 
     context 'no login' do

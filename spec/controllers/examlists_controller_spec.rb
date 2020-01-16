@@ -25,7 +25,7 @@ RSpec.describe ExamlistsController, type: :controller do
       discipline = FactoryBot.create(:discipline)
       examination = FactoryBot.create(:examination)
       examlist = FactoryBot.build(:examlist)
-      get :create, params: { examlist: examlist.attributes }
+      get :create, params: { examlist: FactoryBot.attributes_for(:examlist) }
     end
 
     context 'no login' do

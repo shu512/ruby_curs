@@ -19,7 +19,7 @@ RSpec.describe GroupsController, type: :controller do
   end
 
   describe '#create' do
-    subject { get :create, params: { group: FactoryBot.build(:group).attributes } }
+    subject { get :create, params: { group: FactoryBot.attributes_for(:group) } }
 
     context 'no login' do
       it { is_expected.to redirect_to '/' }
