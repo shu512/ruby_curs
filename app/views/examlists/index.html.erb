@@ -15,8 +15,8 @@
   <tbody>
     <% @examlists.each do |examlist| %>
       <tr>
-        <td><%= examlist.student_id %></td>
-        <td><%= examlist.examination_id %></td>
+        <td><%= Student.find(examlist.student_id).full_name %></td>
+        <td><%= Discipline.find(Examination.find(examlist.examination_id).discipline_id).title %></td>
         <td><%= examlist.mark %></td>
         <td><%= link_to 'Show', examlist %></td>
         <td><%= link_to 'Edit', edit_examlist_path(examlist) %></td>

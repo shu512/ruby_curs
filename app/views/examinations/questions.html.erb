@@ -1,13 +1,7 @@
-<table>
-  <tr>
-    <th>FIO</th>
-    <th>Questions</th>
-  </tr>
- 
-  <% @group.students.each do |student| %>
-    <tr>
-      <td><%= student.full_name %></td>
-      <td><%= random_questions %></td>
-    </tr>
-  <% end %>
-</table>
+<% @group.students.each do |student| %>
+    <p><%= student.full_name %></p>
+    <% random_questions.each_with_index do |question, i| %>
+      <p><%= "#{i + 1}: #{question}" %></p>
+    <% end %>
+    <br>
+<% end %>
